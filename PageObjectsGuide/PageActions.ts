@@ -100,7 +100,7 @@ export interface IPageActions {
      * @author : Web QA Automation Team
      * @since : Dec 2023
      */
-    
+
     waitForElementAttached(locator: string): Promise<void>
 
     /**
@@ -161,21 +161,21 @@ export interface IPageActions {
      * @author : Web QA Automation Team
      * @since : Dec 2023
      */
-    
+
     verifyEditboxValueNotPresent(locateBy: LocateBy, valueToVerify: string, options?: { message: string }): Promise<void>
 
-     /**
-     * This method is used to scroll to a specific element.
-     *
-     * @mandatoryparameters :  
-     *              ==> [locateBy]    -Any Object or Any Object Locator- (E.g.) => 'footer.main-footer input[type="email"]'
-     * @optional_parameters :
-     *              ==> [message] -String-  (E.g.) => 'Footer email Edit Box'
-     * @returnType : void    
-     * @author : Web QA Automation Team
-     * @since : Dec 2023
-     */
-    
+    /**
+    * This method is used to scroll to a specific element.
+    *
+    * @mandatoryparameters :  
+    *              ==> [locateBy]    -Any Object or Any Object Locator- (E.g.) => 'footer.main-footer input[type="email"]'
+    * @optional_parameters :
+    *              ==> [message] -String-  (E.g.) => 'Footer email Edit Box'
+    * @returnType : void    
+    * @author : Web QA Automation Team
+    * @since : Dec 2023
+    */
+
     scrollToElement(locateBy: LocateBy, options?: { message: string }): Promise<void>
 
     checkBoxSelection(locateBy: LocateBy, action: string, options?: { message: string }): Promise<void>
@@ -185,7 +185,9 @@ export interface IPageActions {
     verifyAttributeValue(locateBy: string | Locator, attributeName: string, attributevalue: string, options?: { message: string }): Promise<void>
     keyboardKeyPress(key: string, options?: { message: string }): Promise<void>
     selectDropDownValue(locateBy: LocateBy, text: string, options?: { message: string }): Promise<void>
-    verifySelectedDropDownValue(selectDropDownLocator: string, textToVerify: string, options?: { message: string }): Promise<void> 
+    verifySelectedDropDownValue(selectDropDownLocator: string, textToVerify: string, options?: { message: string }): Promise<void>
     expectToBeTrue(status: boolean, options?: { message: string }): Promise<void>
     clickElementByMouseCoordinates(selector: string, options?: { message: string }): Promise<void>
+    getFilesCount(folderPath: string): Promise<number>
+    verifyFilesCount(folderPath: string, count: number, options?: { message: string }): Promise<void>
 }

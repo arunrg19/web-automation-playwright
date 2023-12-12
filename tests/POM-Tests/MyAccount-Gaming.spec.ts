@@ -1,4 +1,4 @@
-import { test } from '@playwright/test'
+import { expect, test } from '@playwright/test'
 import { LoginPage } from '../../PageObjects/Pages/loginPage'
 import { HomePage } from '../../PageObjects/Pages/homePage'
 import { PLPPage } from '../../PageObjects/Pages/PLPPage'
@@ -10,6 +10,7 @@ import { PaymentOptionsPage } from '../../PageObjects/Pages/paymentOptionsPage'
 import { EditProfilePage } from '../../PageObjects/Pages/editProfilePage'
 import { AddressPage } from '../../PageObjects/Pages/addressPage'
 import { MyOrdersPage } from '../../PageObjects/Pages/myOrdersPage'
+import { InvoicePage } from '../../PageObjects/Pages/invoicePage'
 
 test.describe('MyAccount Non-Logged-In User Test Cases', async () => {
     test(`📃 TC001 - Login Form : Ensure the presence of every sections in Home Page and Login Form Display`, async ({ page }) => {
@@ -131,7 +132,7 @@ test.describe('MyAccount Non-Logged-In User Test Cases', async () => {
             // await loginPage.loginIntoMyAccountApplication('marchtesting@yopmail.com', 'Logitech$#1947')
             // await loginPage.loginIntoMyAccountApplication('playwrighttest@yopmail.com', 'Testing$!1947')
             // await loginPage.loginIntoMyAccountApplication('bkumar@logitech.com', 'Greendust@2022')
-            // await page.context().storageState({ 'path': 'PageObjects/GamingUserLogins/addressUser.json' })
+            // await page.context().storageState({ 'path': 'PageObjects/GamingUserLogins/gaminguser.json' })
             await loginPage.logoutFromMyAccountApplication()
             await homePage.validateHomeButtons()
         })
@@ -271,7 +272,7 @@ test.describe(`MyAccount Logged-In User Generic Test Cases`, async () => {
     })
 })
 
-test.describe(`TC009 - Order Details : Validate complete order creation flow and order cancellation from Order Details Page`, async () => {
+test.describe(`Order Details : Validate complete order creation, cancellation and other validations from Order Details Page`, async () => {
     test.use({ 'storageState': 'PageObjects/GamingUserLogins/orderCreationUser.json' })
     test(`📃 TC009 - Order Details : Validate complete order creation flow and order cancellation from Order Details Page`, async ({ page }) => {
         await test.step(`Validate complete order creation flow and order cancellation from Order Details Page`, async () => {
@@ -358,8 +359,8 @@ test.describe(`TC009 - Order Details : Validate complete order creation flow and
     })
 })
 
-test.describe("Address Validation on Logi Brand which is updated in Gaming Brand", () => {
-    test(`📃 TC007.2 - Ensure the user is able to verify the updated address in 'GAMING' Brand is seen in 'LOGITECH' Brand as well`, async ({ page }) => {
+test.describe("Address Book : Address Validation on Logi Brand which is updated in Gaming Brand", () => {
+    test(`📃 TC007.2 - Address Book : Ensure the user is able to verify the updated address in 'GAMING' Brand is seen in 'LOGITECH' Brand as well`, async ({ page }) => {
         await test.step(`TC007.2 - Ensure the user is able to verify the updated address in 'GAMING' Brand is seen in 'LOGITECH' Brand as well`, async () => {
             await page.goto('https://logi-qa-65.logitech.com/en-us/my-account.html')
             const homePage = new HomePage(page)
@@ -375,7 +376,7 @@ test.describe("Address Validation on Logi Brand which is updated in Gaming Brand
     })
 
     test.use({ 'storageState': 'PageObjects/GamingUserLogins/addressUser.json' })
-    test(`TC013 - My Account Address | Add/Edit field validations`, async ({ page }) => {
+    test(`TC013 - Address Book : Add/Edit field validations in Address Book`, async ({ page }) => {
         await test.step(`TC013 - My Account Address | Add/Edit field validations`, async () => {
             await page.goto('https://gaming-qa-65.logitech.com/en-us/my-account.html')
             const homePage = new HomePage(page)
@@ -386,6 +387,33 @@ test.describe("Address Validation on Logi Brand which is updated in Gaming Brand
             await addressPage.addressFieldsValidationAdd()
             await page.waitForTimeout(1000)
             await addressPage.addressFieldsValidationEdit()
+        })
+    })
+})
+
+test.describe("Order Details : Validation for 'Complete' Order cases", () => {
+    test.use({ 'storageState': 'PageObjects/GamingUserLogins/gamingUser.json' })
+    test(`TC014 - Order Details : Opening any order from Myorders page by clicking Order Details Button and verify the View Invoice button displayed for the 'Complete' Order and download Invoices`, async ({ page }) => {
+        await test.step(`Order Details : Opening any order from Myorders page by clicking Order Details Button and verify the View Invoice button displayed for the 'Complete' Order and download Invoices`, async () => {
+            await page.goto('https://gaming-qa-65.logitech.com/en-us/my-account/my-orders.html')
+            const orderDetailsPage = new OrderDetailsPage(page)
+            const invoicePage = new InvoicePage(page)
+            await orderDetailsPage.clickCompleteOrderDetails()
+            await orderDetailsPage.validateCompleteOrderDetails()
+            await invoicePage.validateCompleteOrderDetails('TC014')
+        })
+    })
+
+    test(`TC015 - Order Details : Searching for a Guest Order and verify the View Invoice button displayed for the 'Complete' Order and download Invoices`, async ({ page }) => {
+        await test.step(`Order Details : Searching for a Guest Order and verify the View Invoice button displayed for the 'Complete' Order and download Invoices`, async () => {
+            await page.goto('https://gaming-qa-65.logitech.com/en-us/order-status.html')
+            const orderStatusPage = new OrderStatusPage(page)
+            const orderDetailsPage = new OrderDetailsPage(page)
+            const invoicePage = new InvoicePage(page)
+            await orderStatusPage.searchGuestOrderDetails('265036640336', 'L0g1t3ch', 'geitrejeinajo-9421@yopmail.com')
+            await page.waitForTimeout(2000)
+            await orderDetailsPage.validateCompleteOrderDetails()
+            await invoicePage.validateCompleteOrderDetails('TC015')
         })
     })
 })

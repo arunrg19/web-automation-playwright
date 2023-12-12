@@ -19,6 +19,7 @@ export class OrderDetailsPage extends BasePage {
     private readonly eleRefreshErrorMsg: Locator
     private readonly linkBackToOrders: Locator
     private readonly btnOrderDetailsAcceptedOrder: Locator
+    private readonly btnOrderDetailsCompleteOrder: Locator
 
     constructor(page: Page) {
         super(page)
@@ -36,7 +37,8 @@ export class OrderDetailsPage extends BasePage {
         this.eleRefreshError = page.locator('div#dr_CustomerServiceOrderList h1')
         this.eleRefreshErrorMsg = page.locator('div#dr_CustomerServiceOrderList')
         this.linkBackToOrders = page.locator('a[data-analytics-title="back-to-main-page"]')
-        this.btnOrderDetailsAcceptedOrder = page.locator('div.order-header').filter({'hasText':'Accepted'}).nth(0).locator('a.btn.btn-buy-kohle-default')
+        this.btnOrderDetailsAcceptedOrder = page.locator('div.order-header').filter({ 'hasText': 'Accepted' }).nth(0).locator('a.btn.btn-buy-kohle-default')
+        this.btnOrderDetailsCompleteOrder = page.locator('div.order-header').filter({ 'hasText': 'Complete' }).nth(0).locator('a.btn.btn-buy-kohle-default')
     }
 
     private async verifyOrderID(): Promise<void> {
@@ -88,6 +90,13 @@ export class OrderDetailsPage extends BasePage {
         })
     }
 
+    public async clickCompleteOrderDetails(): Promise<void> {
+        await test.step(`Clicking Order Details Button`, async () => {
+            await this.clickOn(this.btnOrderDetailsCompleteOrder, { 'message': 'Complete Order : Order Details Button' })
+        })
+    }
+
+
     public async cancelOrderDetails(): Promise<void> {
         await test.step(`Cancel Order Details`, async () => {
             await this.verifyPageURL('my-account/my-orders/order-details.html')
@@ -110,15 +119,30 @@ export class OrderDetailsPage extends BasePage {
         })
     }
 
+    public async validateCompleteOrderDetails(): Promise<void> {
+        await test.step(`[COMPLETE ORDER] Details Validation`, async () => {
+            await this.verifyPageURL('my-account/my-orders/order-details.html')
+            await this.verifyElementVisibility(this.orderID, { message: 'Order ID' })
+            await this.verifyOrderDate()
+            await this.verifyOrderStatus()
+            await this.verifyAddressDetails()
+            await this.verifyInVoiceButton('YES')
+            await this.clickOn(this.btnInvoice, { 'message': 'Invoice Button' })
+            await this.page.waitForTimeout(2000)
+            await this.verifyPageURL('/my-account/my-orders/invoice.html')
+            await this.page.waitForTimeout(4000)
+        })
+    }
+
     public async refreshErrorAcceptedOnOrderDetailsPage(): Promise<void> {
         await test.step(`Refresh Page Error Validation`, async () => {
-            await this.clickOn(this.btnOrderDetailsAcceptedOrder)
+            await this.clickOn(this.btnOrderDetailsAcceptedOrder, { 'message': 'Accepted Order : Order Details Button' })
             await this.verifyPageURL('my-account/my-orders/order-details.html')
             await this.page.waitForTimeout(2000)
             await this.page.reload()
             await this.verifyElementVisibility(this.eleRefreshError, { 'message': 'Refresh Error Header' })
             await this.verifyElementVisibility(this.eleRefreshErrorMsg, { 'message': 'Refresh Error Header' })
-            await this.clickOn(this.linkBackToOrders, { 'message': 'Link Go Back to Order Status' })            
+            await this.clickOn(this.linkBackToOrders, { 'message': 'Link Go Back to Order Status' })
         })
     }
 

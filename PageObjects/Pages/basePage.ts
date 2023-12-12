@@ -1,5 +1,7 @@
 import { Page, test, Locator, expect, ElementHandle } from '@playwright/test'
 import { IPageActions } from '../../PageObjectsGuide/PageActions'
+import * as fs from 'fs/promises';
+import * as path from 'path';
 
 type LocateBy = Locator | string
 
@@ -249,17 +251,38 @@ export class BasePage implements IPageActions {
 
             if (!elementHandles) {
                 throw new Error(`Exception occured while identifying the element`);
-                return;
             }
             const boundingBox = await elementHandles[0].boundingBox()
             if (!boundingBox) {
                 throw new Error(`Exception occured while verifying the element visibility`);
-                return;
             }
             const x = boundingBox.x + boundingBox.width / 2
             const y = boundingBox.y + boundingBox.height / 2
 
             await this.page.mouse.click(x, y)
+        })
+    }
+
+
+    async getFilesCount(folderPath: string): Promise<number> {
+        let count = 0
+        try {
+            const files = await fs.readdir(folderPath)
+            count = files.length
+        } catch (err) {
+            throw new Error(`Exception occured while getting the file count ${err}`);
+        }
+        return count
+    }
+
+    async verifyFilesCount(folderPath: string, count: number, options?: { message: string }): Promise<void> {
+        await test.step(`Verifying the files count`, async () => {
+            try {
+                let fileCount = await this.getFilesCount(folderPath)
+                await expect(fileCount, { 'message': `Files count ${fileCount} in Downloads folder to match with expected value is ${count}` }).toBe(count)
+            } catch (err) {
+                throw new Error(`Exception occured validating the file count for ${options?.message} ${err}`);
+            }
         })
     }
 }
