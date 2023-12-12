@@ -173,9 +173,9 @@ export class AddressPage extends BasePage {
             for (let i = 0; i < count - 1; i++) {
                 await this.deleteAddressIcon.first().click()
                 await this.verifyElementVisibility(this.btnDeletePopUp, { message: 'Delete Address Pop Up' })
-                await this.page.waitForTimeout(1000)
+                await this.page.waitForTimeout(2000)
                 await this.page.keyboard.press('Enter')
-                await this.page.waitForTimeout(4000)
+                await this.page.waitForTimeout(3000)
             }
         }
         await expect(await this.getElementsCount(this.addressCount), { message: 'Verifying all addresses are deleted.' }).toBe(1)

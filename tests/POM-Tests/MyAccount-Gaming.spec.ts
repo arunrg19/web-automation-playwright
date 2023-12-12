@@ -131,7 +131,7 @@ test.describe('MyAccount Non-Logged-In User Test Cases', async () => {
             // await loginPage.loginIntoMyAccountApplication('marchtesting@yopmail.com', 'Logitech$#1947')
             // await loginPage.loginIntoMyAccountApplication('playwrighttest@yopmail.com', 'Testing$!1947')
             // await loginPage.loginIntoMyAccountApplication('bkumar@logitech.com', 'Greendust@2022')
-            await page.context().storageState({ 'path': 'PageObjects/MyAccount/addressUser.json' })
+            // await page.context().storageState({ 'path': 'PageObjects/GamingUserLogins/addressUser.json' })
             await loginPage.logoutFromMyAccountApplication()
             await homePage.validateHomeButtons()
         })
@@ -139,7 +139,7 @@ test.describe('MyAccount Non-Logged-In User Test Cases', async () => {
 })
 
 test.describe(`MyAccount Logged-In User Generic Test Cases`, async () => {
-    test.use({ 'storageState': 'PageObjects/MyAccount/playWrightUser.json' })
+    test.use({ 'storageState': 'PageObjects/GamingUserLogins/playWrightUser.json' })
     test(`📃 TC001.1 - Footer Subscription : [MyAccount Page] Ensure the existence of footer section and validate the E-mail sign-in functionality`, async ({ page }) => {
         await test.step('Footer Subscription : [MyAccount Page] Ensure the existence of footer section and validate the E-mail sign-in functionality', async () => {
             await page.goto('https://gaming-qa-65.logitech.com/en-us/my-account.html')
@@ -272,7 +272,7 @@ test.describe(`MyAccount Logged-In User Generic Test Cases`, async () => {
 })
 
 test.describe(`TC009 - Order Details : Validate complete order creation flow and order cancellation from Order Details Page`, async () => {
-    test.use({ 'storageState': 'PageObjects/MyAccount/orderCreationUser.json' })
+    test.use({ 'storageState': 'PageObjects/GamingUserLogins/orderCreationUser.json' })
     test(`📃 TC009 - Order Details : Validate complete order creation flow and order cancellation from Order Details Page`, async ({ page }) => {
         await test.step(`Validate complete order creation flow and order cancellation from Order Details Page`, async () => {
             await page.goto('https://gaming-qa-65.logitech.com/en-us/products/gaming-mice.html')
@@ -374,7 +374,7 @@ test.describe("Address Validation on Logi Brand which is updated in Gaming Brand
         })
     })
 
-    test.use({ 'storageState': 'PageObjects/MyAccount/addressUser.json' })
+    test.use({ 'storageState': 'PageObjects/GamingUserLogins/addressUser.json' })
     test(`TC013 - My Account Address | Add/Edit field validations`, async ({ page }) => {
         await test.step(`TC013 - My Account Address | Add/Edit field validations`, async () => {
             await page.goto('https://gaming-qa-65.logitech.com/en-us/my-account.html')
