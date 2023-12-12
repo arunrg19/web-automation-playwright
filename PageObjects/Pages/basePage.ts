@@ -245,18 +245,18 @@ export class BasePage implements IPageActions {
     async clickElementByMouseCoordinates(selector: string, options?: { message: string }): Promise<void> {
         await test.step(`Clicking the element ${options?.message}`, async () => {
             await this.page.waitForTimeout(5000)
-            const elementHandle = await this.page.$(selector)
+            const elementHandles = await this.page.$$(selector)
 
-            if (!elementHandle) {
+            if (!elementHandles) {
                 throw new Error(`Exception occured while identifying the element`);
                 return;
             }
-            const boundingBox = await elementHandle.boundingBox()
+            const boundingBox = await elementHandles[0].boundingBox()
             if (!boundingBox) {
                 throw new Error(`Exception occured while verifying the element visibility`);
                 return;
             }
-            const x = boundingBox.x + boundingBox.width / 2;
+            const x = boundingBox.x + boundingBox.width / 2
             const y = boundingBox.y + boundingBox.height / 2
 
             await this.page.mouse.click(x, y)

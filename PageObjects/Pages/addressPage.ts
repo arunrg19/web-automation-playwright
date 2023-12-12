@@ -23,6 +23,7 @@ export class AddressPage extends BasePage {
     private readonly deleteAddressIcon: Locator
     private readonly btnDeletePopUp: Locator
     private readonly btnSaveEditAddress: Locator
+    private readonly btnDelete: Locator
     private readonly savedAddress_Name: Locator
     private readonly savedAddress_StreetName: Locator
     private readonly savedAddress_ApartmentName: Locator
@@ -53,6 +54,7 @@ export class AddressPage extends BasePage {
         this.addressCount = page.locator('.saved-address .card')
         this.editAddressIcon = page.locator('.saved-address .card button.do-edit')
         this.deleteAddressIcon = page.locator('.saved-address .card button.do-delete')
+        this.btnDelete = page.locator('button.btn.btn-error').nth(0)
         this.savedAddress_Name = page.locator('.saved-address .card p.name')
         this.savedAddress_StreetName = page.locator('.saved-address .card p.line1')
         this.savedAddress_ApartmentName = page.locator('.saved-address .card p.line2')
@@ -173,9 +175,10 @@ export class AddressPage extends BasePage {
             for (let i = 0; i < count - 1; i++) {
                 await this.deleteAddressIcon.first().click()
                 await this.verifyElementVisibility(this.btnDeletePopUp, { message: 'Delete Address Pop Up' })
-                await this.page.waitForTimeout(2000)
-                await this.page.keyboard.press('Enter')
+                await this.page.waitForTimeout(1000)
+                await this.clickElementByMouseCoordinates('button.btn.btn-error')
                 await this.page.waitForTimeout(3000)
+                await this.page.reload()
             }
         }
         await expect(await this.getElementsCount(this.addressCount), { message: 'Verifying all addresses are deleted.' }).toBe(1)
