@@ -359,38 +359,6 @@ test.describe(`Order Details : Validate complete order creation, cancellation an
     })
 })
 
-test.describe("Address Book : Address Validation on Logi Brand which is updated in Gaming Brand", () => {
-    test(`📃 TC007.2 - Address Book : Ensure the user is able to verify the updated address in 'GAMING' Brand is seen in 'LOGITECH' Brand as well`, async ({ page }) => {
-        await test.step(`TC007.2 - Ensure the user is able to verify the updated address in 'GAMING' Brand is seen in 'LOGITECH' Brand as well`, async () => {
-            await page.goto('https://logi-qa-65.logitech.com/en-us/my-account.html')
-            const homePage = new HomePage(page)
-            const loginPage = new LoginPage(page)
-            const addressPage = new AddressPage(page)
-            await homePage.clickLoginButton()
-            await page.waitForTimeout(2000)
-            await loginPage.loginIntoMyAccountApplication('playwrighttest@yopmail.com', 'Testing$!1947')
-            await homePage.clickAddressBook()
-            await homePage.verifyPageURL('/address-book.html')
-            await addressPage.validateSavedAddress(2, 'EditedFirstName' + " " + 'EditedLastName', '1445 Moore Avenue', '2', 'Maine', 'Springfield', '7066170489')
-        })
-    })
-
-    test.use({ 'storageState': 'PageObjects/GamingUserLogins/addressUser.json' })
-    test(`TC013 - Address Book : Add/Edit field validations in Address Book`, async ({ page }) => {
-        await test.step(`TC013 - My Account Address | Add/Edit field validations`, async () => {
-            await page.goto('https://gaming-qa-65.logitech.com/en-us/my-account.html')
-            const homePage = new HomePage(page)
-            const addressPage = new AddressPage(page)
-            await homePage.clickAddressBook()
-            await homePage.verifyPageURL('/address-book.html')
-            await addressPage.deleteExistingAddresses()
-            await addressPage.addressFieldsValidationAdd()
-            await page.waitForTimeout(1000)
-            await addressPage.addressFieldsValidationEdit()
-        })
-    })
-})
-
 test.describe("Order Details : Validation for 'Complete' Order cases", () => {
     test.use({ 'storageState': 'PageObjects/GamingUserLogins/gamingUser.json' })
     test(`TC014 - Order Details : Opening any order from Myorders page by clicking Order Details Button and verify the View Invoice button displayed for the 'Complete' Order and download Invoices`, async ({ page }) => {
@@ -417,3 +385,36 @@ test.describe("Order Details : Validation for 'Complete' Order cases", () => {
         })
     })
 })
+
+test.describe("Address Book : Address field level Validations and address change from one brand to another brand", () => {
+    test(`📃 TC007.2 - Address Book : Ensure the user is able to verify the updated address in 'GAMING' Brand is seen in 'LOGITECH' Brand as well`, async ({ page }) => {
+        await test.step(`TC007.2 - Ensure the user is able to verify the updated address in 'GAMING' Brand is seen in 'LOGITECH' Brand as well`, async () => {
+            await page.goto('https://logi-qa-65.logitech.com/en-us/my-account.html')
+            const homePage = new HomePage(page)
+            const loginPage = new LoginPage(page)
+            const addressPage = new AddressPage(page)
+            await homePage.clickLoginButton()
+            await page.waitForTimeout(2000)
+            await loginPage.loginIntoMyAccountApplication('playwrighttest@yopmail.com', 'Testing$!1947')
+            await homePage.clickAddressBook()
+            await homePage.verifyPageURL('/address-book.html')
+            await addressPage.validateSavedAddress(2, 'EditedFirstName' + " " + 'EditedLastName', '1445 Moore Avenue', '2', 'Maine', 'Springfield', '7066170489')
+        })
+    })
+
+    test.use({ 'storageState': 'PageObjects/GamingUserLogins/addressUser.json' })
+    test(`TC016 - Address Book : Add/Edit field validations in Address Book`, async ({ page }) => {
+        await test.step(`TC013 - My Account Address | Add/Edit field validations`, async () => {
+            await page.goto('https://gaming-qa-65.logitech.com/en-us/my-account.html')
+            const homePage = new HomePage(page)
+            const addressPage = new AddressPage(page)
+            await homePage.clickAddressBook()
+            await homePage.verifyPageURL('/address-book.html')
+            await addressPage.deleteExistingAddresses()
+            await addressPage.addressFieldsValidationAdd()
+            await page.waitForTimeout(1000)
+            await addressPage.addressFieldsValidationEdit()
+        })
+    })
+})
+
