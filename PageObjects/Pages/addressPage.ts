@@ -9,7 +9,7 @@ export class AddressPage extends BasePage {
     private readonly txtAddressNickName: Locator
     private readonly txtAddressFirstName: Locator
     private readonly txtAddressLastName: Locator
-    private readonly txtAddressstreetName: Locator
+    private readonly txtAddresstreetName: Locator
     private readonly txtAddressApartmentName: Locator
     private readonly selectAddressCountry: Locator
     private readonly txtAddressStateName: Locator
@@ -28,6 +28,7 @@ export class AddressPage extends BasePage {
     private readonly savedAddress_ApartmentName: Locator
     private readonly savedAddress_City_State: Locator
     private readonly savedAddress_PhoneNumber: Locator
+    private readonly fieldErrorMsg: Locator
     private readonly btnAddAddress: string
 
     constructor(page: Page) {
@@ -39,7 +40,7 @@ export class AddressPage extends BasePage {
         this.txtAddressNickName = page.locator('#address-nickname')
         this.txtAddressFirstName = page.locator('#address-firstname')
         this.txtAddressLastName = page.locator('#address-lastname')
-        this.txtAddressstreetName = page.locator('#address-street')
+        this.txtAddresstreetName = page.locator('#address-street')
         this.txtAddressApartmentName = page.locator('#address-apartment')
         this.selectAddressCountry = page.locator('select#address-country')
         this.txtAddressStateName = page.locator('select#address-state')
@@ -57,6 +58,7 @@ export class AddressPage extends BasePage {
         this.savedAddress_ApartmentName = page.locator('.saved-address .card p.line2')
         this.savedAddress_City_State = page.locator('.saved-address .card p.city-state')
         this.savedAddress_PhoneNumber = page.locator('.saved-address .card p.phone')
+        this.fieldErrorMsg = page.locator('p.error')
     }
 
 
@@ -91,9 +93,9 @@ export class AddressPage extends BasePage {
         })
     }
 
-    public async enterAddressstreetName(streetAddress: string): Promise<void> {
+    public async enterAddresstreetName(streetAddress: string): Promise<void> {
         await test.step('Entering details in the Street Name EditBox', async () => {
-            await this.enterTextInEditBox(this.txtAddressstreetName, streetAddress, { message: 'Street Name Edit Box' })
+            await this.enterTextInEditBox(this.txtAddresstreetName, streetAddress, { message: 'Street Name Edit Box' })
         })
     }
 
@@ -139,14 +141,14 @@ export class AddressPage extends BasePage {
         })
     }
 
-    public async clickSaveAddresss(): Promise<void> {
+    public async clickSaveAddress(): Promise<void> {
         await test.step('Clicking Save Address Button', async () => {
             await this.clickOn(this.btnSaveAddress, { message: 'Save Address Button' })
             await this.page.waitForTimeout(3000)
         })
     }
 
-    public async clickSaveEditedAddresss(): Promise<void> {
+    public async clickSaveEditedAddress(): Promise<void> {
         await test.step('Clicking Save in Edited Address PopUp', async () => {
             await this.clickOn(this.btnSaveEditAddress, { message: 'Save Address Button in Edited Address PopUp' })
             await this.page.waitForTimeout(3000)
@@ -159,6 +161,12 @@ export class AddressPage extends BasePage {
         })
     }
 
+    public async validateFieldErrorMessage(fieldMsg: string): Promise<void> {
+        await test.step('Verify the field level Error message', async () => {
+            await this.verifyElementText(this.fieldErrorMsg, fieldMsg, { message: fieldMsg })
+        })
+    }
+
     public async deleteExistingAddresses(): Promise<void> {
         const count = await this.getElementsCount(this.addressCount, { message: 'Getting Addresses Count' })
         if (count > 1) {
@@ -167,7 +175,7 @@ export class AddressPage extends BasePage {
                 await this.verifyElementVisibility(this.btnDeletePopUp, { message: 'Delete Address Pop Up' })
                 await this.page.waitForTimeout(1000)
                 await this.page.keyboard.press('Enter')
-                await this.page.waitForTimeout(3000)
+                await this.page.waitForTimeout(4000)
             }
         }
         await expect(await this.getElementsCount(this.addressCount), { message: 'Verifying all addresses are deleted.' }).toBe(1)
@@ -205,7 +213,7 @@ export class AddressPage extends BasePage {
             await this.enterAddressNickName(nickName)
             await this.enterAddressFirstName(firstName)
             await this.enterAddressLasttName(lastName)
-            await this.enterAddressstreetName(streetName)
+            await this.enterAddresstreetName(streetName)
             await this.enterAddressApartment(apartmentName)
             await this.selectAddressCountryName(country)
             await this.enterAddressState(state)
@@ -213,7 +221,7 @@ export class AddressPage extends BasePage {
             await this.enterAddressPostCode(postCode)
             await this.enterAddressPhoneNumber(phoneNumber)
             await this.selectDefaultAddress()
-            await this.clickSaveAddresss()
+            await this.clickSaveAddress()
             await this.verifySavedAddressCount(counttoVerify)
 
             //Validate the Saved address here since all the values are passed here directly
@@ -227,4 +235,113 @@ export class AddressPage extends BasePage {
         })
     }
 
+    public async addressFieldsValidationAdd(): Promise<void> {
+        await test.step('Address Field Validations on clicking Add Button', async () => {
+            await this.clickAddAddressButton()           
+
+            await this.enterAddressNickName('test nickname')
+            await this.enterAddressFirstName('testingfiftycharacterslimittestingfiftycharacterslimit')
+            await this.verifyEditboxValue(this.txtAddressFirstName, 'testingfiftycharacterslimittestingfiftycharactersl', { 'message': 'First Name Character Limit' })
+
+            await this.enterAddressLasttName('testingfiftycharacterslimittestingfiftycharacterslimit')
+            await this.verifyEditboxValue(this.txtAddressLastName, 'testingfiftycharacterslimittestingfiftycharactersl', { 'message': 'Last Name Character Limit' })
+
+            await this.enterAddresstreetName('testingfiftycharacterslimittestingfiftycharacterslimit')
+            await this.verifyEditboxValue(this.txtAddresstreetName, 'testingfiftycharacterslimittestingfiftycharactersl', { 'message': 'Street Character Limit' })
+
+            await this.enterAddressApartment('1')
+            await this.selectAddressCountryName('United States')
+
+            await this.enterAddressCity('testingfiftycharacterslimittestingfiftycharacterslimit')
+            await this.verifyEditboxValue(this.txtAddressCityName, 'testingfiftycharacterslimittestingfiftycharactersl', { 'message': 'Street Character Limit' })
+
+            await this.enterAddressPostCode('123456789')
+            await this.enterAddressPhoneNumber('8177174886')
+            await this.clickSaveAddress()
+
+            //To verify the Required State field
+            await this.validateFieldErrorMessage('Please provide your state, province, or region')
+            await this.enterAddressState('Texas')
+
+            //To verify the number of characters in City field is between 2 and 50
+            await this.enterAddressCity('c')
+            await this.clickSaveAddress()
+            await this.validateFieldErrorMessage('Between 2 to 50 characters are required.')
+            await this.enterAddressCity('Fort Worth')
+
+            //To verify the Post Code field validations
+            await this.enterAddressPostCode('AEMTH-2323')
+            await this.clickSaveAddress()
+            await this.validateFieldErrorMessage('Please enter a valid zip code')
+
+            //To verify entering more than 10 characters in Post code
+            await this.enterAddressPostCode('1234567890012345')
+            await this.verifyEditboxValue(this.txtAddressPostCode, '1234567890', { 'message': 'Post Code Address Limit' })
+
+
+            //To check for Australia
+            await this.selectAddressCountryName('Australia')
+            await this.enterAddressState('North South Wales')
+            await this.clickSaveAddress()
+            await this.validateFieldErrorMessage('Please enter a valid zip code')
+
+            await this.enterAddressPostCode('2410')
+            await this.clickSaveAddress()
+        })
+    }
+
+    public async addressFieldsValidationEdit(): Promise<void> {
+        await test.step('Address Fields Validation on clicking Edit Button', async () => {
+            await this.clickEditIcon(1)           
+
+            await this.enterAddressNickName('test nickname')
+            await this.enterAddressFirstName('testingfiftycharacterslimittestingfiftycharacterslimit')
+            await this.verifyEditboxValue(this.txtAddressFirstName, 'testingfiftycharacterslimittestingfiftycharactersl', { 'message': 'First Name Character Limit' })
+
+            await this.enterAddressLasttName('testingfiftycharacterslimittestingfiftycharacterslimit')
+            await this.verifyEditboxValue(this.txtAddressLastName, 'testingfiftycharacterslimittestingfiftycharactersl', { 'message': 'Last Name Character Limit' })
+
+            await this.enterAddresstreetName('testingfiftycharacterslimittestingfiftycharacterslimit')
+            await this.verifyEditboxValue(this.txtAddresstreetName, 'testingfiftycharacterslimittestingfiftycharactersl', { 'message': 'Street Character Limit' })
+
+            await this.enterAddressApartment('1')
+            await this.selectAddressCountryName('United States')
+
+            await this.enterAddressCity('testingfiftycharacterslimittestingfiftycharacterslimit')
+            await this.verifyEditboxValue(this.txtAddressCityName, 'testingfiftycharacterslimittestingfiftycharactersl', { 'message': 'Street Character Limit' })
+
+            await this.enterAddressPostCode('123456789')
+            await this.enterAddressPhoneNumber('8177174886')
+            await this.clickSaveEditedAddress()
+
+            //To verify the Required State field
+            await this.validateFieldErrorMessage('Please provide your state, province, or region')
+            await this.enterAddressState('Texas')
+
+            //To verify the number of characters in City field is between 2 and 50
+            await this.enterAddressCity('c')
+            await this.clickSaveEditedAddress()
+            await this.validateFieldErrorMessage('Between 2 to 50 characters are required.')
+            await this.enterAddressCity('Fort Worth')
+
+            //To verify the Post Code field validations
+            await this.enterAddressPostCode('AEMTH-2323')
+            await this.clickSaveEditedAddress()
+            await this.validateFieldErrorMessage('Please enter a valid zip code')
+
+            //To verify entering more than 10 characters in Post code
+            await this.enterAddressPostCode('1234567890012345')
+            await this.verifyEditboxValue(this.txtAddressPostCode, '1234567890', { 'message': 'Post Code Address Limit' })
+
+
+            //To check for Australia
+            await this.selectAddressCountryName('Australia')
+            await this.enterAddressState('North South Wales')
+            await this.clickSaveEditedAddress()
+            await this.validateFieldErrorMessage('Please enter a valid zip code')
+
+            await this.enterAddressPostCode('2410')
+            await this.clickSaveEditedAddress()
+        })
+    }
 }

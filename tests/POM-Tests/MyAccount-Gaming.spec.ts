@@ -130,7 +130,8 @@ test.describe('MyAccount Non-Logged-In User Test Cases', async () => {
             // await loginPage.loginIntoMyAccountApplication('kaverivijay08@gmail.com', 'Kaveriav@#07')
             // await loginPage.loginIntoMyAccountApplication('marchtesting@yopmail.com', 'Logitech$#1947')
             // await loginPage.loginIntoMyAccountApplication('playwrighttest@yopmail.com', 'Testing$!1947')
-            await page.context().storageState({ 'path': 'PageObjects/MyAccount/OrderDetailsUser.json' })
+            // await loginPage.loginIntoMyAccountApplication('bkumar@logitech.com', 'Greendust@2022')
+            await page.context().storageState({ 'path': 'PageObjects/MyAccount/addressUser.json' })
             await loginPage.logoutFromMyAccountApplication()
             await homePage.validateHomeButtons()
         })
@@ -242,15 +243,15 @@ test.describe(`MyAccount Logged-In User Generic Test Cases`, async () => {
             await addressPage.enterAddressNickName('EditedNickName')
             await addressPage.enterAddressFirstName('EditedFirstName')
             await addressPage.enterAddressLasttName('EditedLastName')
-            await addressPage.enterAddressstreetName('1445 Moore Avenue')
+            await addressPage.enterAddresstreetName('1445 Moore Avenue')
             await addressPage.enterAddressApartment('2')
             await addressPage.selectDefaultAddress()
-            await addressPage.clickSaveEditedAddresss()
+            await addressPage.clickSaveEditedAddress()
             await addressPage.validateSavedAddress(2, 'EditedFirstName' + " " + 'EditedLastName', '1445 Moore Avenue', '2', 'Maine', 'Springfield', '7066170489')
 
             await addressPage.clickEditIcon(1)
             await addressPage.selectDefaultAddress()
-            await addressPage.clickSaveEditedAddresss()
+            await addressPage.clickSaveEditedAddress()
         })
 
         await test.step(`TC008 -  Address Book : Verify Address and My Orders Should not be displayed for Non-SFCC Locales`, async () => {
@@ -289,7 +290,7 @@ test.describe(`TC009 - Order Details : Validate complete order creation flow and
         })
     })
 
-    test.skip(`📃 TC010 - Order Details : Validate Order details page and verify the View Invoice button not present for 'Accepted' Order`, async ({ page }) => {
+    test(`📃 TC010 - Order Details : Validate Order details page and verify the View Invoice button not present for 'Accepted' Order`, async ({ page }) => {
         await test.step(`Order Details : Validate Order details page and verify the View Invoice button not present for 'Accepted' Order`, async () => {
             const orderStatusPage = new OrderStatusPage(page)
             const orderDetailsPage = new OrderDetailsPage(page)
@@ -372,4 +373,19 @@ test.describe("Address Validation on Logi Brand which is updated in Gaming Brand
             await addressPage.validateSavedAddress(2, 'EditedFirstName' + " " + 'EditedLastName', '1445 Moore Avenue', '2', 'Maine', 'Springfield', '7066170489')
         })
     })
-});
+
+    test.use({ 'storageState': 'PageObjects/MyAccount/addressUser.json' })
+    test(`TC013 - My Account Address | Add/Edit field validations`, async ({ page }) => {
+        await test.step(`TC013 - My Account Address | Add/Edit field validations`, async () => {
+            await page.goto('https://gaming-qa-65.logitech.com/en-us/my-account.html')
+            const homePage = new HomePage(page)
+            const addressPage = new AddressPage(page)
+            await homePage.clickAddressBook()
+            await homePage.verifyPageURL('/address-book.html')
+            await addressPage.deleteExistingAddresses()
+            await addressPage.addressFieldsValidationAdd()
+            await page.waitForTimeout(1000)
+            await addressPage.addressFieldsValidationEdit()
+        })
+    })
+})

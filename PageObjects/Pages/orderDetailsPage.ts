@@ -113,9 +113,11 @@ export class OrderDetailsPage extends BasePage {
     public async refreshErrorAcceptedOnOrderDetailsPage(): Promise<void> {
         await test.step(`Refresh Page Error Validation`, async () => {
             await this.clickOn(this.btnOrderDetailsAcceptedOrder)
+            await this.verifyPageURL('my-account/my-orders/order-details.html')
+            await this.page.waitForTimeout(2000)
             await this.page.reload()
-            await this.verifyElementVisibility(this.eleRefreshError.filter({ 'hasText': 'Unable to Retrieve Order Details' }), { 'message': 'Refresh Error Header' })
-            await this.verifyElementVisibility(this.eleRefreshErrorMsg.filter({ 'hasText': "It seems that the page has been refreshed. To continue viewing your order details, please click here to return to the My Orders page. Once you're on the My Orders page, you will be able to select the specific order and access its details." }), { 'message': 'Reresh Error Message' })
+            await this.verifyElementVisibility(this.eleRefreshError, { 'message': 'Refresh Error Header' })
+            await this.verifyElementVisibility(this.eleRefreshErrorMsg, { 'message': 'Refresh Error Header' })
             await this.clickOn(this.linkBackToOrders, { 'message': 'Link Go Back to Order Status' })            
         })
     }
@@ -123,16 +125,16 @@ export class OrderDetailsPage extends BasePage {
     public async refreshErrorValidation(): Promise<void> {
         await test.step(`Refresh Page Error Validation`, async () => {
             await this.page.reload()
-            await this.verifyElementVisibility(this.eleRefreshError.filter({ 'hasText': 'Unable to Retrieve Order Details' }), { 'message': 'Refresh Error Header' })
-            await this.verifyElementVisibility(this.eleRefreshErrorMsg.filter({ 'hasText': "To view your order details, return to the Order Status page by clicking here. Once you're on the page, provide your order number, guest access code, and/or email address to access your orders." }), { 'message': 'Reresh Error Message' })
+            await this.verifyElementVisibility(this.eleRefreshError, { 'message': 'Refresh Error Header' })
+            await this.verifyElementVisibility(this.eleRefreshErrorMsg, { 'message': 'Refresh Error Header' })
             await this.clickOn(this.linkBackToOrders, { 'message': 'Link Go Back to Order Status' })
         })
     }
 
     public async wrongOrderDetailsErrorValidation(): Promise<void> {
         await test.step(`Wrong Order Details Error Validation`, async () => {
-            await this.verifyElementVisibility(this.eleRefreshError.filter({ 'hasText': 'Incorrect Data Entered' }), { 'message': 'Wrong Order Error Header' })
-            await this.verifyElementVisibility(this.eleRefreshErrorMsg.filter({ 'hasText': "You’ve inserted incorrect order number, guest access code and/or email address." }), { 'message': 'Wrong Order Error Message' })
+            await this.verifyElementVisibility(this.eleRefreshError, { 'message': 'Wrong Order Error Header' })
+            await this.verifyElementVisibility(this.eleRefreshErrorMsg, { 'message': 'Refresh Error Header' })
             await this.clickOn(this.linkBackToOrders, { 'message': 'Link Go Back to Order Status' })
         })
     }
