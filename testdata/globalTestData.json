@@ -1,0 +1,1143 @@
+{
+    "changeLocation": [
+        {
+            "URL": "en-ca",
+            "name": "Canada"
+        },
+        {
+            "URL": "fr-ca",
+            "name": "Canada (Français)"
+        },
+        {
+            "URL": "en-us",
+            "name": "United States"
+        },
+        {
+            "URL": "de-de",
+            "name": "Deutschland"
+        },
+        {
+            "URL": "it-it",
+            "name": "Italia"
+        },
+        {
+            "URL": "en-ch",
+            "name": "Switzerland"
+        },
+        {
+            "URL": "en-gb",
+            "name": "United Kingdom"
+        },
+        {
+            "URL": "en-eu",
+            "name": "Other Countries in Europe, Middle East & Africa (English Only)"
+        },
+        {
+            "URL": "en-in",
+            "name": "India (English)"
+        },
+        {
+            "URL": "vi-vn",
+            "name": "Vietnam (Vietnamese)"
+        },
+        {
+            "URL": "ja-jp",
+            "name": "日本"
+        }
+    ],
+    "deviceViewport": [
+        {
+            "label": "macbook",
+            "device": "macbook-16",
+            "viewport": {
+                "width": 1536,
+                "height": 960
+            },
+            "icon": "💻"
+        },
+        {
+            "label": "iphone",
+            "device": "iphone-x",
+            "viewport": {
+                "width": 375,
+                "height": 812
+            },
+            "icon": "📱"
+        },
+        {
+            "label": "ipad",
+            "device": "ipad-mini",
+            "viewport": {
+                "width": 768,
+                "height": 1024
+            },
+            "icon": "🖥️"
+        }
+    ],
+    "brandDetails": {
+        "Prod": {
+            "Logitech": "https://www.logitech.com",
+            "Gaming": "https://www.logitechg.com",
+            "ASTRO": "https://www.astrogaming.com",
+            "Blue": "https://www.bluemic.com",
+            "UltimateEars": "https://www.ultimateears.com",
+            "Jaybird": "https://www.jaybirdsport.com",
+            "suffix": "",
+            "authKey": {}
+        },
+        "Prod65": {
+            "Logitech": "https://logi-prod-65.logitech.com",
+            "Gaming": "https://gaming-prod-65.logitech.com",
+            "ASTRO": "https://astro-prod-65.logitech.com",
+            "Blue": "https://challonge-prod-65.logitech.com",
+            "UltimateEars": "https://ue-prod-65.logitech.com",
+            "Jaybird": "https://jaybird-prod-65.logitech.com",
+            "suffix": "",
+            "authKey": {}
+        },
+        "Stage65": {
+            "Logitech": "https://logi-stage-65.logitech.com",
+            "Gaming": "https://gaming-stage-65.logitech.com",
+            "ASTRO": "https://astro-stage-65.logitech.com",
+            "Blue": "https://blue-stage-65.logitech.com",
+            "UltimateEars": "https://ue-stage-65.logitech.com",
+            "Jaybird": "https://jaybird-stage-65.logitech.com",
+            "suffix": "",
+            "authKey": {}
+        },
+        "Prod65A": {
+            "Logitech": "https://logi-prod-65a.logitech.com",
+            "Gaming": "https://gaming-prod-65a.logitech.com",
+            "ASTRO": "https://astro-prod-65a.logitech.com",
+            "Blue": "https://blue-prod-65a.logitech.com",
+            "UltimateEars": "https://ue-prod-65a.logitech.com",
+            "Jaybird": "https://jaybird-prod-65a.logitech.com",
+            "suffix": "",
+            "authKey": {}
+        },
+        "PreStage65": {
+            "Logitech": "https://logi-prestage-65.logitech.com",
+            "Gaming": "https://gaming-prestage-65.logitech.com",
+            "ASTRO": "https://astro-prestage-65.logitech.com",
+            "Blue": "https://blue-prestage-65.logitech.com",
+            "UltimateEars": "https://ue-prestage-65.logitech.com",
+            "Jaybird": "https://jaybird-prestage-65.logitech.com",
+            "suffix": "",
+            "authKey": {}
+        },
+        "QA65": {
+            "Logitech": "https://logi-qa-65.logitech.com",
+            "Gaming": "https://gaming-qa-65.logitech.com",
+            "ASTRO": "https://astro-qa-65.logitech.com",
+            "Blue": "https://challonge-qa-65.logitech.com",
+            "UltimateEars": "https://ue-qa-65.logitech.com",
+            "Jaybird": "https://jaybird-qa-65.logitech.com",
+            "suffix": "",
+            "authKey": {}
+        },
+        "Dev": {
+            "Logitech": "https://logi-aemdev-65.logitech.com",
+            "Gaming": "https://gaming-aemdev-65.logitech.com",
+            "ASTRO": "https://astro-aemdev-65.logitech.com",
+            "Blue": "https://blue-aemdev-65.logitech.com",
+            "UltimateEars": "https://ue-aemdev-65.logitech.com",
+            "Jaybird": "https://jaybird-aemdev-65.logitech.com",
+            "suffix": "",
+            "authKey": {}
+        },
+        "PlatformDev": {
+            "Logitech": "https://logi-aemdev-65p.logitech.com",
+            "Gaming": "https://gaming-aemdev-65p.logitech.com",
+            "ASTRO": "https://astro-aemdev-65p.logitech.com",
+            "Blue": "https://blue-aemdev-65p.logitech.com",
+            "UltimateEars": "https://ue-aemdev-65p.logitech.com",
+            "Jaybird": "https://jaybird-aemdev-65p.logitech.com",
+            "suffix": "",
+            "authKey": {}
+        },
+        "docker-author": {
+            "Logitech": "http://logiywsosaqdsdw.corp.logitech.com:4502/content/logitech",
+            "Gaming": "http://logiywsosaqdsdw.corp.logitech.com:4502/content/logitechg",
+            "suffix": "?wcmmode=disabled",
+            "authKey": {
+                "Authorization": "Basic YWRtaW46YWRtaW4="
+            }
+        },
+        "ACS-author": {
+            "Url": "https://author-aemqa-65.logitech.com/content/campaigns",
+            "suffix": "?wcmmode=disabled",
+            "authKey": {
+                "Authorization": "Basic YWRtaW46fUk2NUZSckYtKyotaU4="
+            }
+        },
+        "QA-author": {
+            "Logitech": "http://aws13aemqa05.logitech.com:4502/content/logitech",
+            "Gaming": "http://aws13aemqa05.logitech.com:4502/content/logitechg",
+            "ASTRO": "http://aws13aemqa05.logitech.com:4502/content/astro",
+            "Blue": "http://aws13aemqa05.logitech.com:4502/content/blue",
+            "UltimateEars": "http://aws13aemqa05.logitech.com:4502/content/ue-com",
+            "Jaybird": "http://aws13aemqa05.logitech.com:4502/content/jaybird-web",
+            "suffix": "?wcmmode=disabled",
+            "authKey": {
+                "Authorization": "Basic YWRtaW46YWRtaW4="
+            }
+        }
+    },
+    "countries": [
+        {
+            "Sites": "1",
+            "Language": "EN",
+            "CountryCode": "CA",
+            "Country": "Canada",
+            "Region": "North America",
+            "EComm": "SFCC",
+            "Price": "Y",
+            "URL": "https: //www.logitechg.com/en-ca",
+            "SubDomain": "en-ca",
+            "Latitude": 56.130366,
+            "Longitude": -106.346771,
+            "SubBrands": [
+                "Gaming",
+                "Logitech",
+                "ASTRO",
+                "Blue",
+                "UltimateEars",
+                "Jaybird"
+            ]
+        },
+        {
+            "Sites": "2",
+            "Language": "FR",
+            "CountryCode": "CA",
+            "Country": "Canada",
+            "Region": "North America",
+            "EComm": "SFCC",
+            "Price": "Y",
+            "URL": "https: //www.logitechg.com/fr-ca",
+            "SubDomain": "fr-ca",
+            "Latitude": 56.130366,
+            "Longitude": -106.346771,
+            "SubBrands": [
+                "Gaming",
+                "Logitech",
+                "ASTRO",
+                "Blue",
+                "UltimateEars",
+                "Jaybird"
+            ]
+        },
+        {
+            "Sites": "3",
+            "Language": "ES",
+            "CountryCode": "MX",
+            "Country": "Mexico ",
+            "Region": "North America",
+            "EComm": "Store",
+            "Price": "Y",
+            "URL": "https: //www.logitechg.com/es-mx",
+            "SubDomain": "es-mx",
+            "Latitude": 23.634501,
+            "Longitude": -102.552784,
+            "SubBrands": [
+                "Gaming",
+                "Logitech",
+                "Blue",
+                "UltimateEars",
+                "Jaybird"
+            ]
+        },
+        {
+            "Sites": "4",
+            "Language": "EN",
+            "CountryCode": "US",
+            "Country": "United States",
+            "Region": "North America",
+            "EComm": "DR",
+            "Price": "Y",
+            "URL": "https: //www.logitechg.com/en-us",
+            "SubDomain": "en-us",
+            "Latitude": 37.09024,
+            "Longitude": -95.712891,
+            "SubBrands": [
+                "Gaming",
+                "Logitech",
+                "ASTRO",
+                "Blue",
+                "UltimateEars",
+                "Jaybird"
+            ]
+        },
+        {
+            "Sites": "51",
+            "Language": "JA",
+            "CountryCode": "JP",
+            "Country": "United States",
+            "Region": "North America",
+            "EComm": "DR",
+            "Price": "Y",
+            "URL": "https: //www.logitechg.com/ja-jp",
+            "SubDomain": "ja-jp",
+            "Latitude": 37.09024,
+            "Longitude": -95.712891,
+            "SubBrands": [
+                "Gaming",
+                "Logitech",
+                "ASTRO",
+                "Blue",
+                "UltimateEars",
+                "Jaybird"
+            ]
+        },
+        {
+            "Sites": "5",
+            "Language": "PT",
+            "CountryCode": "BR",
+            "Country": "Brazil",
+            "Region": "South America",
+            "EComm": ".br store",
+            "Price": "N",
+            "URL": "https: //www.logitechg.com/pt-br",
+            "SubDomain": "pt-br",
+            "Latitude": -14.235004,
+            "Longitude": -51.92528,
+            "SubBrands": [
+                "Gaming",
+                "Logitech",
+                "ASTRO",
+                "Blue",
+                "UltimateEars",
+                "Jaybird"
+            ]
+        },
+        {
+            "Sites": "6",
+            "Language": "ES",
+            "CountryCode": "ROAM",
+            "Country": "ROAM",
+            "Region": "South America",
+            "EComm": "N",
+            "Price": "N",
+            "URL": "https: //www.logitechg.com/es-roam",
+            "SubDomain": "es-roam",
+            "Latitude": -38.416097,
+            "Longitude": -63.616672,
+            "SubBrands": [
+                "Gaming",
+                "Logitech",
+                "ASTRO",
+                "Blue",
+                "Jaybird"
+            ]
+        },
+        {
+            "Sites": "7",
+            "Language": "FR",
+            "CountryCode": "BE",
+            "Country": "Belgium",
+            "Region": "EMEA",
+            "EComm": "DR",
+            "Price": "Y",
+            "URL": "https: //www.logitechg.com/fr-be",
+            "SubDomain": "fr-be",
+            "Latitude": 50.503887,
+            "Longitude": 4.469936,
+            "SubBrands": [
+                "Gaming",
+                "Logitech",
+                "Blue",
+                "Jaybird"
+            ]
+        },
+        {
+            "Sites": "8",
+            "Language": "NL",
+            "CountryCode": "BE",
+            "Country": "Belgium",
+            "Region": "EMEA",
+            "EComm": "DR",
+            "Price": "Y",
+            "URL": "https: //www.logitechg.com/nl-be",
+            "SubDomain": "nl-be",
+            "Latitude": 50.503887,
+            "Longitude": 4.469936,
+            "SubBrands": [
+                "Gaming",
+                "Logitech",
+                "Blue",
+                "Jaybird"
+            ]
+        },
+        {
+            "Sites": "9",
+            "Language": "DA",
+            "CountryCode": "DK",
+            "Country": "Denmark",
+            "Region": "EMEA",
+            "EComm": "DR",
+            "Price": "Y",
+            "URL": "https: //www.logitechg.com/da-dk",
+            "SubDomain": "da-dk",
+            "Latitude": 56.26392,
+            "Longitude": 9.501785,
+            "SubBrands": [
+                "Gaming",
+                "Logitech",
+                "Blue",
+                "UltimateEars",
+                "Jaybird"
+            ]
+        },
+        {
+            "Sites": "10",
+            "Language": "DE",
+            "CountryCode": "DE",
+            "Country": "Germany",
+            "Region": "EMEA",
+            "EComm": "DR",
+            "Price": "Y",
+            "URL": "https: //www.logitechg.com/de-de",
+            "SubDomain": "de-de",
+            "Latitude": 51.165691,
+            "Longitude": 10.451526,
+            "SubBrands": [
+                "Gaming",
+                "Logitech",
+                "ASTRO",
+                "Blue",
+                "UltimateEars",
+                "Jaybird"
+            ]
+        },
+        {
+            "Sites": "11",
+            "Language": "ES",
+            "CountryCode": "ES",
+            "Country": "Spain",
+            "Region": "EMEA",
+            "EComm": "DR",
+            "Price": "Y",
+            "URL": "https: //www.logitechg.com/es-es",
+            "SubDomain": "es-es",
+            "Latitude": 40.463667,
+            "Longitude": -3.74922,
+            "SubBrands": [
+                "Gaming",
+                "ASTRO",
+                "Logitech",
+                "Blue",
+                "UltimateEars",
+                "Jaybird"
+            ]
+        },
+        {
+            "Sites": "12",
+            "Language": "IT",
+            "CountryCode": "IT",
+            "Country": "Italy",
+            "Region": "EMEA",
+            "EComm": "DR",
+            "Price": "Y",
+            "URL": "https: //www.logitechg.com/it-it",
+            "SubDomain": "it-it",
+            "Latitude": 41.87194,
+            "Longitude": 12.56738,
+            "SubBrands": [
+                "Gaming",
+                "ASTRO",
+                "Logitech",
+                "Blue",
+                "UltimateEars",
+                "Jaybird"
+            ]
+        },
+        {
+            "Sites": "13",
+            "Language": "HU",
+            "CountryCode": "HU",
+            "Country": "Hungary",
+            "Region": "EMEA",
+            "EComm": "DR",
+            "Price": "Y",
+            "URL": "https: //www.logitechg.com/hu-hu",
+            "SubDomain": "hu-hu",
+            "Latitude": 47.162494,
+            "Longitude": 19.503304,
+            "SubBrands": [
+                "Gaming",
+                "Logitech",
+                "Blue"
+            ]
+        },
+        {
+            "Sites": "14",
+            "Language": "NL",
+            "CountryCode": "NL",
+            "Country": "Netherlands",
+            "Region": "EMEA",
+            "EComm": "DR",
+            "Price": "Y",
+            "URL": "https: //www.logitechg.com/nl-nl",
+            "SubDomain": "nl-nl",
+            "Latitude": 52.132633,
+            "Longitude": 5.291266,
+            "SubBrands": [
+                "Gaming",
+                "Logitech",
+                "Blue",
+                "UltimateEars",
+                "Jaybird"
+            ]
+        },
+        {
+            "Sites": "15",
+            "Language": "NB",
+            "CountryCode": "NO",
+            "Country": "Norway",
+            "Region": "EMEA",
+            "EComm": "DR",
+            "Price": "Y",
+            "URL": "https: //www.logitechg.com/nb-no",
+            "SubDomain": "nb-no",
+            "Latitude": 60.472024,
+            "Longitude": 8.468946,
+            "SubBrands": [
+                "Gaming",
+                "Blue",
+                "UltimateEars",
+                "Jaybird"
+            ]
+        },
+        {
+            "Sites": "16",
+            "Language": "DE",
+            "CountryCode": "AT",
+            "Country": "Austria",
+            "Region": "EMEA",
+            "EComm": "DR",
+            "Price": "Y",
+            "URL": "https: //www.logitechg.com/de-at",
+            "SubDomain": "de-at",
+            "Latitude": 47.516231,
+            "Longitude": 14.550072,
+            "SubBrands": [
+                "Gaming",
+                "Logitech",
+                "Blue",
+                "Jaybird"
+            ]
+        },
+        {
+            "Sites": "17",
+            "Language": "EN",
+            "CountryCode": "ZA",
+            "Country": "South Africa",
+            "Region": "EMEA",
+            "EComm": "N",
+            "Price": "N",
+            "URL": "https: //www.logitechg.com/en-za",
+            "SubDomain": "en-za",
+            "Latitude": -30.559482,
+            "Longitude": 22.937506,
+            "SubBrands": [
+                "Gaming",
+                "Logitech"
+            ]
+        },
+        {
+            "Sites": "19",
+            "Language": "SV",
+            "CountryCode": "SE",
+            "Country": "Sweden",
+            "Region": "EMEA",
+            "EComm": "DR",
+            "Price": "Y",
+            "URL": "https: //www.logitechg.com/sv-se",
+            "SubDomain": "sv-se",
+            "Latitude": 60.128161,
+            "Longitude": 18.643501,
+            "SubBrands": [
+                "Gaming",
+                "Logitech",
+                "Blue",
+                "UltimateEars",
+                "Jaybird"
+            ]
+        },
+        {
+            "Sites": "20",
+            "Language": "DE",
+            "CountryCode": "CH",
+            "Country": "Switzerland",
+            "Region": "EMEA",
+            "EComm": "DR",
+            "Price": "Y",
+            "URL": "https: //www.logitechg.com/de-ch",
+            "SubDomain": "de-ch",
+            "Latitude": 46.818188,
+            "Longitude": 8.227512,
+            "SubBrands": [
+                "Gaming",
+                "Logitech",
+                "Blue",
+                "UltimateEars",
+                "Jaybird"
+            ]
+        },
+        {
+            "Sites": "21",
+            "Language": "EN",
+            "CountryCode": "CH",
+            "Country": "Switzerland",
+            "Region": "EMEA",
+            "EComm": "DR",
+            "Price": "Y",
+            "URL": "https: //www.logitechg.com/en-ch",
+            "SubDomain": "en-ch",
+            "Latitude": 46.818188,
+            "Longitude": 8.227512,
+            "SubBrands": [
+                "Gaming",
+                "Logitech",
+                "UltimateEars",
+                "Jaybird"
+            ]
+        },
+        {
+            "Sites": "22",
+            "Language": "FR",
+            "CountryCode": "CH",
+            "Country": "Switzerland",
+            "Region": "EMEA",
+            "EComm": "DR",
+            "Price": "Y",
+            "URL": "https: //www.logitechg.com/fr-ch",
+            "SubDomain": "fr-ch",
+            "Latitude": 46.818188,
+            "Longitude": 8.227512,
+            "SubBrands": [
+                "Gaming",
+                "Logitech",
+                "Blue",
+                "UltimateEars",
+                "Jaybird"
+            ]
+        },
+        {
+            "Sites": "23",
+            "Language": "IT",
+            "CountryCode": "CH",
+            "Country": "Switzerland",
+            "Region": "EMEA",
+            "EComm": "DR",
+            "Price": "Y",
+            "URL": "https: //www.logitechg.com/it-ch",
+            "SubDomain": "it-ch",
+            "Latitude": 46.818188,
+            "Longitude": 8.227512,
+            "SubBrands": [
+                "Gaming",
+                "Logitech",
+                "Blue",
+                "Jaybird"
+            ]
+        },
+        {
+            "Sites": "24",
+            "Language": "TR",
+            "CountryCode": "TR",
+            "Country": "Turkey",
+            "Region": "EMEA",
+            "EComm": "3rd PARTY",
+            "Price": "N",
+            "URL": "https: //www.logitechg.com/tr-tr",
+            "SubDomain": "tr-tr",
+            "Latitude": 38.963745,
+            "Longitude": 35.243322,
+            "SubBrands": [
+                "Gaming",
+                "Logitech",
+                "Blue"
+            ]
+        },
+        {
+            "Sites": "25",
+            "Language": "EN",
+            "CountryCode": "GB",
+            "Country": "UK",
+            "Region": "EMEA",
+            "EComm": "DR",
+            "Price": "Y",
+            "URL": "https: //www.logitechg.com/en-gb",
+            "SubDomain": "en-gb",
+            "Latitude": 55.378051,
+            "Longitude": -3.435973,
+            "SubBrands": [
+                "Gaming",
+                "Logitech",
+                "ASTRO",
+                "Blue",
+                "UltimateEars",
+                "Jaybird"
+            ]
+        },
+        {
+            "Sites": "26",
+            "Language": "FI",
+            "CountryCode": "FI",
+            "Country": "Finland",
+            "Region": "EMEA",
+            "EComm": "DR",
+            "Price": "Y",
+            "URL": "https: //www.logitechg.com/fi-fi",
+            "SubDomain": "fi-fi",
+            "Latitude": 61.92411,
+            "Longitude": 25.748151,
+            "SubBrands": [
+                "Gaming",
+                "Logitech",
+                "Blue",
+                "UltimateEars",
+                "Jaybird"
+            ]
+        },
+        {
+            "Sites": "27",
+            "Language": "CS",
+            "CountryCode": "CZ",
+            "Country": "Czech Republic",
+            "Region": "EMEA",
+            "EComm": "DR",
+            "Price": "Y",
+            "URL": "https: //www.logitechg.com/cs-cz",
+            "SubDomain": "cs-cz",
+            "Latitude": 49.817492,
+            "Longitude": 15.472962,
+            "SubBrands": [
+                "Gaming",
+                "Logitech",
+                "Blue"
+            ]
+        },
+        {
+            "Sites": "28",
+            "Language": "PL",
+            "CountryCode": "PL",
+            "Country": "Poland",
+            "Region": "EMEA",
+            "EComm": "DR",
+            "Price": "Y",
+            "URL": "https: //www.logitechg.com/pl-pl",
+            "SubDomain": "pl-pl",
+            "Latitude": 51.919438,
+            "Longitude": 19.145136,
+            "SubBrands": [
+                "Gaming",
+                "Logitech",
+                "Blue"
+            ]
+        },
+        {
+            "Sites": "29",
+            "Language": "EL",
+            "CountryCode": "GR",
+            "Country": "Greece",
+            "Region": "EMEA",
+            "EComm": "N",
+            "Price": "N",
+            "URL": "https: //www.logitechg.com/el-gr",
+            "SubDomain": "el-gr",
+            "Latitude": 39.074208,
+            "Longitude": 21.824312,
+            "SubBrands": [
+                "Gaming",
+                "Logitech",
+                "Blue"
+            ]
+        },
+        {
+            "Sites": "30",
+            "Language": "EN",
+            "CountryCode": "ROEU",
+            "Country": "Rest of Europe",
+            "Region": "EMEA",
+            "EComm": "DR",
+            "Price": "Y",
+            "URL": "https: //www.logitechg.com/en-roeu",
+            "SubDomain": "en-roeu",
+            "Latitude": 47.516231,
+            "Longitude": 14.550072,
+            "SubBrands": [
+                "Gaming",
+                "Logitech",
+                "ASTRO",
+                "Jaybird"
+            ]
+        },
+        {
+            "Sites": "31",
+            "Language": "EN",
+            "CountryCode": "AU",
+            "Country": "Australia",
+            "Region": "AP",
+            "EComm": "DR",
+            "Price": "Y",
+            "URL": "https: //www.logitechg.com/en-au",
+            "SubDomain": "en-au",
+            "Latitude": -25.274398,
+            "Longitude": 133.775136,
+            "SubBrands": [
+                "Gaming",
+                "Logitech",
+                "ASTRO",
+                "UltimateEars",
+                "Jaybird"
+            ]
+        },
+        {
+            "Sites": "32",
+            "Language": "ZH",
+            "CountryCode": "HK",
+            "Country": "Hong Kong",
+            "Region": "AP",
+            "EComm": "HK Club",
+            "Price": "N",
+            "URL": "https: //www.logitechg.com/zh-hk",
+            "SubDomain": "zh-hk",
+            "Latitude": 22.396428,
+            "Longitude": 114.109497,
+            "SubBrands": [
+                "Gaming",
+                "Logitech",
+                "Blue",
+                "UltimateEars"
+            ]
+        },
+        {
+            "Sites": "33",
+            "Language": "EN",
+            "CountryCode": "HK",
+            "Country": "Hong Kong",
+            "Region": "AP",
+            "EComm": "HK Club",
+            "Price": "N",
+            "URL": "https: //www.logitechg.com/en-hk",
+            "SubDomain": "en-hk",
+            "Latitude": 22.396428,
+            "Longitude": 114.109497,
+            "SubBrands": [
+                "Gaming",
+                "Logitech",
+                "UltimateEars",
+                "Jaybird"
+            ]
+        },
+        {
+            "Sites": "34",
+            "Language": "EN",
+            "CountryCode": "IN",
+            "Country": "India",
+            "Region": "AP",
+            "EComm": "3rd PARTY",
+            "Price": "Y",
+            "URL": "https: //www.logitechg.com/en-in",
+            "SubDomain": "en-in",
+            "Latitude": 20.593684,
+            "Longitude": 78.96288,
+            "SubBrands": [
+                "Gaming",
+                "Logitech",
+                "UltimateEars"
+            ]
+        },
+        {
+            "Sites": "35",
+            "Language": "EN",
+            "CountryCode": "MY",
+            "Country": "Malaysia",
+            "Region": "AP",
+            "EComm": "3rd PARTY",
+            "Price": "Y",
+            "URL": "https: //www.logitechg.com/en-my",
+            "SubDomain": "en-my",
+            "Latitude": 4.210484,
+            "Longitude": 101.975766,
+            "SubBrands": [
+                "Gaming",
+                "Logitech",
+                "UltimateEars",
+                "Jaybird"
+            ]
+        },
+        {
+            "Sites": "36",
+            "Language": "EN",
+            "CountryCode": "NZ",
+            "Country": "New Zealand",
+            "Region": "AP",
+            "EComm": "DR",
+            "Price": "Y",
+            "URL": "https: //www.logitechg.com/en-nz",
+            "SubDomain": "en-nz",
+            "Latitude": -40.900557,
+            "Longitude": 174.885971,
+            "SubBrands": [
+                "Gaming",
+                "Logitech",
+                "UltimateEars",
+                "Jaybird"
+            ]
+        },
+        {
+            "Sites": "37",
+            "Language": "EN",
+            "CountryCode": "SG",
+            "Country": "Singapore",
+            "Region": "AP",
+            "EComm": "3rd PARTY",
+            "Price": "Y",
+            "URL": "https: //www.logitechg.com/en-sg",
+            "SubDomain": "en-sg",
+            "Latitude": 1.352083,
+            "Longitude": 103.819836,
+            "SubBrands": [
+                "Gaming",
+                "Logitech",
+                "UltimateEars",
+                "Jaybird"
+            ]
+        },
+        {
+            "Sites": "38",
+            "Language": "EN",
+            "CountryCode": "PH",
+            "Country": "Philippines",
+            "Region": "AP",
+            "EComm": "Store",
+            "Price": "N",
+            "URL": "https: //www.logitechg.com/en-ph",
+            "SubDomain": "en-ph",
+            "Latitude": 12.879721,
+            "Longitude": 121.774017,
+            "SubBrands": [
+                "Gaming",
+                "Logitech"
+            ]
+        },
+        {
+            "Sites": "39",
+            "Language": "KO",
+            "CountryCode": "KR",
+            "Country": " S.Korea",
+            "Region": "AP",
+            "EComm": "N",
+            "Price": "N",
+            "URL": "https: //www.logitechg.com/ko-kr",
+            "SubDomain": "ko-kr",
+            "Latitude": 35.907757,
+            "Longitude": 127.766922,
+            "SubBrands": [
+                "Gaming",
+                "Logitech",
+                "Blue",
+                "UltimateEars",
+                "Jaybird"
+            ]
+        },
+        {
+            "Sites": "40",
+            "Language": "ZH",
+            "CountryCode": "TW",
+            "Country": "Taiwan ",
+            "Region": "AP",
+            "EComm": ".tw store",
+            "Price": "N",
+            "URL": "https: //www.logitechg.com/zh-tw",
+            "SubDomain": "zh-tw",
+            "Latitude": 23.69781,
+            "Longitude": 120.960515,
+            "SubBrands": [
+                "Gaming",
+                "Logitech",
+                "Blue",
+                "UltimateEars"
+            ]
+        },
+        {
+            "Sites": "41",
+            "Language": "ID",
+            "CountryCode": "ID",
+            "Country": "Indonesia",
+            "Region": "AP",
+            "EComm": "3rd PARTY",
+            "Price": "Y",
+            "URL": "https: //www.logitechg.com/in-id",
+            "SubDomain": "in-id",
+            "Latitude": -0.789275,
+            "Longitude": 113.921327,
+            "SubBrands": [
+                "Gaming",
+                "Logitech",
+                "Blue",
+                "UltimateEars",
+                "Jaybird"
+            ]
+        },
+        {
+            "Sites": "42",
+            "Language": "TH",
+            "CountryCode": "TH",
+            "Country": "Thailand",
+            "Region": "AP",
+            "EComm": "N",
+            "Price": "Y",
+            "URL": "https: //www.logitechg.com/th-th",
+            "SubDomain": "th-th",
+            "Latitude": 15.870032,
+            "Longitude": 100.992541,
+            "SubBrands": [
+                "Gaming",
+                "Logitech",
+                "Blue"
+            ]
+        },
+        {
+            "Sites": "43",
+            "Language": "VI",
+            "CountryCode": "VN",
+            "Country": "Vietnam",
+            "Region": "AP",
+            "EComm": "3rd PARTY",
+            "Price": "Y",
+            "URL": "https: //www.logitechg.com/vi-vn",
+            "SubDomain": "vi-vn",
+            "Latitude": 14.058324,
+            "Longitude": 108.277199,
+            "SubBrands": [
+                "Gaming",
+                "Logitech",
+                "Blue"
+            ]
+        },
+        {
+            "Sites": "44",
+            "Language": "ES",
+            "CountryCode": "AR",
+            "Country": "Argentina",
+            "Region": "South America",
+            "EComm": "Store",
+            "Price": "N",
+            "URL": "https: //www.logitech.com/es-ar",
+            "SubDomain": "es-ar",
+            "Latitude": 14.058324,
+            "Longitude": 108.277199,
+            "SubBrands": [
+                "Gaming",
+                "Logitech",
+                "Blue"
+            ]
+        },
+        {
+            "Sites": "45",
+            "Language": "ID",
+            "CountryCode": "ID",
+            "Country": "Indonesia",
+            "Region": "AP",
+            "EComm": "3rd Party",
+            "Price": "Y",
+            "URL": "https: //www.logitech.com/id-id",
+            "SubDomain": "id-id",
+            "Latitude": 14.058324,
+            "Longitude": 108.277199,
+            "SubBrands": [
+                "Logitech",
+                "Jaybird",
+                "Blue"
+            ]
+        },
+        {
+            "Sites": "46",
+            "Language": "FR",
+            "CountryCode": "FR",
+            "Country": "France",
+            "Region": "EMEA",
+            "EComm": "SFCC",
+            "Price": "Y",
+            "URL": "https: //www.logitech.com/fr-fr",
+            "SubDomain": "fr-fr",
+            "Latitude": 14.058324,
+            "Longitude": 108.277199,
+            "SubBrands": [
+                "Logitech",
+                "Gaming",
+                "Jaybird",
+                "UltimateEars",
+                "Astro",
+                "Blue"
+            ]
+        },
+        {
+            "Sites": "47",
+            "Language": "EN",
+            "CountryCode": "KW",
+            "Country": "Kuwait",
+            "Region": "EMEA",
+            "EComm": "N",
+            "Price": "N",
+            "URL": "https: //www.logitechg.com/en-kw",
+            "SubDomain": "en-kw",
+            "Latitude": 14.058324,
+            "Longitude": 108.277199,
+            "SubBrands": [
+                "Astro"
+            ]
+        },
+        {
+            "Sites": "48",
+            "Language": "EN",
+            "CountryCode": "QA",
+            "Country": "Qatar",
+            "Region": "EMEA",
+            "EComm": "N",
+            "Price": "N",
+            "URL": "https: //www.logitechg.com/en-qa",
+            "SubDomain": "en-qa",
+            "Latitude": 14.058324,
+            "Longitude": 108.277199,
+            "SubBrands": [
+                "Astro"
+            ]
+        },
+        {
+            "Sites": "49",
+            "Language": "EN",
+            "CountryCode": "SA",
+            "Country": "Saudi Arabia",
+            "Region": "EMEA",
+            "EComm": "N",
+            "Price": "N",
+            "URL": "https: //www.logitechg.com/en-sa",
+            "SubDomain": "en-sa",
+            "Latitude": 14.058324,
+            "Longitude": 108.277199,
+            "SubBrands": [
+                "Astro"
+            ]
+        },
+        {
+            "Sites": "50",
+            "Language": "EN",
+            "CountryCode": "AE",
+            "Country": "United Arab Emirates",
+            "Region": "EMEA",
+            "EComm": "N",
+            "Price": "N",
+            "URL": "https: //www.logitechg.com/en-ae",
+            "SubDomain": "en-ae",
+            "Latitude": 14.058324,
+            "Longitude": 108.277199,
+            "SubBrands": [
+                "Astro"
+            ]
+        }
+    ]
+}

@@ -15,7 +15,7 @@ export class OrderStatusPage extends BasePage {
         this.orderNumberField = page.locator('div.order input[name="orderId"]')
         this.guestAccessCodeField = page.locator('div.order input[name="accessCode"]')
         this.guestOrderEmailField = page.locator('div.order input[name="email"]')
-        this.btnSearchOrder = page.locator('button[type="submit"]').filter({ 'hasText': 'SEARCH' })
+        this.btnSearchOrder = page.locator('button[type="submit"][data-analytics-title="search-cta"]')
     }
 
     private async enterOrderNumber(orderID: string): Promise<void> {

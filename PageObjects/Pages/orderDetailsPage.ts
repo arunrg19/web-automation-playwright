@@ -20,6 +20,10 @@ export class OrderDetailsPage extends BasePage {
     private readonly linkBackToOrders: Locator
     private readonly btnOrderDetailsAcceptedOrder: Locator
     private readonly btnOrderDetailsCompleteOrder: Locator
+    private readonly btnOrderDetailsSpecificOrder: Locator
+    private readonly discountedPrice: Locator
+    private readonly formattedSalesPrice: Locator
+    private readonly eleSpecificOrderBody: Locator
 
     constructor(page: Page) {
         super(page)
@@ -39,6 +43,10 @@ export class OrderDetailsPage extends BasePage {
         this.linkBackToOrders = page.locator('a[data-analytics-title="back-to-main-page"]')
         this.btnOrderDetailsAcceptedOrder = page.locator('div.order-header').filter({ 'hasText': 'Accepted' }).nth(0).locator('a.btn.btn-buy-kohle-default')
         this.btnOrderDetailsCompleteOrder = page.locator('div.order-header').filter({ 'hasText': 'Complete' }).nth(0).locator('a.btn.btn-buy-kohle-default')
+        this.btnOrderDetailsSpecificOrder = page.locator('div.order-header')
+        this.eleSpecificOrderBody = page.locator('div.order')
+        this.discountedPrice = page.locator('span.formatted-list-price del')
+        this.formattedSalesPrice = page.locator('span.formatted-sale-price')
     }
 
     private async verifyOrderID(): Promise<void> {
@@ -96,6 +104,25 @@ export class OrderDetailsPage extends BasePage {
         })
     }
 
+    public async clickOrderDetailsSpecificOrder(orderNum: string): Promise<void> {
+        await test.step(`Clicking Order Details Button for ${orderNum}`, async () => {
+            const orderElement = this.eleSpecificOrderBody.filter({ 'hasText': orderNum }).nth(0)
+            await this.verifyElementVisibility(orderElement.locator('div.order-body div.pricing span.formatted-list-price del'), { 'message': 'Discount Price Details in Orders Page' })
+            await this.verifyElementText(orderElement.locator('div.order-body div.pricing span.formatted-list-price del'), "$", { 'message': 'Discount Price Details in Orders Page' })
+            await this.verifyElementVisibility(orderElement.locator('div.order-body div.pricing span.formatted-sale-price'), { 'message': 'Discount Price Details in Orders Page' })
+            await this.verifyElementText(orderElement.locator('div.order-body div.pricing span.formatted-sale-price'), "$", { 'message': 'Discount Price Details in Orders Page' })
+            await this.clickOn(this.btnOrderDetailsSpecificOrder.filter({ 'hasText': orderNum }).nth(0).locator('a.btn.btn-buy-kohle-default'), { 'message': 'Complete Order : Order Details Button' })
+        })
+    }
+
+    public async verifyDiscountedPriceInOrderDetails(): Promise<void> {
+        await test.step(`Verify Discounted Price In Order Details`, async () => {
+            await this.verifyElementVisibility(this.discountedPrice, { 'message': 'Discount Price Details in Orders Page' })
+            await this.verifyElementText(this.discountedPrice, "$", { 'message': 'Discount Price Details in Orders Page' })
+            await this.verifyElementVisibility(this.formattedSalesPrice, { 'message': 'Discount Price Details in Orders Page' })
+            await this.verifyElementText(this.formattedSalesPrice, "$", { 'message': 'Discount Price Details in Orders Page' })
+        })
+    }
 
     public async cancelOrderDetails(): Promise<void> {
         await test.step(`Cancel Order Details`, async () => {
@@ -160,6 +187,17 @@ export class OrderDetailsPage extends BasePage {
             await this.verifyElementVisibility(this.eleRefreshError, { 'message': 'Wrong Order Error Header' })
             await this.verifyElementVisibility(this.eleRefreshErrorMsg, { 'message': 'Refresh Error Header' })
             await this.clickOn(this.linkBackToOrders, { 'message': 'Link Go Back to Order Status' })
+        })
+    }
+
+    public async validateJaJpOrderDetails(): Promise<void> {
+        await test.step(`Ja-Jp Order Details`, async () => {
+            await this.verifyPageURL('my-account/my-orders/order-details.html')
+            await this.verifyElementVisibility(this.orderID, { message: 'Order ID' })
+            await this.verifyOrderDate()
+            await this.verifyOrderStatus()
+            await this.verifyElementText(this.orderStatus, '完了', { 'message': 'Ja-Jp Element Status' })
+            await this.verifyAddressDetails()
         })
     }
 

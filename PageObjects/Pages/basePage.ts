@@ -1,7 +1,6 @@
 import { Page, test, Locator, expect, ElementHandle } from '@playwright/test'
 import { IPageActions } from '../../PageObjectsGuide/PageActions'
 import * as fs from 'fs/promises';
-import * as path from 'path';
 
 type LocateBy = Locator | string
 
