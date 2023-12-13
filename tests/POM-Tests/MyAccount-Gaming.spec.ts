@@ -13,7 +13,6 @@ import { MyOrdersPage } from '../../PageObjects/Pages/myOrdersPage'
 import { InvoicePage } from '../../PageObjects/Pages/invoicePage'
 import * as globalData from '../../testdata/globalTestData.json'
 import * as environmentDetails from '../../playwright.env.json'
-import * as fs from 'fs/promises';
 
 var brandName: string = "Gaming"
 let brandDetails: any = globalData.brandDetails
@@ -475,7 +474,3 @@ if (["QA65", "Stage65"].includes(env)) {
         })
     })
 }
-
-test.afterAll(async () => {
-    await fs.rmdir('/downloads/')
-});
