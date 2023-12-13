@@ -412,7 +412,7 @@ if (["QA65", "Stage65"].includes(env)) {
             })
         })
 
-        test.only(`📃 TC016 - Order Details : Ensure the section headings - 'Order Placed', 'Order #' and 'Status' are displayed under 'RECENT ORDERS' & 'ALL OTHER ORDERS' sections`, async ({ page }) => {
+        test(`📃 TC016 - Order Details : Ensure the section headings - 'Order Placed', 'Order #' and 'Status' are displayed under 'RECENT ORDERS' & 'ALL OTHER ORDERS' sections`, async ({ page }) => {
             await test.step(`Ensure the section headings - 'Order Placed', 'Order #' and 'Status' are displayed under 'RECENT ORDERS' & 'ALL OTHER ORDERS' sections`, async () => {
                 await page.goto(baseURL + '/en-us/my-account/my-orders.html')
                 const myOrdersPage = new MyOrdersPage(page)
