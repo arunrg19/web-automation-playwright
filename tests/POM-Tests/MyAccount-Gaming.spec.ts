@@ -314,7 +314,11 @@ if (["QA65", "Stage65"].includes(env)) {
                 const orderStatusPage = new OrderStatusPage(page)
                 const orderDetailsPage = new OrderDetailsPage(page)
                 await page.goto(baseURL + '/en-us/order-status.html')
-                await orderStatusPage.searchGuestOrderDetails('260402290336', 'L0g1t3ch', 'marchtestingauto@yopmail.com')
+                if (["QA65"].includes(env)) {
+                    await orderStatusPage.searchGuestOrderDetails('260402290336', 'L0g1t3ch', 'marchtestingauto@yopmail.com')
+                } else if (["Stage65"].includes(env)) {
+                    await orderStatusPage.searchGuestOrderDetails('266022070336', 'L0g1t3ch', 'marchtesting@yopmail.com')
+                }
                 await page.waitForTimeout(2000)
                 await orderDetailsPage.validateAcceptedOrderDetails()
             })
@@ -341,27 +345,7 @@ if (["QA65", "Stage65"].includes(env)) {
             })
         })
 
-        test(`📃 TC011 - Order Details : Ensure the section headings - 'Order Placed', 'Order #' and 'Status' are displayed under 'RECENT ORDERS' & 'ALL OTHER ORDERS' sections`, async ({ page }) => {
-            await test.step(`Ensure the section headings - 'Order Placed', 'Order #' and 'Status' are displayed under 'RECENT ORDERS' & 'ALL OTHER ORDERS' sections`, async () => {
-                await page.goto(baseURL + '/en-us/my-account/my-orders.html')
-                const myOrdersPage = new MyOrdersPage(page)
-                await myOrdersPage.verifyOrdersSection()
-                await myOrdersPage.verifyMyOrderHeaderDetails()
-                await myOrdersPage.verifyLegacyDetails('NO')
-
-                await page.goto(baseURL + '/en-gb/my-account/my-orders.html')
-                await myOrdersPage.verifyOrdersSection()
-                await myOrdersPage.verifyMyOrderHeaderDetails()
-                await myOrdersPage.verifyLegacyDetails('NO')
-
-                await page.goto(baseURL + '/en-ca/my-account/my-orders.html')
-                await myOrdersPage.verifyOrdersSection()
-                await myOrdersPage.verifyMyOrderHeaderDetails()
-                await myOrdersPage.verifyLegacyDetails('NO')
-            })
-        })
-
-        test(`📃 TC012 - Order Details : Validate complete order creation flow and order cancellation from MyOrders Page`, async ({ page }) => {
+        test(`📃 TC011 - Order Details : Validate complete order creation flow and order cancellation from MyOrders Page`, async ({ page }) => {
             await test.step(`Validate complete order creation flow and order cancellation from MyOrders Page`, async () => {
                 await page.goto(baseURL + '/en-us/products/gaming-mice.html')
                 const plpPage = new PLPPage(page)
@@ -379,18 +363,18 @@ if (["QA65", "Stage65"].includes(env)) {
 
     test.describe("Order Details : Validation for 'Complete' Order cases", () => {
         test.use({ 'storageState': 'PageObjects/GamingUserLogins/gamingUser.json' })
-        test(`TC014 - Order Details : Opening any order from Myorders page by clicking Order Details Button and verify the View Invoice button displayed for the 'Complete' Order and download Invoices`, async ({ page }) => {
+        test(`📃 TC012 - Order Details : Opening any order from Myorders page by clicking Order Details Button and verify the View Invoice button displayed for the 'Complete' Order and download Invoices`, async ({ page }) => {
             await test.step(`Order Details : Opening any order from Myorders page by clicking Order Details Button and verify the View Invoice button displayed for the 'Complete' Order and download Invoices`, async () => {
                 await page.goto(baseURL + '/en-us/my-account/my-orders.html')
                 const orderDetailsPage = new OrderDetailsPage(page)
                 const invoicePage = new InvoicePage(page)
                 await orderDetailsPage.clickCompleteOrderDetails()
                 await orderDetailsPage.validateCompleteOrderDetails()
-                await invoicePage.validateCompleteOrderDetails('TC014')
+                await invoicePage.validateCompleteOrderDetails('TC012')
             })
         })
 
-        test(`TC015 - Order Details : Searching for a Guest Order and verify the View Invoice button displayed for the 'Complete' Order and download more than 1 Invoice`, async ({ page }) => {
+        test(`📃 TC013 - Order Details : Searching for a Guest Order and verify the View Invoice button displayed for the 'Complete' Order and download more than 1 Invoice`, async ({ page }) => {
             await test.step(`Order Details : Searching for a Guest Order and verify the View Invoice button displayed for the 'Complete' Order and download more than 1 Invoice`, async () => {
                 await page.goto(baseURL + '/en-us/order-status.html')
                 const orderStatusPage = new OrderStatusPage(page)
@@ -399,11 +383,11 @@ if (["QA65", "Stage65"].includes(env)) {
                 await orderStatusPage.searchGuestOrderDetails('265036640336', 'L0g1t3ch', 'geitrejeinajo-9421@yopmail.com')
                 await page.waitForTimeout(2000)
                 await orderDetailsPage.validateCompleteOrderDetails()
-                await invoicePage.validateCompleteOrderDetails('TC015')
+                await invoicePage.validateCompleteOrderDetails('TC013')
             })
         })
 
-        test(`TC016 - Order Details : Searching for a [ja-jp] Guest Order and verify the View Invoice button displayed for the 'Complete' Order and download Multiple Invoices`, async ({ page }) => {
+        test(`📃 TC014 - Order Details : Searching for a [ja-jp] Guest Order and verify the View Invoice button displayed for the 'Complete' Order and download Multiple Invoices`, async ({ page }) => {
             await test.step(`Order Details : Searching for a [ja-jp] Guest Order and verify the View Invoice button displayed for the 'Complete' Order and download Multiple Invoices`, async () => {
                 await page.goto(baseURL + '/en-us/order-status.html')
                 const orderStatusPage = new OrderStatusPage(page)
@@ -412,11 +396,11 @@ if (["QA65", "Stage65"].includes(env)) {
                 await orderStatusPage.searchGuestOrderDetails('265168450336', 'L0g1t3ch', 'grezugeivefreu-9112@yopmail.com')
                 await page.waitForTimeout(2000)
                 await orderDetailsPage.validateCompleteOrderDetails()
-                await invoicePage.validateCompleteOrderDetails('TC016')
+                await invoicePage.validateCompleteOrderDetails('TC014')
             })
         })
 
-        test(`TC017 - Order Details : Opening any order from Myorders page by clicking Order Details Button and verify Discount Product Price Strike Verification`, async ({ page }) => {
+        test(`📃 TC015 - Order Details : Opening any order from Myorders page by clicking Order Details Button and verify Discount Product Price Strike Verification`, async ({ page }) => {
             await test.step(`Order Details : Searching for a Guest Order and verify Discount Product Price Strike Verification`, async () => {
                 await page.goto(baseURL + '/en-us/my-account/my-orders.html')
                 const orderDetailsPage = new OrderDetailsPage(page)
@@ -424,11 +408,31 @@ if (["QA65", "Stage65"].includes(env)) {
                 await orderDetailsPage.clickOrderDetailsSpecificOrder('277936510336')
                 await orderDetailsPage.verifyDiscountedPriceInOrderDetails()
                 await orderDetailsPage.validateCompleteOrderDetails()
-                await invoicePage.validateCompleteOrderDetails('TC017')
+                await invoicePage.validateCompleteOrderDetails('TC015')
             })
         })
 
-        test(`TC018 - Order Details : Searching for a Guest Order for ja-jp locale and verify the Order # & Status text is seen localized`, async ({ page }) => {
+        test.only(`📃 TC016 - Order Details : Ensure the section headings - 'Order Placed', 'Order #' and 'Status' are displayed under 'RECENT ORDERS' & 'ALL OTHER ORDERS' sections`, async ({ page }) => {
+            await test.step(`Ensure the section headings - 'Order Placed', 'Order #' and 'Status' are displayed under 'RECENT ORDERS' & 'ALL OTHER ORDERS' sections`, async () => {
+                await page.goto(baseURL + '/en-us/my-account/my-orders.html')
+                const myOrdersPage = new MyOrdersPage(page)
+                await myOrdersPage.verifyOrdersSection()
+                await myOrdersPage.verifyMyOrderHeaderDetails()
+                await myOrdersPage.verifyLegacyDetails('YES')
+
+                await page.goto(baseURL + '/en-gb/my-account/my-orders.html')
+                await myOrdersPage.verifyOrdersSection()
+                await myOrdersPage.verifyMyOrderHeaderDetails()
+                await myOrdersPage.verifyLegacyDetails('NO')
+
+                await page.goto(baseURL + '/en-ca/my-account/my-orders.html')
+                await myOrdersPage.verifyOrdersSection()
+                await myOrdersPage.verifyMyOrderHeaderDetails()
+                await myOrdersPage.verifyLegacyDetails('NO')
+            })
+        })
+
+        test(`📃 TC017 - Order Details : Searching for a Guest Order for ja-jp locale and verify the Order # & Status text is seen localized`, async ({ page }) => {
             await test.step(`Order Details : Searching for a Guest Order for ja-jp locale and verify the Order # & Status text is seen localized`, async () => {
                 await page.goto(baseURL + '/ja-jp/order-status.html')
                 const orderStatusPage = new OrderStatusPage(page)
@@ -459,7 +463,7 @@ if (["QA65", "Stage65"].includes(env)) {
         }
 
         test.use({ 'storageState': 'PageObjects/GamingUserLogins/addressUser.json' })
-        test(`TC019 - Address Book : Add/Edit field validations in Address Book`, async ({ page }) => {
+        test(`📃 TC018 - Address Book : Add/Edit field validations in Address Book`, async ({ page }) => {
             await test.step(`TC013 - My Account Address | Add/Edit field validations`, async () => {
                 await page.goto(baseURL + '/en-us/my-account.html')
                 const homePage = new HomePage(page)

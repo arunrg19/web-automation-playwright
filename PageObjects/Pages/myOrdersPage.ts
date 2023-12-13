@@ -25,9 +25,9 @@ export class MyOrdersPage extends BasePage {
         this.eleOrderDetailsScreen = page.locator('div.order-details-return')
         this.eleRecentOrders = page.locator('.recent-order-detail .order-subtitle').filter({ 'hasText': 'RECENT ORDERS' })
         this.eleAllOtherOrders = page.locator('.order-detail .order-subtitle').filter({ 'hasText': 'ALL OTHER ORDERS' })
-        this.eleHeaderOrderPlaced = page.locator('.order-subtitle +div .order-placed span.label')
-        this.eleHeaderOrderNumber = page.locator('.order-subtitle +div .order-id .label')
-        this.eleHeaderOrdersStatus = page.locator('.order-subtitle +div .order-status .label')
+        this.eleHeaderOrderPlaced = page.locator('.order-subtitle +div .order-placed span.label').nth(0)
+        this.eleHeaderOrderNumber = page.locator('.order-subtitle +div .order-id .label').nth(0)
+        this.eleHeaderOrdersStatus = page.locator('.order-subtitle +div .order-status .label').nth(0)
         this.legacyOrderDetails = page.locator('div.order[data-legacy="true"]').nth(0)
         this.btnTrackPackage = page.locator('div.order[data-legacy="true"] a[class="btn btn-ko-kohle"]').nth(0)
         this.cancelOrderPopup = page.locator('div.cancel-order-modal div.order-cancel p').nth(1)
@@ -75,9 +75,9 @@ export class MyOrdersPage extends BasePage {
         await test.step(`Verify the order Header Details`, async () => {
             if (legacyOrdersExist.toUpperCase() == 'YES') {
                 await this.verifyElementVisibility(this.legacyOrderDetails, { message: `Legacy Orders` })
-                await this.scrollToElement(this.legacyOrderDetails, { message: `Legacy Orders Section` })
+                await this.scrollToElement(this.legacyOrderDetails, { message: `Legacy Orders Section` })                              
                 await this.verifyElementVisibility(this.btnTrackPackage, { message: `Track Package Button` })
-                await this.clickOn(this.btnTrackPackage, { message: `Track Package Button` })
+                await this.verifyAttributeValue(this.btnTrackPackage,'target','_blank',{'message':'Track Package Button target Attribute'})
             } else {
                 await this.verifyElementNotPresent(this.legacyOrderDetails, { message: `Legacy Orders` })
                 await this.verifyElementNotPresent(this.btnTrackPackage, { message: `Track Package Button` })
