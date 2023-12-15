@@ -107,10 +107,10 @@ export class OrderDetailsPage extends BasePage {
     public async clickOrderDetailsSpecificOrder(orderNum: string): Promise<void> {
         await test.step(`Clicking Order Details Button for ${orderNum}`, async () => {
             const orderElement = this.eleSpecificOrderBody.filter({ 'hasText': orderNum }).nth(0)
-            await this.verifyElementVisibility(orderElement.locator('div.order-body div.pricing span.formatted-list-price del'), { 'message': 'Discount Price Details in Orders Page' })
-            await this.verifyElementText(orderElement.locator('div.order-body div.pricing span.formatted-list-price del'), "$", { 'message': 'Discount Price Details in Orders Page' })
-            await this.verifyElementVisibility(orderElement.locator('div.order-body div.pricing span.formatted-sale-price'), { 'message': 'Discount Price Details in Orders Page' })
-            await this.verifyElementText(orderElement.locator('div.order-body div.pricing span.formatted-sale-price'), "$", { 'message': 'Discount Price Details in Orders Page' })
+            await this.verifyElementVisibility(orderElement.locator('div.order-body div.pricing span.formatted-list-price del').nth(0), { 'message': 'Discount Price Details in Orders Page' })
+            await this.verifyElementText(orderElement.locator('div.order-body div.pricing span.formatted-list-price del').nth(0), "$", { 'message': 'Discount Price Details in Orders Page' })
+            await this.verifyElementVisibility(orderElement.locator('div.order-body div.pricing span.formatted-sale-price').nth(0), { 'message': 'Discount Price Details in Orders Page' })
+            await this.verifyElementText(orderElement.locator('div.order-body div.pricing span.formatted-sale-price').nth(0), "$", { 'message': 'Discount Price Details in Orders Page' })
             await this.clickOn(this.btnOrderDetailsSpecificOrder.filter({ 'hasText': orderNum }).nth(0).locator('a.btn.btn-buy-kohle-default'), { 'message': 'Complete Order : Order Details Button' })
         })
     }
@@ -156,7 +156,7 @@ export class OrderDetailsPage extends BasePage {
             await this.verifyInVoiceButton('YES')
             await this.clickOn(this.btnInvoice, { 'message': 'Invoice Button' })
             await this.page.waitForTimeout(2000)
-            await this.verifyPageURL('/my-account/my-orders/invoice.html')
+            await this.verifyPageURL('/my-account/my-orders/invoice')
             await this.page.waitForTimeout(4000)
         })
     }

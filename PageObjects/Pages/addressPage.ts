@@ -49,8 +49,8 @@ export class AddressPage extends BasePage {
         this.txtAddressPostCode = page.locator('#address-zip')
         this.txtPhoneNumber = page.locator('#address-phone')
         this.chkDefaultAddress = page.locator('#billing-me +label')
-        this.btnSaveAddress = page.locator('button[data-buttonaction="add"]')
-        this.btnSaveEditAddress = page.locator('button[data-buttonaction="edit"]')
+        this.btnSaveAddress = page.locator('button[data-buttonaction="add"]').nth(0)
+        this.btnSaveEditAddress = page.locator('button[data-buttonaction="edit"]').nth(0)
         this.addressCount = page.locator('.saved-address .card')
         this.editAddressIcon = page.locator('.saved-address .card button.do-edit')
         this.deleteAddressIcon = page.locator('.saved-address .card button.do-delete')
@@ -153,7 +153,7 @@ export class AddressPage extends BasePage {
     public async clickSaveEditedAddress(): Promise<void> {
         await test.step('Clicking Save in Edited Address PopUp', async () => {
             await this.clickOn(this.btnSaveEditAddress, { message: 'Save Address Button in Edited Address PopUp' })
-            await this.page.waitForTimeout(3000)
+            await this.page.waitForTimeout(5000)
         })
     }
 

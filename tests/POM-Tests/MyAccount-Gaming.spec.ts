@@ -19,7 +19,7 @@ let brandDetails: any = globalData.brandDetails
 let env: any = environmentDetails.environment
 let baseURL = brandDetails[env][brandName]
 
-test.describe('MyAccount: Non-Logged-In User Generic Test Cases', async () => {
+test.describe(`MyAccount : Non-Logged-In User Generic Test Cases executed in ${env} environment`, async () => {
     test(`📃 TC001 - Login Form : Ensure the presence of every sections in Home Page and Login Form Display`, async ({ page }) => {
         await test.step('Ensure the presence of every sections in Home Page and Login Form Display', async () => {
             await page.goto(baseURL + '/en-us/my-account.html')
@@ -70,14 +70,17 @@ test.describe('MyAccount: Non-Logged-In User Generic Test Cases', async () => {
     if (["QA65", "Stage65"].includes(env)) {
         test(`📃 TC003 - Notify Me : Verify Notify Me for a non-logged in user by clicking Notify Me button in PLP`, async ({ page }) => {
             await test.step('Notify Me : Verify Notify Me for a non-logged in user by clicking Notify Me button in PLP', async () => {
-                await page.goto(baseURL + '/en-us/products/gaming-mice.html')
+                if (["QA65"].includes(env)) {
+                    await page.goto(baseURL + '/en-us/products/gaming-mice.html')
+                } else if (["Stage65"].includes(env)) {
+                    await page.goto(baseURL + '/en-us/products/driving.html')
+                }
                 const plpPage = new PLPPage(page)
                 await plpPage.verifySubscriptionForCS("", false)
                 await plpPage.verifySubscriptionForOOS("", false)
             })
         })
     }
-
 
     test(`📃 TC004 - Guest Order creation and order cancellation from Order Details Page`, async ({ page }) => {
         await test.step('Guest Order creation and order cancellation from Order Details Page', async () => {
@@ -148,7 +151,7 @@ test.describe('MyAccount: Non-Logged-In User Generic Test Cases', async () => {
                 // await loginPage.loginIntoMyAccountApplication('marchtesting@yopmail.com', 'Logitech$#1947')
                 // await loginPage.loginIntoMyAccountApplication('playwrighttest@yopmail.com', 'Testing$!1947')
                 // await loginPage.loginIntoMyAccountApplication('bkumar@logitech.com', 'Greendust@2022')
-                // await page.context().storageState({ 'path': 'PageObjects/GamingUserLogins/gaminguser.json' })
+                // await page.context().storageState({ 'path': 'PageObjects/UserLogins/Stage65/OrderDetailsUser.json' })
                 await loginPage.logoutFromMyAccountApplication()
                 await homePage.validateHomeButtons()
             })
@@ -157,8 +160,8 @@ test.describe('MyAccount: Non-Logged-In User Generic Test Cases', async () => {
 })
 
 if (["QA65", "Stage65"].includes(env)) {
-    test.describe(`MyAccount: Logged-In User Generic Test Cases`, async () => {
-        test.use({ 'storageState': 'PageObjects/GamingUserLogins/playWrightUser.json' })
+    test.describe(`MyAccount : Logged-In User Generic Test Cases executed in ${env} environment`, async () => {
+        test.use({ 'storageState': `PageObjects/UserLogins/${env}/playwrightuser.json` })
         test(`📃 TC001.1 - Footer Subscription : [MyAccount Page] Ensure the existence of footer section and validate the E-mail sign-in functionality`, async ({ page }) => {
             await test.step('Footer Subscription : [MyAccount Page] Ensure the existence of footer section and validate the E-mail sign-in functionality', async () => {
                 await page.goto(baseURL + '/en-us/my-account.html')
@@ -188,7 +191,11 @@ if (["QA65", "Stage65"].includes(env)) {
 
         test(`📃 TC002 - Notify Me : Verify Notify Me for a logged in user by clicking Notify Me button in PLP`, async ({ page }) => {
             await test.step('Notify Me : Verify Notify Me for a logged in user by clicking Notify Me button in PLP', async () => {
-                await page.goto(baseURL + '/en-us/products/gaming-mice.html')
+                if (["QA65"].includes(env)) {
+                    await page.goto(baseURL + '/en-us/products/gaming-mice.html')
+                } else if (["Stage65"].includes(env)) {
+                    await page.goto(baseURL + '/en-us/products/driving.html')
+                }
                 const plpPage = new PLPPage(page)
                 await plpPage.verifySubscriptionForCS("playwrighttest@yopmail.com", true)
                 await plpPage.verifySubscriptionForOOS("playwrighttest@yopmail.com", true)
@@ -290,8 +297,8 @@ if (["QA65", "Stage65"].includes(env)) {
         })
     })
 
-    test.describe(`Order Details : Validate complete order creation, cancellation and other validations from Order Details Page`, async () => {
-        test.use({ 'storageState': 'PageObjects/GamingUserLogins/orderCreationUser.json' })
+    test.describe(`Order Details : Validate complete order creation, cancellation and other validations from Order Details Page executed in ${env} environment`, async () => {
+        test.use({ 'storageState': `PageObjects/UserLogins/${env}/orderCreationUser.json` })
         test(`📃 TC009 - Order Details : Validate complete order creation flow and order cancellation from Order Details Page`, async ({ page }) => {
             await test.step(`Validate complete order creation flow and order cancellation from Order Details Page`, async () => {
                 await page.goto(baseURL + '/en-us/products/gaming-mice.html')
@@ -361,8 +368,8 @@ if (["QA65", "Stage65"].includes(env)) {
         })
     })
 
-    test.describe("Order Details : Validation for 'Complete' Order cases", () => {
-        test.use({ 'storageState': 'PageObjects/GamingUserLogins/gamingUser.json' })
+    test.describe(`Order Details : Validation for 'Complete' Order cases executed in ${env} environment`, () => {
+        test.use({ 'storageState': `PageObjects/UserLogins/${env}/gamingUser.json` })
         test(`📃 TC012 - Order Details : Opening any order from Myorders page by clicking Order Details Button and verify the View Invoice button displayed for the 'Complete' Order and download Invoices`, async ({ page }) => {
             await test.step(`Order Details : Opening any order from Myorders page by clicking Order Details Button and verify the View Invoice button displayed for the 'Complete' Order and download Invoices`, async () => {
                 await page.goto(baseURL + '/en-us/my-account/my-orders.html')
@@ -380,7 +387,11 @@ if (["QA65", "Stage65"].includes(env)) {
                 const orderStatusPage = new OrderStatusPage(page)
                 const orderDetailsPage = new OrderDetailsPage(page)
                 const invoicePage = new InvoicePage(page)
-                await orderStatusPage.searchGuestOrderDetails('265036640336', 'L0g1t3ch', 'geitrejeinajo-9421@yopmail.com')
+                if (["QA65"].includes(env)) {
+                    await orderStatusPage.searchGuestOrderDetails('265036640336', 'L0g1t3ch', 'geitrejeinajo-9421@yopmail.com')
+                } else if (["Stage65"].includes(env)) {
+                    await orderStatusPage.searchGuestOrderDetails('266012340336', 'L0g1t3ch', 'marchtesting@yopmail.com')
+                }
                 await page.waitForTimeout(2000)
                 await orderDetailsPage.validateCompleteOrderDetails()
                 await invoicePage.validateCompleteOrderDetails('TC013')
@@ -393,7 +404,11 @@ if (["QA65", "Stage65"].includes(env)) {
                 const orderStatusPage = new OrderStatusPage(page)
                 const orderDetailsPage = new OrderDetailsPage(page)
                 const invoicePage = new InvoicePage(page)
-                await orderStatusPage.searchGuestOrderDetails('265168450336', 'L0g1t3ch', 'grezugeivefreu-9112@yopmail.com')
+                if (["QA65"].includes(env)) {
+                    await orderStatusPage.searchGuestOrderDetails('265168450336', 'L0g1t3ch', 'grezugeivefreu-9112@yopmail.com')
+                } else if (["Stage65"].includes(env)) {
+                    await orderStatusPage.searchGuestOrderDetails('266012340336', 'L0g1t3ch', 'marchtesting@yopmail.com')
+                }
                 await page.waitForTimeout(2000)
                 await orderDetailsPage.validateCompleteOrderDetails()
                 await invoicePage.validateCompleteOrderDetails('TC014')
@@ -401,11 +416,15 @@ if (["QA65", "Stage65"].includes(env)) {
         })
 
         test(`📃 TC015 - Order Details : Opening any order from Myorders page by clicking Order Details Button and verify Discount Product Price Strike Verification`, async ({ page }) => {
-            await test.step(`Order Details : Searching for a Guest Order and verify Discount Product Price Strike Verification`, async () => {
+            await test.step(`Order Details : Opening any order from Myorders page by clicking Order Details Button and verify Discount Product Price Strike Verification`, async () => {
                 await page.goto(baseURL + '/en-us/my-account/my-orders.html')
                 const orderDetailsPage = new OrderDetailsPage(page)
                 const invoicePage = new InvoicePage(page)
-                await orderDetailsPage.clickOrderDetailsSpecificOrder('277936510336')
+                if (["QA65"].includes(env)) {
+                    await orderDetailsPage.clickOrderDetailsSpecificOrder('277936510336')
+                } else if (["Stage65"].includes(env)) {
+                    await orderDetailsPage.clickOrderDetailsSpecificOrder('266013180336')
+                }
                 await orderDetailsPage.verifyDiscountedPriceInOrderDetails()
                 await orderDetailsPage.validateCompleteOrderDetails()
                 await invoicePage.validateCompleteOrderDetails('TC015')
@@ -437,14 +456,18 @@ if (["QA65", "Stage65"].includes(env)) {
                 await page.goto(baseURL + '/ja-jp/order-status.html')
                 const orderStatusPage = new OrderStatusPage(page)
                 const orderDetailsPage = new OrderDetailsPage(page)
-                await orderStatusPage.searchGuestOrderDetails('265036640336', 'L0g1t3ch', 'geitrejeinajo-9421@yopmail.com')
+                if (["QA65"].includes(env)) {
+                    await orderStatusPage.searchGuestOrderDetails('265036640336', 'L0g1t3ch', 'geitrejeinajo-9421@yopmail.com')
+                } else if (["Stage65"].includes(env)) {
+                    await orderStatusPage.searchGuestOrderDetails('266012340336', 'L0g1t3ch', 'marchtesting@yopmail.com')
+                }
                 await page.waitForTimeout(2000)
                 await orderDetailsPage.validateJaJpOrderDetails()
             })
         })
     })
 
-    test.describe("Address Book : Address field level Validations and address change from one brand to another brand", () => {
+    test.describe(`Address Book : Address field level Validations and address change from one brand to another brand excuted in ${env} environment`, () => {
         if (["QA65"].includes(env)) {
             test(`📃 TC007.2 - Address Book : Ensure the user is able to verify the updated address in 'GAMING' Brand is seen in 'LOGITECH' Brand as well`, async ({ page }) => {
                 await test.step(`TC007.2 - Ensure the user is able to verify the updated address in 'GAMING' Brand is seen in 'LOGITECH' Brand as well`, async () => {
@@ -462,7 +485,7 @@ if (["QA65", "Stage65"].includes(env)) {
             })
         }
 
-        test.use({ 'storageState': 'PageObjects/GamingUserLogins/addressUser.json' })
+        test.use({ 'storageState': `PageObjects/UserLogins/${env}/addressUser.json` })
         test(`📃 TC018 - Address Book : Add/Edit field validations in Address Book`, async ({ page }) => {
             await test.step(`TC013 - My Account Address | Add/Edit field validations`, async () => {
                 await page.goto(baseURL + '/en-us/my-account.html')
