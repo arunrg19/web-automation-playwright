@@ -1,6 +1,7 @@
 import { Page, test, Locator, expect, ElementHandle } from '@playwright/test'
 import { IPageActions } from '../../PageObjectsGuide/PageActions'
 import * as fs from 'fs/promises';
+import path from 'path';
 
 type LocateBy = Locator | string
 
@@ -283,5 +284,20 @@ export class BasePage implements IPageActions {
                 throw new Error(`Exception occured validating the file count for ${options?.message} ${err}`);
             }
         })
+    }
+
+    async deleteAllFilesInDir(dirPath, options?: { message: string }): Promise<void> {
+        try {
+            const files = await fs.readdir(dirPath);
+
+            const deleteFilePromises = files.map(file =>
+                fs.unlink(path.join(dirPath, file)),
+            );
+
+            await Promise.all(deleteFilePromises);
+            await fs.rmdir(dirPath);
+        } catch (err) {
+            throw new Error(`Exception occured while deleting files from the folder ${options?.message} and ${err}`);
+        }
     }
 }

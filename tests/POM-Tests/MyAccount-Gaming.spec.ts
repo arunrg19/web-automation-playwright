@@ -421,11 +421,12 @@ if (["QA65", "Stage65"].includes(env)) {
                 const orderDetailsPage = new OrderDetailsPage(page)
                 const invoicePage = new InvoicePage(page)
                 if (["QA65"].includes(env)) {
-                    await orderDetailsPage.clickOrderDetailsSpecificOrder('277936510336')
+                    await orderDetailsPage.clickOrderDetailsSpecificOrder('277936510336', 0)
+                    await orderDetailsPage.verifyDiscountedPriceInOrderDetails(0)
                 } else if (["Stage65"].includes(env)) {
-                    await orderDetailsPage.clickOrderDetailsSpecificOrder('266013180336')
+                    await orderDetailsPage.clickOrderDetailsSpecificOrder('266013180336', 2)
+                    await orderDetailsPage.verifyDiscountedPriceInOrderDetails(2)
                 }
-                await orderDetailsPage.verifyDiscountedPriceInOrderDetails()
                 await orderDetailsPage.validateCompleteOrderDetails()
                 await invoicePage.validateCompleteOrderDetails('TC015')
             })
@@ -441,13 +442,14 @@ if (["QA65", "Stage65"].includes(env)) {
 
                 await page.goto(baseURL + '/en-gb/my-account/my-orders.html')
                 await myOrdersPage.verifyOrdersSection()
-                await myOrdersPage.verifyMyOrderHeaderDetails()
+                await myOrdersPage.verifyMyOrderHeaderDetails()                
                 await myOrdersPage.verifyLegacyDetails('NO')
+                
 
                 await page.goto(baseURL + '/en-ca/my-account/my-orders.html')
                 await myOrdersPage.verifyOrdersSection()
-                await myOrdersPage.verifyMyOrderHeaderDetails()
-                await myOrdersPage.verifyLegacyDetails('NO')
+                await myOrdersPage.verifyMyOrderHeaderDetails()                
+                await myOrdersPage.verifyLegacyDetails('NO')                
             })
         })
 

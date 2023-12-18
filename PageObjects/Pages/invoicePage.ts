@@ -103,6 +103,7 @@ export class InvoicePage extends BasePage {
             await this.verifyElementVisibility(this.eleInvoices, { 'message': 'DownLoad Invoice Links' })
             await this.scrollToElement(this.eleInvoices, { 'message': 'Invoices Section' })
             await this.page.waitForTimeout(1000)
+            await this.deleteAllFilesInDir("downloads/" + testcaseFolderPath, { 'message': `Deleting all files from the folder ${testcaseFolderPath}` })
             let count = await this.getElementsCount(this.linkDownLoadInvoice)
             for (let i = 1; i <= count; i++) {
                 const fileDownLoadPromise = this.page.waitForEvent('download')
@@ -110,7 +111,7 @@ export class InvoicePage extends BasePage {
                 const fileDownload = await fileDownLoadPromise
                 await fileDownload.saveAs(path.join("downloads/" + testcaseFolderPath + "/" + fileDownload.suggestedFilename()))
             }
-            await this.verifyFilesCount("downloads/" + testcaseFolderPath, count, { 'message': 'Downloads Folder Path Verification' })
+            await this.verifyFilesCount("downloads/" + testcaseFolderPath, count, { 'message': 'Downloads Folder Path Verification' })            
         })
     }
 

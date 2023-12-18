@@ -180,8 +180,8 @@ export class EditProfilePage extends BasePage {
             await this.enterTextInEditBox(this.txtDOB, '2012-12-12', { message: 'DOB Edit Box' })
             await this.clickOn(this.btnSaveDOB, { message: 'DOB Save Button' })
             await this.clickOn(this.btnEditDOB, { message: 'DOB Edit Button' })
-            // await this.verifyEditboxValue(this.txtDOB, '2012-12-12', { message: 'DOB Edit Box' })    //QA verification
-            await this.verifyEditboxValue(this.txtDOB, '02/12/1212', { message: 'DOB Edit Box' })       //Stage verification
+            await this.verifyEditboxValue(this.txtDOB, '2012-12-12', { message: 'DOB Edit Box' })    //QA verification
+            // await this.verifyEditboxValue(this.txtDOB, '02/12/1212', { message: 'DOB Edit Box' })       //Stage verification
             await this.clickOn(this.btnSaveDOB, { message: 'DOB Save Button' })
         })
     }
@@ -211,7 +211,7 @@ export class EditProfilePage extends BasePage {
         })
     }
 
-    private async phoenNumberEditCancelVerification(): Promise<void> {
+    private async phoneNumberEditCancelVerification(): Promise<void> {
         await test.step('Clicking the Phone Number Cancel Button', async () => {
             await this.clickOn(this.btnEditPhoneNumber, { message: 'Phone Number Edit Button' })
             await this.verifyElementVisibility(this.txtPhoneNumber, { message: 'Phone Number Edit Box' })
@@ -241,7 +241,7 @@ export class EditProfilePage extends BasePage {
             await this.selectLanguageEditCancelVerification()
             await this.selectCountryEditCancelVerification()
             await this.DOBEditCancelVerification()
-            await this.phoenNumberEditCancelVerification()
+            await this.phoneNumberEditCancelVerification()
         })
     }  
 

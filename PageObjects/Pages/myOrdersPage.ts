@@ -73,13 +73,12 @@ export class MyOrdersPage extends BasePage {
 
     public async verifyLegacyDetails(legacyOrdersExist: string): Promise<void> {
         await test.step(`Verify the order Header Details`, async () => {
-            if (legacyOrdersExist.toUpperCase() == 'YES') {
-                await this.verifyElementVisibility(this.legacyOrderDetails, { message: `Legacy Orders` })
-                await this.scrollToElement(this.legacyOrderDetails, { message: `Legacy Orders Section` })                              
+            await this.verifyElementVisibility(this.legacyOrderDetails, { message: `Legacy Orders` })
+            await this.scrollToElement(this.legacyOrderDetails, { message: `Legacy Orders Section` }) 
+            if (legacyOrdersExist.toUpperCase() == 'YES') {                                             
                 await this.verifyElementVisibility(this.btnTrackPackage, { message: `Track Package Button` })
                 await this.verifyAttributeValue(this.btnTrackPackage,'target','_blank',{'message':'Track Package Button target Attribute'})
             } else {
-                await this.verifyElementNotPresent(this.legacyOrderDetails, { message: `Legacy Orders` })
                 await this.verifyElementNotPresent(this.btnTrackPackage, { message: `Track Package Button` })
             }
         })
