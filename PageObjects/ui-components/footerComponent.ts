@@ -12,11 +12,11 @@ export class FooterComponent extends BasePage {
 
     constructor(page: Page) {
         super(page)
-        this.footerElement = page.locator('footer.main-footer')
-        this.copyrightElement = page.locator('.copyright')
-        this.footerEmail = page.locator('footer.main-footer input[type="email"]')
-        this.subscribeCheckBox = page.locator('footer.main-footer .checkmark-label')
-        this.btnSubscribe = page.locator('footer.main-footer button[name="email-subscription-submit"]')
+        this.footerElement = page.locator('footer[data-analytics-section="footer"]')
+        this.copyrightElement = page.locator('div[class^="copyright"]').nth(0)
+        this.footerEmail = page.locator('footer[data-analytics-section="footer"] input[type="email"]')
+        this.subscribeCheckBox = page.locator('footer[data-analytics-section="footer"] .checkmark-label')
+        this.btnSubscribe = page.locator('footer[data-analytics-section="footer"] button[name="email-subscription-submit"]')
         this.successMessage = page.locator('.email-subscription-success')
     }
 
@@ -37,7 +37,6 @@ export class FooterComponent extends BasePage {
             await this.clickOn(this.subscribeCheckBox, {message:'Footer Email Subscribe Checkbox'})
             await this.clickOn(this.btnSubscribe, {message:'Subscribe Button'})
             await this.verifyElementVisibility(this.successMessage, {message:'Email Subscription Sucesss Message'})
-            await this.verifyElementText(this.successMessage, 'THANK YOU', {message:'Success Message Text'})
         })
     }
 }

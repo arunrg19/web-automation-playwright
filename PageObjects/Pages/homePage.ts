@@ -10,7 +10,8 @@ export class HomePage extends BasePage {
     private readonly txtPassword: Locator
     private readonly btnLogin: Locator
     private readonly form: Locator
-    private readonly homePageLineItems: Locator
+    private readonly homePageLineItemsGaming: Locator
+    private readonly homePageLineItemsLogi: Locator
     private readonly newAccount_firstName: Locator
     private readonly newAccount_LastName: Locator
     private readonly newAccount_MOB: Locator
@@ -23,18 +24,23 @@ export class HomePage extends BasePage {
     private readonly linkCreateAnAccount: Locator
     private readonly accountCreationSuccess: Locator
     private readonly resendEmail: Locator
-    private readonly linkEmailPreferences: Locator
+    private readonly linkGamingEmailPreferences: Locator
+    private readonly linkLogiEmailPreferences: Locator
     private readonly linkPaymentOptions: Locator
+    private readonly linkLogiPaymentOptions: Locator
     private readonly linkEditProfile: Locator
     private readonly linkAddressBook: Locator
+    private readonly linkLogiAddressBook: Locator
+    private readonly linkLogiProfile: Locator
     readonly footerComponent: FooterComponent
 
     constructor(page: Page) {
         super(page)
         this.btnHomePageLogin = page.locator('a[data-component-name="ctaItem"]').filter({ hasText: 'Login' }).nth(0)
-        this.btnHomePageCreateAccount = page.locator('a.btn.btn-ko-white')
+        this.btnHomePageCreateAccount = page.locator('a[data-component-name="ctaItem"]').filter({ hasText: 'Create' }).nth(0)
         this.form = page.locator('#form_container')
-        this.homePageLineItems = page.locator('div.layout-item h2')
+        this.homePageLineItemsGaming = page.locator('div.layout-item h2')
+        this.homePageLineItemsLogi = page.locator('div.col-md-4 section[data-component-name="TextJumbo"] h2.h3')
         this.txtUserName = page.locator('input[id="Email address"]')
         this.txtPassword = page.locator('input[id="Password"]')
         this.btnLogin = page.locator('div.button').filter({ 'hasText': 'Login' })
@@ -50,7 +56,11 @@ export class HomePage extends BasePage {
         this.linkCreateAnAccount = page.locator('a.nav_button_text').filter({ 'hasText': 'Create an Account' })
         this.accountCreationSuccess = page.locator('div.heading.centered')
         this.resendEmail = page.locator('div.button').filter({ 'hasText': 'Resend Email' })
-        this.linkEmailPreferences = page.locator('div.content-ctn a').filter({ 'hasText': 'Email Preferences' })
+        this.linkGamingEmailPreferences = page.locator('div.content-ctn a').filter({ 'hasText': 'Email Preferences' })
+        this.linkLogiEmailPreferences = page.locator('div.cta a').filter({ 'hasText': 'Email Preferences' }).nth(0)
+        this.linkLogiPaymentOptions = page.locator('div.cta a').filter({ 'hasText': 'Payment Options' }).nth(0)
+        this.linkLogiAddressBook = page.locator('div.cta a').filter({ 'hasText': 'Address Book' }).nth(0)
+        this.linkLogiProfile = page.locator('div.cta a').filter({ 'hasText': 'Profile' }).nth(0)
         this.linkPaymentOptions = page.locator('div.content-ctn a').filter({ 'hasText': 'Payment Options' })
         this.linkEditProfile = page.locator('div.content-ctn a').filter({ 'hasText': 'Profile' })
         this.linkAddressBook = page.locator('a[data-analytics-title="address-book"]').filter({ 'hasText': 'Address Book' }).nth(0)
@@ -77,9 +87,15 @@ export class HomePage extends BasePage {
         })
     }
 
-    public async clickEmailPreferences(): Promise<void> {
+    public async clickGamingEmailPreferences(): Promise<void> {
         await test.step('Clicking Email Preferences Link in Home Page', async () => {
-            await this.clickOn(this.linkEmailPreferences, { message: 'Email Preferences' })
+            await this.clickOn(this.linkGamingEmailPreferences, { message: 'Gaming Email Preferences' })
+        })
+    }
+
+    public async clickLogiEmailPreferences(): Promise<void> {
+        await test.step('Clicking Email Preferences Link in Home Page', async () => {
+            await this.clickOn(this.linkLogiEmailPreferences.nth(0), { message: 'Logi Email Preferences' })
         })
     }
 
@@ -89,9 +105,21 @@ export class HomePage extends BasePage {
         })
     }
 
+    public async clickLogiAddressBook(): Promise<void> {
+        await test.step('Clicking Address Book Link in Home Page', async () => {
+            await this.clickOn(this.linkLogiAddressBook, { message: 'Address Book' })
+        })
+    }
+
     public async clickPaymentOptions(): Promise<void> {
         await test.step('Clicking Payment Options Link in Home Page', async () => {
             await this.clickOn(this.linkPaymentOptions, { message: 'Payment Options' })
+        })
+    }
+
+    public async clickLogiPaymentOptions(): Promise<void> {
+        await test.step('Clicking Payment Options Link in Home Page', async () => {
+            await this.clickOn(this.linkLogiPaymentOptions, { message: 'Payment Options' })
         })
     }
 
@@ -101,14 +129,31 @@ export class HomePage extends BasePage {
         })
     }
 
-    public async validateAllSections(): Promise<void> {
-        await test.step('Validate all sections in Home Page', async () => {
-            await this.verifyElementVisibility(this.homePageLineItems.filter({ hasText: 'Account' }), { message: 'Account Section' })
-            await this.verifyElementVisibility(this.homePageLineItems.filter({ hasText: 'Orders' }), { message: 'Orders Section' })
-            await this.verifyElementVisibility(this.homePageLineItems.filter({ hasText: 'My Products' }), { message: 'My Products Section' })
-            await this.verifyElementVisibility(this.homePageLineItems.filter({ hasText: 'Support' }), { message: 'Support Section' })
-            await this.verifyElementVisibility(this.homePageLineItems.filter({ hasText: 'Email' }), { message: 'Email Section' })
-            await this.verifyElementVisibility(this.homePageLineItems.filter({ hasText: 'Just for You' }), { message: 'Just For You Section' })
+    public async clickLogiProfile(): Promise<void> {
+        await test.step('Clicking Profile Link in Home Page', async () => {
+            await this.clickOn(this.linkLogiProfile, { message: 'Profile' })
+        })
+    }
+
+    public async validateAllSectionsGaming(): Promise<void> {
+        await test.step('Validate all sections in Gaming Home Page', async () => {
+            await this.verifyElementVisibility(this.homePageLineItemsGaming.filter({ hasText: 'Account' }), { message: 'Account Section' })
+            await this.verifyElementVisibility(this.homePageLineItemsGaming.filter({ hasText: 'Orders' }), { message: 'Orders Section' })
+            await this.verifyElementVisibility(this.homePageLineItemsGaming.filter({ hasText: 'My Products' }), { message: 'My Products Section' })
+            await this.verifyElementVisibility(this.homePageLineItemsGaming.filter({ hasText: 'Support' }), { message: 'Support Section' })
+            await this.verifyElementVisibility(this.homePageLineItemsGaming.filter({ hasText: 'Email' }), { message: 'Email Section' })
+            await this.verifyElementVisibility(this.homePageLineItemsGaming.filter({ hasText: 'Just for You' }), { message: 'Just For You Section' })
+        })
+    }
+
+    public async validateAllSectionsLogi(): Promise<void> {
+        await test.step('Validate all sections in Logi Home Page', async () => {
+            await this.verifyElementVisibility(this.homePageLineItemsLogi.filter({ hasText: 'Account' }), { message: 'Account Section' })
+            await this.verifyElementVisibility(this.homePageLineItemsLogi.filter({ hasText: 'Get Started' }), { message: 'Get Started Section' })
+            await this.verifyElementVisibility(this.homePageLineItemsLogi.filter({ hasText: 'Services' }), { message: 'Services Section' })
+            await this.verifyElementVisibility(this.homePageLineItemsLogi.filter({ hasText: 'Support' }), { message: 'Support Section' })
+            await this.verifyElementVisibility(this.homePageLineItemsLogi.filter({ hasText: 'Email' }), { message: 'Email Section' })
+            await this.verifyElementVisibility(this.homePageLineItemsLogi.filter({ hasText: 'Just for You' }), { message: 'Just For You Section' })
         })
     }
 

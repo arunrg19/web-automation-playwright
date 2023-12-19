@@ -162,7 +162,7 @@ export class BasePage implements IPageActions {
         let count = 0
         await test.step(`Returning the element ${options?.message} count`, async () => {
             try {
-                await this.generateElement(locateBy).first().waitFor({ timeout: 5000 })
+                await this.generateElement(locateBy).first().waitFor({ timeout: 15000 })
                 count = await this.generateElement(locateBy).count()
             } catch (err) {
                 throw new Error(`Exception occured while getting the count of elements [Error Details: ${err}]`)

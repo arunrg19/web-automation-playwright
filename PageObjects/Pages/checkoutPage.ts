@@ -25,6 +25,7 @@ export class CheckoutPage extends BasePage {
     private readonly orderSuccessMessage: Locator
     private readonly orderNumberField: Locator
     private readonly linkCreateAnAccount: Locator
+    private readonly linkShippingAddressEditLink: Locator
 
     constructor(page: Page) {
         super(page)
@@ -47,6 +48,7 @@ export class CheckoutPage extends BasePage {
         this.orderSuccessMessage = page.frameLocator(iframeName).locator('main.relative div[class^="max-w-"]').nth(0)
         this.orderNumberField = page.frameLocator(iframeName).locator('main.relative div[class^="max-w-"] div.text-body-14 strong').nth(0)
         this.linkCreateAnAccount = page.frameLocator(iframeName).locator('a').filter({ 'hasText': 'Create Account' })
+        this.linkShippingAddressEditLink = page.frameLocator(iframeName).locator('div#shipping-form button').nth(0)
     }
 
     private async enterEmail(email: string): Promise<void> {
@@ -144,6 +146,14 @@ export class CheckoutPage extends BasePage {
     public async clickCreateAnAccount(): Promise<void> {
         await test.step('Clicking Create An Account Link', async () => {
             await this.clickOn(this.linkCreateAnAccount, { message: 'Create An Account Link' })
+        })
+    }
+
+    public async validateEditLink(): Promise<void> {
+        await test.step('Clicking the Edit Link in Shipping Address', async () => {
+            await this.clickOn(this.linkShippingAddressEditLink, { message: 'Shipping Address Edit Link' })
+            await this.verifyElementVisibility(this.txtCheckoutFirstName, { message: 'First Name Edit Box' })
+            await this.verifyElementVisibility(this.txtCheckoutLastName, { message: 'Last Name Edit Box' })
         })
     }
 

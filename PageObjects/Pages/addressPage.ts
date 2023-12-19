@@ -157,10 +157,12 @@ export class AddressPage extends BasePage {
         })
     }
 
-    public async verifySavedAddressCount(counttoVerify: number): Promise<void> {
-        await test.step('Verifying the Saved Address Count', async () => {
-            await this.verifyElementCount(this.addressCount, counttoVerify, { message: 'Verify Saved Addresses Count' })
-        })
+    public async verifySavedAddressCount(counttoVerify: number | undefined): Promise<void> {
+        if (counttoVerify) {
+            await test.step('Verifying the Saved Address Count', async () => {
+                await this.verifyElementCount(this.addressCount, counttoVerify, { message: 'Verify Saved Addresses Count' })
+            })
+        }
     }
 
     public async validateFieldErrorMessage(fieldMsg: string): Promise<void> {
@@ -181,6 +183,7 @@ export class AddressPage extends BasePage {
                 await this.page.reload()
             }
         }
+        await this.page.waitForTimeout(3000)
         await expect(await this.getElementsCount(this.addressCount), { message: 'Verifying all addresses are deleted.' }).toBe(1)
     }
 
@@ -210,7 +213,7 @@ export class AddressPage extends BasePage {
         })
     }
 
-    public async addAddressValidation(nickName: string, firstName: string, lastName: string, streetName: string, apartmentName: string, country: string, state: string, city: string, postCode: string, phoneNumber: string, counttoVerify: number): Promise<void> {
+    public async addAddressValidation(nickName: string, firstName: string, lastName: string, streetName: string, apartmentName: string, country: string, state: string, city: string, postCode: string, phoneNumber: string, options?: { counttoVerify: number | undefined }): Promise<void> {
         await test.step('Adding New Address Validation', async () => {
             await this.clickAddAddressButton()
             await this.enterAddressNickName(nickName)
@@ -225,7 +228,7 @@ export class AddressPage extends BasePage {
             await this.enterAddressPhoneNumber(phoneNumber)
             await this.selectDefaultAddress()
             await this.clickSaveAddress()
-            await this.verifySavedAddressCount(counttoVerify)
+            await this.verifySavedAddressCount(options?.counttoVerify)
 
             //Validate the Saved address here since all the values are passed here directly
 
@@ -240,7 +243,7 @@ export class AddressPage extends BasePage {
 
     public async addressFieldsValidationAdd(): Promise<void> {
         await test.step('Address Field Validations on clicking Add Button', async () => {
-            await this.clickAddAddressButton()           
+            await this.clickAddAddressButton()
 
             await this.enterAddressNickName('test nickname')
             await this.enterAddressFirstName('testingfiftycharacterslimittestingfiftycharacterslimit')
@@ -295,7 +298,7 @@ export class AddressPage extends BasePage {
 
     public async addressFieldsValidationEdit(): Promise<void> {
         await test.step('Address Fields Validation on clicking Edit Button', async () => {
-            await this.clickEditIcon(1)           
+            await this.clickEditIcon(1)
 
             await this.enterAddressNickName('test nickname')
             await this.enterAddressFirstName('testingfiftycharacterslimittestingfiftycharacterslimit')

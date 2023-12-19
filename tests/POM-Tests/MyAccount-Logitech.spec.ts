@@ -14,10 +14,11 @@ import { InvoicePage } from '../../PageObjects/Pages/invoicePage'
 import * as globalData from '../../testdata/globalTestData.json'
 import * as environmentDetails from '../../playwright.env.json'
 
-var brandName: string = "Gaming"
+var brandName: string = "Logitech"
 let brandDetails: any = globalData.brandDetails
 let env: any = environmentDetails.environment
 let baseURL = brandDetails[env][brandName]
+
 
 test.describe(`MyAccount : Non-Logged-In User Generic Test Cases executed in ${env} environment`, async () => {
     test(`📃 TC001 - Login Form : Ensure the presence of every sections in Home Page and Login Form Display`, async ({ page }) => {
@@ -25,7 +26,7 @@ test.describe(`MyAccount : Non-Logged-In User Generic Test Cases executed in ${e
             await page.goto(baseURL + '/en-us/my-account.html')
             const homePage = new HomePage(page)
             await homePage.validateHomeButtons()
-            await homePage.validateAllSectionsGaming()
+            await homePage.validateAllSectionsLogi()
             await homePage.clickhomePageLoginButton()
         })
     })
@@ -35,7 +36,7 @@ test.describe(`MyAccount : Non-Logged-In User Generic Test Cases executed in ${e
             await page.goto(baseURL + '/en-us/my-account.html')
             const homePage = new HomePage(page)
             await homePage.validateHomeButtons()
-            await homePage.validateAllSectionsGaming()
+            await homePage.validateAllSectionsLogi()
             await homePage.clickhomeCreateAccount()
         })
     })
@@ -51,7 +52,7 @@ test.describe(`MyAccount : Non-Logged-In User Generic Test Cases executed in ${e
 
     test(`📃 TC002.1 - Footer Subscription : [PLP Page] Ensure the existence of footer section and validate the E-mail sign-in functionality`, async ({ page }) => {
         await test.step('Footer Subscription : [PLP Page] Ensure the existence of footer section and validate the E-mail sign-in functionality', async () => {
-            await page.goto(baseURL + '/en-us/products/gaming-mice.html')
+            await page.goto(baseURL + '/en-us/products/mice.html')
             const plpPage = new PLPPage(page)
             await plpPage.footerComponent.validateFooterComponent()
             await plpPage.footerComponent.validateFooterEmailSubscription()
@@ -60,7 +61,7 @@ test.describe(`MyAccount : Non-Logged-In User Generic Test Cases executed in ${e
 
     test(`📃 TC002.2 - Footer Subscription : [PDP Page] Ensure the existence of footer section and validate the E-mail sign-in functionality`, async ({ page }) => {
         await test.step('Footer Subscription : [PDP Page] Ensure the existence of footer section and validate the E-mail sign-in functionality', async () => {
-            await page.goto(baseURL + '/en-us/products/gaming-mice/g305-lightspeed-wireless-gaming-mouse.html')
+            await page.goto(baseURL + '/en-us/products/mice/limited-edition-wireless-mouse.html')
             const homePage = new HomePage(page)
             await homePage.footerComponent.validateFooterComponent()
             await homePage.footerComponent.validateFooterEmailSubscription()
@@ -71,9 +72,9 @@ test.describe(`MyAccount : Non-Logged-In User Generic Test Cases executed in ${e
         test(`📃 TC003 - Notify Me : Verify Notify Me for a non-logged in user by clicking Notify Me button in PLP`, async ({ page }) => {
             await test.step('Notify Me : Verify Notify Me for a non-logged in user by clicking Notify Me button in PLP', async () => {
                 if (["QA65"].includes(env)) {
-                    await page.goto(baseURL + '/en-us/products/gaming-mice.html')
+                    await page.goto(baseURL + '/en-us/products/mice.html')
                 } else if (["Stage65"].includes(env)) {
-                    await page.goto(baseURL + '/en-us/products/driving.html')
+                    await page.goto(baseURL + '/en-us/products/keyboards.html')
                 }
                 const plpPage = new PLPPage(page)
                 await plpPage.verifySubscriptionForCS("", false)
@@ -84,7 +85,7 @@ test.describe(`MyAccount : Non-Logged-In User Generic Test Cases executed in ${e
 
     test(`📃 TC004 - Guest Order creation and order cancellation from Order Details Page`, async ({ page }) => {
         await test.step('Guest Order creation and order cancellation from Order Details Page', async () => {
-            await page.goto(baseURL + '/en-us/products/gaming-mice.html')
+            await page.goto(baseURL + '/en-us/products/mice.html')
             const plpPage = new PLPPage(page)
             const checkoutPage = new CheckoutPage(page)
             const orderStatusPage = new OrderStatusPage(page)
@@ -97,7 +98,6 @@ test.describe(`MyAccount : Non-Logged-In User Generic Test Cases executed in ${e
                 await checkoutPage.fillCardDetailsAndPlaceOrder('4444222233331111', '12/40', '123')
                 await page.goto(baseURL + '/en-us/order-status.html')
                 await orderStatusPage.searchGuestOrderDetails(CheckoutPage.orderID, 'L0g1t3ch', 'marchtesting@yopmail.com')
-                await page.waitForTimeout(2000)
                 await orderDetailsPage.cancelOrderDetails()
             }
         })
@@ -106,7 +106,7 @@ test.describe(`MyAccount : Non-Logged-In User Generic Test Cases executed in ${e
     if (["QA65", "Stage65"].includes(env)) {
         test(`📃 TC005 - New User Creation : Verify Account creation by clicking Create an Account in the CART Page`, async ({ page }) => {
             await test.step('New User Creation : Verify Account creation by clicking Create an Account in the CART Page', async () => {
-                await page.goto(baseURL + '/en-us/products/gaming-mice.html')
+                await page.goto(baseURL + '/en-us/products/mice.html')
                 const plpPage = new PLPPage(page)
                 const checkoutPage = new CheckoutPage(page)
                 const homePage = new HomePage(page)
@@ -133,7 +133,7 @@ test.describe(`MyAccount : Non-Logged-In User Generic Test Cases executed in ${e
             await page.goto(baseURL + '/en-us/my-account.html')
             const homePage = new HomePage(page)
             const emailPreferencesPage = new EmailPreferencesPage(page)
-            await homePage.clickGamingEmailPreferences()
+            await homePage.clickLogiEmailPreferences()
             await homePage.verifyPageURL('email-preferences.html')
             await emailPreferencesPage.nonLoggedInUserEmailPreferencesValidation()
         })
@@ -151,7 +151,7 @@ test.describe(`MyAccount : Non-Logged-In User Generic Test Cases executed in ${e
                 // await loginPage.loginIntoMyAccountApplication('marchtesting@yopmail.com', 'Logitech$#1947')
                 // await loginPage.loginIntoMyAccountApplication('playwrighttest@yopmail.com', 'Testing$!1947')
                 // await loginPage.loginIntoMyAccountApplication('bkumar@logitech.com', 'Greendust@2022')
-                // await page.context().storageState({ 'path': 'PageObjects/UserLogins/Gaming/QA65/addressUser.json' })
+                // await page.context().storageState({ 'path': 'PageObjects/UserLogins/Logi/QA65/playWrightUser.json' })
                 await loginPage.logoutFromMyAccountApplication()
                 await homePage.validateHomeButtons()
             })
@@ -161,7 +161,7 @@ test.describe(`MyAccount : Non-Logged-In User Generic Test Cases executed in ${e
 
 if (["QA65", "Stage65"].includes(env)) {
     test.describe(`MyAccount : Logged-In User Generic Test Cases executed in ${env} environment`, async () => {
-        test.use({ 'storageState': `PageObjects/UserLogins/Gaming/${env}/playwrightuser.json` })
+        test.use({ 'storageState': `PageObjects/UserLogins/Logi/${env}/playwrightuser.json` })
         test(`📃 TC001.1 - Footer Subscription : [MyAccount Page] Ensure the existence of footer section and validate the E-mail sign-in functionality`, async ({ page }) => {
             await test.step('Footer Subscription : [MyAccount Page] Ensure the existence of footer section and validate the E-mail sign-in functionality', async () => {
                 await page.goto(baseURL + '/en-us/my-account.html')
@@ -173,7 +173,7 @@ if (["QA65", "Stage65"].includes(env)) {
 
         test(`📃 TC001.2 - Footer Subscription : [PLP Page] Ensure the existence of footer section and validate the E-mail sign-in functionality`, async ({ page }) => {
             await test.step('Footer Subscription : [PLP Page] Ensure the existence of footer section and validate the E-mail sign-in functionality', async () => {
-                await page.goto(baseURL + '/en-us/products/gaming-mice.html')
+                await page.goto(baseURL + '/en-us/products/mice.html')
                 const plpPage = new PLPPage(page)
                 await plpPage.footerComponent.validateFooterComponent()
                 await plpPage.footerComponent.validateFooterEmailSubscription()
@@ -182,7 +182,7 @@ if (["QA65", "Stage65"].includes(env)) {
 
         test(`📃 TC001.3 - Footer Subscription : [PDP Page] Ensure the existence of footer section and validate the E-mail sign-in functionality`, async ({ page }) => {
             await test.step('Footer Subscription : [PDP Page] Ensure the existence of footer section and validate the E-mail sign-in functionality', async () => {
-                await page.goto(baseURL + '/en-us/products/gaming-mice/g305-lightspeed-wireless-gaming-mouse.html')
+                await page.goto(baseURL + '/en-us/products/mice/limited-edition-wireless-mouse.html')
                 const homePage = new HomePage(page)
                 await homePage.footerComponent.validateFooterComponent()
                 await homePage.footerComponent.validateFooterEmailSubscription()
@@ -192,9 +192,9 @@ if (["QA65", "Stage65"].includes(env)) {
         test(`📃 TC002 - Notify Me : Verify Notify Me for a logged in user by clicking Notify Me button in PLP`, async ({ page }) => {
             await test.step('Notify Me : Verify Notify Me for a logged in user by clicking Notify Me button in PLP', async () => {
                 if (["QA65"].includes(env)) {
-                    await page.goto(baseURL + '/en-us/products/gaming-mice.html')
+                    await page.goto(baseURL + '/en-us/products/mice.html')
                 } else if (["Stage65"].includes(env)) {
-                    await page.goto(baseURL + '/en-us/products/driving.html')
+                    await page.goto(baseURL + '/en-us/products/keyboards.html')
                 }
                 const plpPage = new PLPPage(page)
                 await plpPage.verifySubscriptionForCS("playwrighttest@yopmail.com", true)
@@ -207,7 +207,7 @@ if (["QA65", "Stage65"].includes(env)) {
                 await page.goto(baseURL + '/en-us/my-account.html')
                 const homePage = new HomePage(page)
                 const emailPreferencesPage = new EmailPreferencesPage(page)
-                await homePage.clickGamingEmailPreferences()
+                await homePage.clickLogiEmailPreferences()
                 await homePage.verifyPageURL('email-preferences.html')
                 await emailPreferencesPage.loggedInUserEmailPreferencesValidation()
             })
@@ -218,7 +218,7 @@ if (["QA65", "Stage65"].includes(env)) {
                 await page.goto(baseURL + '/en-us/my-account.html')
                 const homePage = new HomePage(page)
                 const emailPreferencesPage = new EmailPreferencesPage(page)
-                await homePage.clickGamingEmailPreferences()
+                await homePage.clickLogiEmailPreferences()
                 await homePage.verifyPageURL('/email-preferences.html')
                 await emailPreferencesPage.unSubscribeAllValidation()
             })
@@ -229,9 +229,9 @@ if (["QA65", "Stage65"].includes(env)) {
                 await page.goto(baseURL + '/en-us/my-account.html')
                 const homePage = new HomePage(page)
                 const paymentOptionsPage = new PaymentOptionsPage(page)
-                await homePage.clickPaymentOptions()
+                await homePage.clickLogiPaymentOptions()
                 await homePage.verifyPageURL('/payment-options.html')
-                await paymentOptionsPage.validateAllPaymentDetails()
+                await paymentOptionsPage.validateLogiAllPaymentDetails()
             })
         })
 
@@ -240,7 +240,7 @@ if (["QA65", "Stage65"].includes(env)) {
                 await page.goto(baseURL + '/en-us/my-account.html')
                 const homePage = new HomePage(page)
                 const editProfilePage = new EditProfilePage(page)
-                await homePage.clickProfile()
+                await homePage.clickLogiProfile()
                 await homePage.verifyPageURL('/account-information.html')
                 await editProfilePage.validateEditProfileCancel()
                 await editProfilePage.validateEditProfileSave()
@@ -291,10 +291,10 @@ if (["QA65", "Stage65"].includes(env)) {
     })
 
     test.describe(`Order Details : Validate complete order creation, cancellation and other validations from Order Details Page executed in ${env} environment`, async () => {
-        test.use({ 'storageState': `PageObjects/UserLogins/Gaming/${env}/orderCreationUser.json` })
+        test.use({ 'storageState': `PageObjects/UserLogins/Logi/${env}/orderCreationUser.json` })
         test(`📃 TC009 - Order Details : Validate complete order creation flow and order cancellation from Order Details Page`, async ({ page }) => {
             await test.step(`Validate complete order creation flow and order cancellation from Order Details Page`, async () => {
-                await page.goto(baseURL + '/en-us/products/gaming-mice.html')
+                await page.goto(baseURL + '/en-us/products/mice.html')
                 const plpPage = new PLPPage(page)
                 const checkoutPage = new CheckoutPage(page)
                 const myOrdersPage = new MyOrdersPage(page)
@@ -347,7 +347,7 @@ if (["QA65", "Stage65"].includes(env)) {
 
         test(`📃 TC011 - Order Details : Validate complete order creation flow and order cancellation from MyOrders Page`, async ({ page }) => {
             await test.step(`Validate complete order creation flow and order cancellation from MyOrders Page`, async () => {
-                await page.goto(baseURL + '/en-us/products/gaming-mice.html')
+                await page.goto(baseURL + '/en-us/products/mice.html')
                 const plpPage = new PLPPage(page)
                 const checkoutPage = new CheckoutPage(page)
                 const myOrdersPage = new MyOrdersPage(page)
@@ -362,7 +362,7 @@ if (["QA65", "Stage65"].includes(env)) {
     })
 
     test.describe(`Order Details : Validation for 'Complete' Order cases executed in ${env} environment`, () => {
-        test.use({ 'storageState': `PageObjects/UserLogins/Gaming/${env}/gamingUser.json` })
+        test.use({ 'storageState': `PageObjects/UserLogins/Logi/${env}/logiUser.json` })
         test(`📃 TC012 - Order Details : Opening any order from Myorders page by clicking Order Details Button and verify the View Invoice button displayed for the 'Complete' Order and download Invoices`, async ({ page }) => {
             await test.step(`Order Details : Opening any order from Myorders page by clicking Order Details Button and verify the View Invoice button displayed for the 'Complete' Order and download Invoices`, async () => {
                 await page.goto(baseURL + '/en-us/my-account/my-orders.html')
@@ -462,31 +462,14 @@ if (["QA65", "Stage65"].includes(env)) {
         })
     })
 
-    test.describe(`Address Book : Address field level Validations and address change from one brand to another brand excuted in ${env} environment`, () => {
-        if (["QA65"].includes(env)) {
-            test(`📃 TC007.2 - Address Book : Ensure the user is able to verify the updated address in 'GAMING' Brand is seen in 'LOGITECH' Brand as well`, async ({ page }) => {
-                await test.step(`TC007.2 - Ensure the user is able to verify the updated address in 'GAMING' Brand is seen in 'LOGITECH' Brand as well`, async () => {
-                    await page.goto('https://logi-qa-65.logitech.com/en-us/my-account.html')
-                    const homePage = new HomePage(page)
-                    const loginPage = new LoginPage(page)
-                    const addressPage = new AddressPage(page)
-                    await homePage.clickLoginButton()
-                    await page.waitForTimeout(2000)
-                    await loginPage.loginIntoMyAccountApplication('playwrighttest@yopmail.com', 'Testing$!1947')
-                    await homePage.clickAddressBook()
-                    await homePage.verifyPageURL('/address-book.html')
-                    await addressPage.validateSavedAddress(2, 'EditedFirstName' + " " + 'EditedLastName', '1445 Moore Avenue', '2', 'Maine', 'Springfield', '7066170489')
-                })
-            })
-        }
-
-        test.use({ 'storageState': `PageObjects/UserLogins/Gaming/${env}/addressUser.json` })
+    test.describe(`Address Book : Address field level Validations excuted in ${env} environment`, () => {
+        test.use({ 'storageState': `PageObjects/UserLogins/Logi/${env}/addressUser.json` })
         test(`📃 TC018 - Address Book : Add/Edit field validations in Address Book`, async ({ page }) => {
             await test.step(`TC013 - My Account Address | Add/Edit field validations`, async () => {
                 await page.goto(baseURL + '/en-us/my-account.html')
                 const homePage = new HomePage(page)
                 const addressPage = new AddressPage(page)
-                await homePage.clickAddressBook()
+                await homePage.clickLogiAddressBook()
                 await homePage.verifyPageURL('/address-book.html')
                 await addressPage.deleteExistingAddresses()
                 await addressPage.addressFieldsValidationAdd()
@@ -502,11 +485,11 @@ if (["QA65", "Stage65"].includes(env)) {
                 await page.goto(baseURL + '/en-us/my-account.html')
                 const homePage = new HomePage(page)
                 const addressPage = new AddressPage(page)
-                await homePage.clickAddressBook()
+                await homePage.clickLogiAddressBook()
                 await homePage.verifyPageURL('/address-book.html')
                 await addressPage.deleteExistingAddresses()
                 await addressPage.addAddressValidation('test nickname', 'test fname', 'test lname', '1444 Moore Avenue', '1', 'United States', 'Texas', 'Fort Worth', ' 73301 ', '8177174886')
-                await page.goto(baseURL + '/en-us/products/gaming-mice.html')
+                await page.goto(baseURL + '/en-us/products/mice.html')
                 await plpPage.clickAddToCart(1, '1')
                 await plpPage.clickCheckoutButton()
                 await page.waitForTimeout(2000)
