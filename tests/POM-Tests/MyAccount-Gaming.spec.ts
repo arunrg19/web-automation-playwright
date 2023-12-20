@@ -161,7 +161,7 @@ test.describe(`MyAccount : Non-Logged-In User Generic Test Cases executed in ${e
 
 if (["QA65", "Stage65"].includes(env)) {
     test.describe(`MyAccount : Logged-In User Generic Test Cases executed in ${env} environment`, async () => {
-        test.use({ 'storageState': `PageObjects/UserLogins/Gaming/${env}/playwrightuser.json` })
+        test.use({ 'storageState': `PageObjects/UserLogins/Gaming/${env}/playwrightUser.json` })
         test(`📃 TC001.1 - Footer Subscription : [MyAccount Page] Ensure the existence of footer section and validate the E-mail sign-in functionality`, async ({ page }) => {
             await test.step('Footer Subscription : [MyAccount Page] Ensure the existence of footer section and validate the E-mail sign-in functionality', async () => {
                 await page.goto(baseURL + '/en-us/my-account.html')
