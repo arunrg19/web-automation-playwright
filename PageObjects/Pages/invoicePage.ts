@@ -1,4 +1,4 @@
-import { Locator, Page, test, expect } from "@playwright/test";
+import { Locator, Page, test } from "@playwright/test";
 import { BasePage } from "./basePage";
 import path from 'path'
 
@@ -111,7 +111,7 @@ export class InvoicePage extends BasePage {
                 await fileDownload.saveAs(path.join("downloads/" + testcaseFolderPath + "/" + fileDownload.suggestedFilename()))
             }
             await this.verifyFilesCount("downloads/" + testcaseFolderPath, count, { 'message': 'Downloads Folder Path Verification' })
-            await this.deleteAllFilesInDir("downloads/" + testcaseFolderPath, { 'message': `Deleting all files from the folder ${testcaseFolderPath}` })        
+            await this.deleteAllFilesInDir("downloads/" + testcaseFolderPath, { 'message': `Deleting all files from the folder ${testcaseFolderPath}` })
         })
     }
 

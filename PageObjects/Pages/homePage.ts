@@ -1,4 +1,4 @@
-import { expect, Locator, Page, test } from "@playwright/test";
+import { Locator, Page, test } from "@playwright/test";
 import { BasePage } from "./basePage";
 import { FooterComponent } from "../ui-components/footerComponent";
 
