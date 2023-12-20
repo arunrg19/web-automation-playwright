@@ -72,7 +72,9 @@ export class PLPPage extends BasePage {
             }
         }
         await expect(this.dockedCartDetails).toBeVisible()
-        await this.clickOn(this.btnDockedCartClose)
+        if(await this.btnDockedCartClose.isVisible()){
+            await this.clickOn(this.btnDockedCartClose)
+        }
     }
 
     public async clearingCart(): Promise<void> {

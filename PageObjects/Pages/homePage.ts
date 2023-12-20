@@ -188,7 +188,7 @@ export class HomePage extends BasePage {
             await this.enterTextInEditBox(this.newAccount_Month, '10', { message: 'Month Edit Box' })
             await this.enterTextInEditBox(this.newAccount_Year, '1984', { message: 'Year Edit Box' })
             await this.enterTextInEditBox(this.newAccount_emailID, "testemail" + Math.floor((Math.random() * 1000000) + 1) + "@logitech.com", { message: 'EmailID Edit Box' })
-            await this.enterTextInEditBox(this.newAccount_Password, "Security1947P@ssword#" + randomValue, { message: 'Password Edit Box' })
+            await this.enterTextInEditBox(this.newAccount_Password, "Logitech1947P@ssword#" + randomValue, { message: 'Password Edit Box' })
             await this.clickOn(this.newAccount_Password, { message: 'Account Password' })
             await this.checkBoxSelection(this.newAccount_emailCheckBox, 'check', { message: 'Email Check Box' })
             await this.page.waitForTimeout(1000)

@@ -83,7 +83,7 @@ test.describe(`MyAccount : Non-Logged-In User Generic Test Cases executed in ${e
         })
     }
 
-    test(`📃 TC004 - Guest Order creation and order cancellation from Order Details Page`, async ({ page }) => {
+    test(`📃 TC004 - Order Details : Guest Order creation and order cancellation from Order Details Page`, async ({ page }) => {
         await test.step('Guest Order creation and order cancellation from Order Details Page', async () => {
             await page.goto(baseURL + '/en-us/products/mice.html')
             const plpPage = new PLPPage(page)
@@ -478,7 +478,7 @@ if (["QA65", "Stage65"].includes(env)) {
             })
         })
 
-        test(`📃 TC019-AEMU-4450-Space in post code field validation in checkout page`, async ({ page }) => {
+        test(`📃 TC019-AEMU-4450 - Space in post code field validation in checkout page`, async ({ page }) => {
             await test.step(`TC019 - Space in post code field validation in checkout page`, async () => {
                 const plpPage = new PLPPage(page)
                 const checkoutPage = new CheckoutPage(page)
