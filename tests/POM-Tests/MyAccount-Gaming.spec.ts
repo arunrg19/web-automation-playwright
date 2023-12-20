@@ -10,7 +10,7 @@ import { EditProfilePage } from '../../PageObjects/Pages/editProfilePage'
 import { AddressPage } from '../../PageObjects/Pages/addressPage'
 import { MyOrdersPage } from '../../PageObjects/Pages/myOrdersPage'
 import { InvoicePage } from '../../PageObjects/Pages/invoicePage'
-import { CheckoutPage } from '../../PageObjects/Pages/CheckoutPage'
+import { CheckoutPage } from '../../PageObjects/Pages/checkoutPage'
 import * as globalData from '../../testdata/globalTestData.json'
 import * as environmentDetails from '../../playwright.env.json'
 
