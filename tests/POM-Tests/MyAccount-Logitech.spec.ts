@@ -151,7 +151,7 @@ test.describe(`MyAccount : Non-Logged-In User Generic Test Cases executed in ${e
                 // await loginPage.loginIntoMyAccountApplication('marchtesting@yopmail.com', 'Logitech$#1947')
                 // await loginPage.loginIntoMyAccountApplication('playwrighttest@yopmail.com', 'Testing$!1947')
                 // await loginPage.loginIntoMyAccountApplication('bkumar@logitech.com', 'Greendust@2022')
-                // await page.context().storageState({ 'path': 'PageObjects/UserLogins/Logi/QA65/playWrightUser.json' })
+                // await page.context().storageState({ 'path': 'PageObjects/UserLogins/Logi/Stage65/orderDetailsUser.json' })
                 await loginPage.logoutFromMyAccountApplication()
                 await homePage.validateHomeButtons()
             })
