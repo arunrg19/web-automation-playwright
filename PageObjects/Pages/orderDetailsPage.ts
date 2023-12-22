@@ -94,6 +94,7 @@ export class OrderDetailsPage extends BasePage {
             await this.verifyElementVisibility(this.btnCancelNo, { message: 'Cancel Order No' })
             await this.clickOn(this.btnCancelYes, { message: 'Cancel Button Yes' })
             await this.verifyElementVisibility(this.cancelSuccessMessage, { message: 'Cancel Order Success Message' })
+            await this.verifyElementText(this.cancelSuccessMessage, `Order ${CheckoutPage.orderID} cancelled successfully.`, { message: 'Order Status Text' })
             await this.verifyElementText(this.orderStatus, 'Cancelled', { message: 'Order Status Text' })
         })
     }
