@@ -51,6 +51,7 @@ export class OrderDetailsPage extends BasePage {
 
     private async verifyOrderID(): Promise<void> {
         await test.step(`Verifying the OrderID details`, async () => {
+            await this.verifyElementVisibility(this.orderID, { 'message': "Order ID" })
             await this.verifyElementText(this.orderID, CheckoutPage.orderID, { message: 'Order#' })
         })
     }
@@ -202,5 +203,4 @@ export class OrderDetailsPage extends BasePage {
             await this.verifyAddressDetails()
         })
     }
-
 }
