@@ -5,6 +5,7 @@ import { CheckoutPage } from "./checkoutPage";
 export class MyOrdersPage extends BasePage {
 
     private readonly btnOrderDetails: Locator
+    private readonly btnCancelOrder: Locator
     private readonly eleOrderDetailsScreen: Locator
     private readonly eleRecentOrders: Locator
     private readonly eleAllOtherOrders: Locator
@@ -21,7 +22,8 @@ export class MyOrdersPage extends BasePage {
     constructor(page: Page) {
         super(page)
         console.log("Order ID:", CheckoutPage.orderID)
-        this.btnOrderDetails = page.locator('div[class="order-header"]')
+        this.btnOrderDetails = page.locator('div[data-order-id*="' + CheckoutPage.orderID + '"] a[data-analytics-title*="order-details"]')
+        this.btnCancelOrder = page.locator('div[data-order-id*="' + CheckoutPage.orderID + '"] a[data-analytics-title*="cancel-order"]')
         this.eleOrderDetailsScreen = page.locator('div.order-details-return')
         this.eleRecentOrders = page.locator('.recent-order-detail .order-subtitle').filter({ 'hasText': 'RECENT ORDERS' })
         this.eleAllOtherOrders = page.locator('.order-detail .order-subtitle').filter({ 'hasText': 'ALL OTHER ORDERS' })
@@ -39,8 +41,8 @@ export class MyOrdersPage extends BasePage {
     public async openOrderDetails(): Promise<void> {
         await test.step(`Opening the order ${CheckoutPage.orderID} by clicking the order Details button`, async () => {
             console.log("Order ID:", CheckoutPage.orderID)
-            await this.verifyElementVisibility(this.btnOrderDetails.filter({ hasText: CheckoutPage.orderID }).locator('a.btn[data-analytics-title*="' + CheckoutPage.orderID + '"]'), { message: `Order Details Button for Order ${CheckoutPage.orderID}` })
-            await this.clickOn(this.btnOrderDetails.filter({ hasText: CheckoutPage.orderID }).locator('a.btn[data-analytics-title*="' + CheckoutPage.orderID + '"]'), { message: 'Order Details button' })
+            await this.verifyElementVisibility(this.btnOrderDetails, { message: `Order Details Button for Order ${CheckoutPage.orderID}` })
+            await this.clickOn(this.btnOrderDetails, { message: 'Order Details button' })
             await this.verifyPageURL('/my-account/my-orders/order-details.html')
             await this.verifyElementVisibility(this.eleOrderDetailsScreen, { message: `Order Details Page` })
         })
@@ -49,8 +51,8 @@ export class MyOrdersPage extends BasePage {
     public async cancelOrderDetails(): Promise<void> {
         await test.step(`Cancelling the order ${CheckoutPage.orderID} by clicking the cancel order button`, async () => {
             console.log("Order ID:", CheckoutPage.orderID)
-            await this.verifyElementVisibility(this.btnOrderDetails.filter({ hasText: CheckoutPage.orderID }).locator('a.btn[data-order-id*="' + CheckoutPage.orderID + '"][data-analytics-title="cancel-order"]'), { message: `Cancel Order Button for Order ${CheckoutPage.orderID}` })
-            await this.clickOn(this.btnOrderDetails.filter({ hasText: CheckoutPage.orderID }).locator('a.btn[data-order-id*="' + CheckoutPage.orderID + '"][data-analytics-title="cancel-order"]'), { message: `Cancel Order button for Order ${CheckoutPage.orderID}` })
+            await this.verifyElementVisibility(this.btnCancelOrder, { message: `Cancel Order Button for Order ${CheckoutPage.orderID}` })
+            await this.clickOn(this.btnCancelOrder, { message: `Cancel Order button for Order ${CheckoutPage.orderID}` })
             await this.validateOrderCancellation()
         })
     }
@@ -74,10 +76,10 @@ export class MyOrdersPage extends BasePage {
     public async verifyLegacyDetails(legacyOrdersExist: string): Promise<void> {
         await test.step(`Verify the order Header Details`, async () => {
             await this.verifyElementVisibility(this.legacyOrderDetails, { message: `Legacy Orders` })
-            await this.scrollToElement(this.legacyOrderDetails, { message: `Legacy Orders Section` }) 
-            if (legacyOrdersExist.toUpperCase() == 'YES') {                                             
+            await this.scrollToElement(this.legacyOrderDetails, { message: `Legacy Orders Section` })
+            if (legacyOrdersExist.toUpperCase() == 'YES') {
                 await this.verifyElementVisibility(this.btnTrackPackage, { message: `Track Package Button` })
-                await this.verifyAttributeValue(this.btnTrackPackage,'target','_blank',{'message':'Track Package Button target Attribute'})
+                await this.verifyAttributeValue(this.btnTrackPackage, 'target', '_blank', { 'message': 'Track Package Button target Attribute' })
             } else {
                 await this.verifyElementNotPresent(this.btnTrackPackage, { message: `Track Package Button` })
             }
