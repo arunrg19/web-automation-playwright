@@ -22,8 +22,8 @@ export class MyOrdersPage extends BasePage {
     constructor(page: Page) {
         super(page)
         console.log("Order ID:", CheckoutPage.orderID)
-        this.btnOrderDetails = page.locator('div[data-order-id*="' + CheckoutPage.orderID + '"] a[data-analytics-title*="order-details"]')
-        this.btnCancelOrder = page.locator('div[data-order-id*="' + CheckoutPage.orderID + '"] a[data-analytics-title*="cancel-order"]')
+        // this.btnOrderDetails = this.page.locator('div[data-order-id*="' + CheckoutPage.orderID + '"] a[data-analytics-title*="order-details"]')
+        // this.btnCancelOrder = this.page.locator('div[data-order-id*="' + CheckoutPage.orderID + '"] a[data-analytics-title*="cancel-order"]')
         this.eleOrderDetailsScreen = page.locator('div.order-details-return')
         this.eleRecentOrders = page.locator('.recent-order-detail .order-subtitle').filter({ 'hasText': 'RECENT ORDERS' })
         this.eleAllOtherOrders = page.locator('.order-detail .order-subtitle').filter({ 'hasText': 'ALL OTHER ORDERS' })
@@ -41,8 +41,8 @@ export class MyOrdersPage extends BasePage {
     public async openOrderDetails(): Promise<void> {
         await test.step(`Opening the order ${CheckoutPage.orderID} by clicking the order Details button`, async () => {
             console.log("Order ID:", CheckoutPage.orderID)
-            await this.verifyElementVisibility(this.btnOrderDetails, { message: `Order Details Button for Order ${CheckoutPage.orderID}` })
-            await this.clickOn(this.btnOrderDetails, { message: 'Order Details button' })
+            await this.verifyElementVisibility(this.page.locator('div[data-order-id*="' + CheckoutPage.orderID + '"] a[data-analytics-title*="order-details"]'), { message: `Order Details Button for Order ${CheckoutPage.orderID}` })
+            await this.clickOn(this.page.locator('div[data-order-id*="' + CheckoutPage.orderID + '"] a[data-analytics-title*="order-details"]'), { message: 'Order Details button' })
             await this.verifyPageURL('/my-account/my-orders/order-details.html')
             await this.verifyElementVisibility(this.eleOrderDetailsScreen, { message: `Order Details Page` })
         })
@@ -51,8 +51,8 @@ export class MyOrdersPage extends BasePage {
     public async cancelOrderDetails(): Promise<void> {
         await test.step(`Cancelling the order ${CheckoutPage.orderID} by clicking the cancel order button`, async () => {
             console.log("Order ID:", CheckoutPage.orderID)
-            await this.verifyElementVisibility(this.btnCancelOrder, { message: `Cancel Order Button for Order ${CheckoutPage.orderID}` })
-            await this.clickOn(this.btnCancelOrder, { message: `Cancel Order button for Order ${CheckoutPage.orderID}` })
+            await this.verifyElementVisibility(this.page.locator('div[data-order-id*="' + CheckoutPage.orderID + '"] a[data-analytics-title*="cancel-order"]'), { message: `Cancel Order Button for Order ${CheckoutPage.orderID}` })
+            await this.clickOn(this.page.locator('div[data-order-id*="' + CheckoutPage.orderID + '"] a[data-analytics-title*="cancel-order"]'), { message: `Cancel Order button for Order ${CheckoutPage.orderID}` })
             await this.validateOrderCancellation()
         })
     }

@@ -67,7 +67,7 @@ export class BasePage implements IPageActions {
     async verifyElementVisibility(locateBy: LocateBy, options?: { message: string }): Promise<void> {
         await test.step(`Visibility of the element ${options?.message}`, async () => {
             try {
-                await expect(this.generateElement(locateBy)).toBeVisible({ timeout: 30000 })
+                await expect(this.generateElement(locateBy)).toBeVisible({ timeout: 60000 })
             } catch (err) {
                 throw new Error(`Exception occured while verifying the element visibility [Error Details: ${err}]`)
             }

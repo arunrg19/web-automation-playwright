@@ -63,6 +63,7 @@ export class PLPPage extends BasePage {
 
     public async clearCart(): Promise<void> {
         await this.clickOn(this.cartIcon, { message: 'Clicking the Cart Icon' })
+        await this.page.waitForTimeout(2000)
         if (!await this.dockedCartDetails.isVisible()) {
             let count = await this.getElementsCount(this.btnDockedCartRemove)
             if (count > 0) {
@@ -85,6 +86,7 @@ export class PLPPage extends BasePage {
 
     public async clickAddToCart(cartItemsCount: number, itemQuantity: string): Promise<void> {
         await test.step('Clicking the ATC button for a non-test Product', async () => {
+            await this.page.waitForTimeout(1000)
             await this.clearCart()
             await this.clickOn(this.cartIcon, { message: 'Clicking the Cart Icon before clicking ATC button' })
             await this.clickOn(this.cartIconClose, { message: 'Closing the Docked Cart before clicking ATC button' })

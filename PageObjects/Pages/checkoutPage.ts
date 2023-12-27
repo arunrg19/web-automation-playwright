@@ -152,6 +152,7 @@ export class CheckoutPage extends BasePage {
     public async validateEditLink(): Promise<void> {
         await test.step('Clicking the Edit Link in Shipping Address', async () => {
             await this.clickOn(this.linkShippingAddressEditLink, { message: 'Shipping Address Edit Link' })
+            await this.page.waitForTimeout(3000)
             await this.verifyElementVisibility(this.txtCheckoutFirstName, { message: 'First Name Edit Box' })
             await this.verifyElementVisibility(this.txtCheckoutLastName, { message: 'Last Name Edit Box' })
         })
