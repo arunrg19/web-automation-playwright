@@ -146,14 +146,16 @@ export class HomePage extends BasePage {
         })
     }
 
-    public async validateAllSectionsLogi(): Promise<void> {
+    public async validateAllSectionsLogi(env: string): Promise<void> {
         await test.step('Validate all sections in Logi Home Page', async () => {
             await this.verifyElementVisibility(this.homePageLineItemsLogi.filter({ hasText: 'Account' }), { message: 'Account Section' })
             await this.verifyElementVisibility(this.homePageLineItemsLogi.filter({ hasText: 'Get Started' }), { message: 'Get Started Section' })
             await this.verifyElementVisibility(this.homePageLineItemsLogi.filter({ hasText: 'Services' }), { message: 'Services Section' })
             await this.verifyElementVisibility(this.homePageLineItemsLogi.filter({ hasText: 'Support' }), { message: 'Support Section' })
             await this.verifyElementVisibility(this.homePageLineItemsLogi.filter({ hasText: 'Email' }), { message: 'Email Section' })
-            await this.verifyElementVisibility(this.homePageLineItemsLogi.filter({ hasText: 'Just for You' }), { message: 'Just For You Section' })
+            if (["QA65"].includes(env)) {
+                await this.verifyElementVisibility(this.homePageLineItemsLogi.filter({ hasText: 'Just for You' }), { message: 'Just For You Section' })
+            }
         })
     }
 

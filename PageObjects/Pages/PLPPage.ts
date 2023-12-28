@@ -73,7 +73,7 @@ export class PLPPage extends BasePage {
             }
         }
         await expect(this.dockedCartDetails).toBeVisible()
-        if(await this.btnDockedCartClose.isVisible()){
+        if (await this.btnDockedCartClose.isVisible()) {
             await this.clickOn(this.btnDockedCartClose)
         }
     }
@@ -107,7 +107,7 @@ export class PLPPage extends BasePage {
 
     public async verifySubscriptionForOOS(emailID: string, loggedInUser: boolean): Promise<void> {
         await test.step('Verifying email subscription for Out Of Stock Product', async () => {
-            await this.clickComingSoonkNotifyMe()
+            await this.clickOutOfStockNotifyMe()
             await this.verifyEditboxValue(this.txtNotifyMeEmail, emailID, { message: 'Email ID Edit Box value validation' })
             if (loggedInUser === false) {
                 let randomEmail: any = "testemail" + Math.floor((Math.random() * 10000) + 1) + "@logitech.com"

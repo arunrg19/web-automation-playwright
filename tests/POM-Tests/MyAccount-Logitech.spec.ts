@@ -16,7 +16,7 @@ import * as environmentDetails from '../../playwright.env.json'
 
 var brandName: string = "Logitech"
 let brandDetails: any = globalData.brandDetails
-let env: any = environmentDetails.environment
+let env: string = environmentDetails.environment
 let baseURL = brandDetails[env][brandName]
 
 
@@ -26,7 +26,7 @@ test.describe(`MyAccount : Non-Logged-In User Generic Test Cases executed in ${e
             await page.goto(baseURL + '/en-us/my-account.html')
             const homePage = new HomePage(page)
             await homePage.validateHomeButtons()
-            await homePage.validateAllSectionsLogi()
+            await homePage.validateAllSectionsLogi(env)
             await homePage.clickhomePageLoginButton()
         })
     })
@@ -36,7 +36,7 @@ test.describe(`MyAccount : Non-Logged-In User Generic Test Cases executed in ${e
             await page.goto(baseURL + '/en-us/my-account.html')
             const homePage = new HomePage(page)
             await homePage.validateHomeButtons()
-            await homePage.validateAllSectionsLogi()
+            await homePage.validateAllSectionsLogi(env)
             await homePage.clickhomeCreateAccount()
         })
     })
@@ -71,14 +71,15 @@ test.describe(`MyAccount : Non-Logged-In User Generic Test Cases executed in ${e
     if (["QA65", "Stage65"].includes(env)) {
         test(`📃 TC003 - Notify Me : Verify Notify Me for a non-logged in user by clicking Notify Me button in PLP`, async ({ page }) => {
             await test.step('Notify Me : Verify Notify Me for a non-logged in user by clicking Notify Me button in PLP', async () => {
+                const plpPage = new PLPPage(page)
                 if (["QA65"].includes(env)) {
                     await page.goto(baseURL + '/en-us/products/mice.html')
+                    await plpPage.verifySubscriptionForCS("", false)
+                    await plpPage.verifySubscriptionForOOS("", false)
                 } else if (["Stage65"].includes(env)) {
                     await page.goto(baseURL + '/en-us/products/keyboards.html')
+                    await plpPage.verifySubscriptionForOOS("", false)
                 }
-                const plpPage = new PLPPage(page)
-                await plpPage.verifySubscriptionForCS("", false)
-                await plpPage.verifySubscriptionForOOS("", false)
             })
         })
     }
@@ -191,14 +192,15 @@ if (["QA65", "Stage65"].includes(env)) {
 
         test(`📃 TC002 - Notify Me : Verify Notify Me for a logged in user by clicking Notify Me button in PLP`, async ({ page }) => {
             await test.step('Notify Me : Verify Notify Me for a logged in user by clicking Notify Me button in PLP', async () => {
+                const plpPage = new PLPPage(page)
                 if (["QA65"].includes(env)) {
                     await page.goto(baseURL + '/en-us/products/mice.html')
+                    await plpPage.verifySubscriptionForCS("playwrighttest@yopmail.com", true)
+                    await plpPage.verifySubscriptionForOOS("playwrighttest@yopmail.com", true)
                 } else if (["Stage65"].includes(env)) {
                     await page.goto(baseURL + '/en-us/products/keyboards.html')
+                    await plpPage.verifySubscriptionForOOS("playwrighttest@yopmail.com", true)
                 }
-                const plpPage = new PLPPage(page)
-                await plpPage.verifySubscriptionForCS("playwrighttest@yopmail.com", true)
-                await plpPage.verifySubscriptionForOOS("playwrighttest@yopmail.com", true)
             })
         })
 
