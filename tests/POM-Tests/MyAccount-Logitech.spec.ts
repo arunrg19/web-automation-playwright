@@ -91,7 +91,7 @@ test.describe(`MyAccount : Non-Logged-In User Generic Test Cases executed in ${e
             const checkoutPage = new CheckoutPage(page)
             const orderStatusPage = new OrderStatusPage(page)
             const orderDetailsPage = new OrderDetailsPage(page)
-            await plpPage.clickAddToCart(1, '1')
+            await plpPage.clickAddToCart(1, '1')            
             await plpPage.clickCheckoutButton()
             await checkoutPage.fillNonLoggedInUserCheckoutDetails('marchtesting@yopmail.com', 'fname', 'lname', '7086 Railroad Court', '138177174886')
             //Payment should work only on lower environments

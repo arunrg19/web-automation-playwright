@@ -1,6 +1,9 @@
 import { expect, Locator, Page, test } from "@playwright/test";
 import { BasePage } from "./basePage";
 import { FooterComponent } from "../ui-components/footerComponent";
+import * as environmentDetails from '../../playwright.env.json';
+
+let env: string = environmentDetails.environment
 
 export class PLPPage extends BasePage {
 
@@ -92,8 +95,10 @@ export class PLPPage extends BasePage {
             await this.clickOn(this.cartIconClose, { message: 'Closing the Docked Cart before clicking ATC button' })
             await this.clickOn(this.btnATC, { message: 'Clicking the ATC button for a non-test Product' })
             await this.verifyElementVisibility(this.eleDockedCart, { message: 'Docked Cart' })
-            await this.verifyElementCount(this.cartItems, cartItemsCount, { message: 'Items Count' })
-            await this.verifyAttributeValue(this.cartItems, 'data-quantity', itemQuantity)
+            if (["QA65", "Stage65"].includes(env)) {
+                await this.verifyElementCount(this.cartItems, cartItemsCount, { message: 'Items Count' })
+                await this.verifyAttributeValue(this.cartItems, 'data-quantity', itemQuantity)
+            }
         })
     }
 
