@@ -65,13 +65,13 @@ export class AddressPage extends BasePage {
 
 
     public async verifyAddressBookDetails(): Promise<void> {
-        test.step(`Verify the Address Book Page is loaded`, async () => {
+        await test.step(`Verify the Address Book Page is loaded`, async () => {
             await this.verifyElementVisibility(this.addressView, { message: 'Address View Element' })
         })
     }
 
     public async clickAddAddressButton(): Promise<void> {
-        test.step(`Clicking Add Address in the address book`, async () => {
+        await test.step(`Clicking Add Address in the address book`, async () => {
             await this.clickElementByMouseCoordinates(this.btnAddAddress, { message: 'Add Address Plus Icon' })
             await this.verifyElementVisibility(this.addAddressPopUp, { message: 'Add Address Modal PopUp' })
         })
