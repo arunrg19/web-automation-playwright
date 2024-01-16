@@ -1,71 +1,41 @@
 {
   "cookies": [
     {
-      "name": "_cls_cfgver",
-      "value": "1825ee1a",
-      "domain": "report.logitech.gbqofs.io",
-      "path": "/reporting/3905eb64-8d9c-4ca0-bd98-3625e51e40b1",
-      "expires": -1,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "_cls_v",
-      "value": "b5949aba-e1e2-4caa-81c5-5dd35e545f94",
-      "domain": "report.logitech.gbqofs.io",
-      "path": "/reporting/3905eb64-8d9c-4ca0-bd98-3625e51e40b1",
-      "expires": -1,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "_cls_s",
-      "value": "ca02f2bf-1f5e-4840-9a5c-64af93a1d6b7:0",
-      "domain": "report.logitech.gbqofs.io",
-      "path": "/reporting/3905eb64-8d9c-4ca0-bd98-3625e51e40b1",
-      "expires": -1,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
       "name": "X-AB",
-      "value": "b0abdf9f9dff4cfeb2717a9960d575ec",
+      "value": "dc4e3509882e40c68a170453af779220",
       "domain": "sc-static.net",
       "path": "/scevent.min.js",
-      "expires": 1703235757.078773,
+      "expires": 1705478480.331396,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "x-amz-continuous-deployment-state",
-      "value": "AYABeFhsPVez12LRyROZskMz3VcAPQACAAFEABxkMjBwa3R3c202ZTR3LmNsb3VkZnJvbnQubmV0AAFHABVHMDk0NjA1NDNQQlJHUElBWFRNOEUAAQACQ0QAGkNvb2tpZQAAAIAAAAAM3HTKx4ZYgDaoPII6ADBKOTImIEd3Q3mQBWOlqj3y6mDJ4RR2bM5EmAaW3rJv3ndp9X5zN0Qwrmd8FyUzjmoCAAAAAAwABAAAAAAAAAAAAAAAAAAAKLNZnepZrGO5%2FmIh86gqmP%2F%2F%2F%2F8AAAABAAAAAAAAAAAAAAABAAAADDNHEH3H90%2FXBf8cGCBgDUXpCxUdigjvJepwKFM=",
+      "value": "AYABeGyKyeqlWCA+kum+uBe7WPgAPQACAAFEABxkMjBwa3R3c202ZTR3LmNsb3VkZnJvbnQubmV0AAFHABVHMDk0NjA1NDNQQlJHUElBWFRNOEUAAQACQ0QAGkNvb2tpZQAAAIAAAAAM9sJDs%2FAnBVIQFAfxADDRm4a+NnvQeLYfjlRfxwW4k7fE3GVboSxq7+SLXMQtCr9B16IhwdKqOrjepSCMBqICAAAAAAwABAAAAAAAAAAAAAAAAAAAGxwMTfIo5jWgsbnlNz0fcv%2F%2F%2F%2F8AAAABAAAAAAAAAAAAAAABAAAADMRG5ct+ZdpqQYLY1EtylQlsibR27X1hv9b%2FiPk=",
       "domain": "sandbox.id.logi.com",
       "path": "/assets/fonts",
-      "expires": 1703162544.963585,
+      "expires": 1705411086.917287,
       "httpOnly": true,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "x-amz-continuous-deployment-state",
-      "value": "AYABeFhsPVez12LRyROZskMz3VcAPQACAAFEABxkMjBwa3R3c202ZTR3LmNsb3VkZnJvbnQubmV0AAFHABVHMDk0NjA1NDNQQlJHUElBWFRNOEUAAQACQ0QAGkNvb2tpZQAAAIAAAAAM3HTKx4ZYgDaoPII6ADBKOTImIEd3Q3mQBWOlqj3y6mDJ4RR2bM5EmAaW3rJv3ndp9X5zN0Qwrmd8FyUzjmoCAAAAAAwABAAAAAAAAAAAAAAAAAAAKLNZnepZrGO5%2FmIh86gqmP%2F%2F%2F%2F8AAAABAAAAAAAAAAAAAAABAAAADDNHEH3H90%2FXBf8cGCBgDUXpCxUdigjvJepwKFM=",
+      "value": "AYABeGyKyeqlWCA+kum+uBe7WPgAPQACAAFEABxkMjBwa3R3c202ZTR3LmNsb3VkZnJvbnQubmV0AAFHABVHMDk0NjA1NDNQQlJHUElBWFRNOEUAAQACQ0QAGkNvb2tpZQAAAIAAAAAM9sJDs%2FAnBVIQFAfxADDRm4a+NnvQeLYfjlRfxwW4k7fE3GVboSxq7+SLXMQtCr9B16IhwdKqOrjepSCMBqICAAAAAAwABAAAAAAAAAAAAAAAAAAAGxwMTfIo5jWgsbnlNz0fcv%2F%2F%2F%2F8AAAABAAAAAAAAAAAAAAABAAAADMRG5ct+ZdpqQYLY1EtylQlsibR27X1hv9b%2FiPk=",
       "domain": "sandbox.id.logi.com",
       "path": "/locales",
-      "expires": 1703153417.71888,
+      "expires": 1705411085.71608,
       "httpOnly": true,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "x-amz-continuous-deployment-state",
-      "value": "AYABeJp1OWXjyhUr0hsQdNHfVpwAPQACAAFEABxkMjBwa3R3c202ZTR3LmNsb3VkZnJvbnQubmV0AAFHABVHMDk0NjA1NDNQQlJHUElBWFRNOEUAAQACQ0QAGkNvb2tpZQAAAIAAAAAMR91NvY%2F+s5rWLjlKADBUvzHQoVxFSLaqwAiuRgQHZ5ES6ch%2F7vLjZkNiUnuyjNjyq3E9HnxPwAtoY7yGoOECAAAAAAwABAAAAAAAAAAAAAAAAAAAs+FX8GWGjaai+PMIrq79a%2F%2F%2F%2F%2F8AAAABAAAAAAAAAAAAAAABAAAADBRDlgMb05Zo3%2FR7mwJW6niw0KKILPwIlU2k%2FW8=",
+      "value": "AYABeLSUC%2F%2FVVAZElc1I3zwKqwgAPQACAAFEABxkMjBwa3R3c202ZTR3LmNsb3VkZnJvbnQubmV0AAFHABVHMDk0NjA1NDNQQlJHUElBWFRNOEUAAQACQ0QAGkNvb2tpZQAAAIAAAAAM1tDO5kb2k3g4giffADBLUtoxm9ntOaBQmMU34zlOHBPRAiTfajuLLeGowc2zzHyDetdoslB+JXIIWGUOk9gCAAAAAAwABAAAAAAAAAAAAAAAAAAAbp8ScRjVv+Ds3Y1vVK8mav%2F%2F%2F%2F8AAAABAAAAAAAAAAAAAAABAAAADMkpNMJZ1No2QVSwIZa%2FFjn%2FdKj9FvJOmfUM70s=",
       "domain": "sandbox.id.logi.com",
       "path": "/css",
-      "expires": 1703164494.722283,
+      "expires": 1705408746.717149,
       "httpOnly": true,
       "secure": false,
       "sameSite": "Lax"
@@ -82,10 +52,10 @@
     },
     {
       "name": "demdex",
-      "value": "27908822891882281562770846245660553284",
+      "value": "74896075252176178291615130603709254999",
       "domain": ".demdex.net",
       "path": "/",
-      "expires": 1718701342.630753,
+      "expires": 1720944067.034092,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
@@ -102,110 +72,90 @@
     },
     {
       "name": "s_ecid",
-      "value": "MCMID%7C27449022793898165832799245869006494591",
+      "value": "MCMID%7C74479696497207328301641269635711837804",
       "domain": ".logitech.com",
       "path": "/",
-      "expires": 1737709357.197797,
+      "expires": 1739952080.143091,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
-      "name": "dpm",
-      "value": "27908822891882281562770846245660553284",
-      "domain": ".dpm.demdex.net",
-      "path": "/",
-      "expires": 1718701342.63069,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
       "name": "AMCV_970FAA6357F533BB0A495CC8%40AdobeOrg",
-      "value": "1176715910%7CMCIDTS%7C19713%7CMCMID%7C27449022793898165832799245869006494591%7CMCAAMLH-1703754141%7C9%7CMCAAMB-1703754141%7C6G1ynYcLPuiQxYZrsz_pkqfLG9yMXBpb2zX5dvJdYQJzPXImdj0y%7CMCOPTOUT-1703156541s%7CNONE%7CMCAID%7CNONE%7CMCSYNCSOP%7C411-19720%7CvVersion%7C5.4.0",
+      "value": "1176715910%7CMCIDTS%7C19739%7CMCMID%7C74479696497207328301641269635711837804%7CMCAAMLH-1705996862%7C9%7CMCAAMB-1705996862%7C6G1ynYcLPuiQxYZrsz_pkqfLG9yMXBpb2zX5dvJdYQJzPXImdj0y%7CMCOPTOUT-1705399263s%7CNONE%7CMCAID%7CNONE%7CvVersion%7C5.4.0",
       "domain": ".logitech.com",
       "path": "/",
-      "expires": 1737709342.632517,
+      "expires": 1739952063.687351,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "dextp",
-      "value": "144230-1-1703149342147|144231-1-1703149342253|144232-1-1703149342368|144233-1-1703149342485|144234-1-1703149342598|144235-1-1703149342706|144236-1-1703149342814|144237-1-1703149342920",
+      "value": "144230-1-1705392063136|144231-1-1705392063238|144232-1-1705392063341|144233-1-1705392063443|144234-1-1705392063544|144235-1-1705392063655|144236-1-1705392063758|144237-1-1705392063859",
       "domain": ".demdex.net",
       "path": "/",
-      "expires": 1718701342,
+      "expires": 1720944063,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "everest_g_v2",
-      "value": "g_surferid~ZYP-HwAIjHpHUgBH",
+      "value": "g_surferid~ZaY3wAAO43Vr-gBH",
       "domain": ".everesttech.net",
       "path": "/",
-      "expires": 1734685343.235991,
+      "expires": 1736928064.251548,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "i",
-      "value": "7824be90-9887-4264-9ff9-afe61851f39e|1703149343",
+      "value": "f9557c91-f58e-48a0-b5be-0dfeb4724b38|1705392064",
       "domain": ".openx.net",
       "path": "/",
-      "expires": 1734685343.278179,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "CMID",
-      "value": "ZYP-Hz3OAK65jXE6mYoinQAA",
-      "domain": ".casalemedia.com",
-      "path": "/",
-      "expires": 1734685357.480733,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "CMPS",
-      "value": "5534",
-      "domain": ".casalemedia.com",
-      "path": "/",
-      "expires": 1710925343.426651,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "CMPRO",
-      "value": "5534",
-      "domain": ".casalemedia.com",
-      "path": "/",
-      "expires": 1710925357.480801,
+      "expires": 1736928064.828485,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "KRTBCOOKIE_218",
-      "value": "4056-ZYP-HgAAAGbvAQOF&KRTB&22978-ZYP-HgAAAGbvAQOF&KRTB&23194-ZYP-HgAAAGbvAQOF&KRTB&23209-ZYP-HgAAAGbvAQOF",
+      "value": "4056-ZaY3wAAO4gdkGQBd&KRTB&22978-ZaY3wAAO4gdkGQBd&KRTB&23194-ZaY3wAAO4gdkGQBd&KRTB&23209-ZaY3wAAO4gdkGQBd",
       "domain": ".pubmatic.com",
       "path": "/",
-      "expires": 1710925344.092479,
+      "expires": 1713168066.108975,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
     {
-      "name": "uuid2",
-      "value": "3030253689725357977",
-      "domain": ".adnxs.com",
+      "name": "khaos",
+      "value": "LRG2EJIV-15-AT1E",
+      "domain": ".rubiconproject.com",
       "path": "/",
-      "expires": 1710925344.141887,
+      "expires": 1736928065.741712,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "audit",
+      "value": "1|LDUCBKhypw4LTiER20GbjlPN0mYiCcyspAY68aScK7VkTZ3FKkaiKD7YxRX8HJ+qgs6HhCwiCJOM1KxoLazIt8oW2SgbbjsrEOjxxX8e+bMd/UKytPeANWvWeOa7BjJetgMFcTIb4k5/6K+MJaMXAqDfiuUG3Hajm0RDjh4ja3N+rZsJSB4a12m1SoXrMY+RsqlSNZOaaDQ=",
+      "domain": ".rubiconproject.com",
+      "path": "/",
+      "expires": 1736928065.741827,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "receive-cookie-deprecation",
+      "value": "1",
+      "domain": "pixel.rubiconproject.com",
+      "path": "/",
+      "expires": 1713168065.741868,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
@@ -215,14 +165,44 @@
       "value": "en-us",
       "domain": "logi-stage-65.logitech.com",
       "path": "/",
-      "expires": 1708333343.953048,
+      "expires": 1710576066.006373,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
+      "name": "PugT",
+      "value": "1705371412",
+      "domain": ".pubmatic.com",
+      "path": "/",
+      "expires": 1707984066.109087,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "ev_sync_dd",
+      "value": "20240116",
+      "domain": ".everesttech.net",
+      "path": "/",
+      "expires": 1708070466.770474,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "usid",
+      "value": "e951c0e2-cf7a-4a8a-8d15-489a944ae631",
+      "domain": "logi-stage-65.logitech.com",
+      "path": "/",
+      "expires": 1710648066.775409,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
       "name": "YSC",
-      "value": "hulkY5ViHM8",
+      "value": "lmHnp8zJB3I",
       "domain": ".youtube.com",
       "path": "/",
       "expires": -1,
@@ -232,33 +212,13 @@
     },
     {
       "name": "VISITOR_INFO1_LIVE",
-      "value": "uWAc9nbRMu8",
+      "value": "PC0pslaJyjs",
       "domain": ".youtube.com",
       "path": "/",
-      "expires": 1718701344.108448,
+      "expires": 1720944066.832383,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
-    },
-    {
-      "name": "anj",
-      "value": "dTM7k!M4.FErk#WF']wIg2E?]hmsdI!]tbPl1MwL(!R7qUY#QaNCHHVYWJX5?SQ%kcVR$oN/S3</X%W#.wL5oa9/sZwfzrVl!jAy2bKk*e8php!!+Vr*S_<e",
-      "domain": ".adnxs.com",
-      "path": "/",
-      "expires": 1710925344.141716,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "usid",
-      "value": "82f98f01-3709-4ae1-ac2d-539b385a864a",
-      "domain": "logi-stage-65.logitech.com",
-      "path": "/",
-      "expires": 1708405344.815471,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "Lax"
     },
     {
       "name": "s_ips",
@@ -272,7 +232,7 @@
     },
     {
       "name": "s_tp",
-      "value": "2179",
+      "value": "2174",
       "domain": ".logitech.com",
       "path": "/",
       "expires": -1,
@@ -291,112 +251,22 @@
       "sameSite": "Lax"
     },
     {
-      "name": "_cls_v",
-      "value": "b5949aba-e1e2-4caa-81c5-5dd35e545f94",
-      "domain": ".logitech.com",
-      "path": "/",
-      "expires": 1737709356.948546,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "_cls_s",
-      "value": "ca02f2bf-1f5e-4840-9a5c-64af93a1d6b7:0",
-      "domain": ".logitech.com",
-      "path": "/",
-      "expires": -1,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "web_vitals_fid",
-      "value": "13.899999998509884",
-      "domain": "logi-stage-65.logitech.com",
-      "path": "/",
-      "expires": -1,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "_gcl_au",
-      "value": "1.1.939984590.1703149346",
-      "domain": ".logitech.com",
-      "path": "/",
-      "expires": 1710925346,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
       "name": "VC_visitor",
-      "value": "27449022793898165832799245869006494591",
+      "value": "74479696497207328301641269635711837804",
       "domain": ".logitech.com",
       "path": "/",
-      "expires": 1713517357.806243,
+      "expires": 1715760080.313076,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
-    },
-    {
-      "name": "TDID",
-      "value": "f53c4976-de3b-49a5-94fa-9f6c93e98f36",
-      "domain": ".adsrvr.org",
-      "path": "/",
-      "expires": 1734771758.263566,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "nmstat",
-      "value": "02705d7d-39ab-50bd-284c-5c19c5212d5d",
-      "domain": ".logitech.com",
-      "path": "/",
-      "expires": 1737709345.992835,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "_rdt_uuid",
-      "value": "1703149346168.f2bb36f4-606c-4b02-97ae-2dc3b7f936e8",
-      "domain": ".logitech.com",
-      "path": "/",
-      "expires": 1710925356,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "Strict"
     },
     {
       "name": "x-amz-continuous-deployment-state",
-      "value": "AYABeFhsPVez12LRyROZskMz3VcAPQACAAFEABxkMjBwa3R3c202ZTR3LmNsb3VkZnJvbnQubmV0AAFHABVHMDk0NjA1NDNQQlJHUElBWFRNOEUAAQACQ0QAGkNvb2tpZQAAAIAAAAAM3HTKx4ZYgDaoPII6ADBKOTImIEd3Q3mQBWOlqj3y6mDJ4RR2bM5EmAaW3rJv3ndp9X5zN0Qwrmd8FyUzjmoCAAAAAAwABAAAAAAAAAAAAAAAAAAAKLNZnepZrGO5%2FmIh86gqmP%2F%2F%2F%2F8AAAABAAAAAAAAAAAAAAABAAAADDNHEH3H90%2FXBf8cGCBgDUXpCxUdigjvJepwKFM=",
+      "value": "AYABeGyKyeqlWCA+kum+uBe7WPgAPQACAAFEABxkMjBwa3R3c202ZTR3LmNsb3VkZnJvbnQubmV0AAFHABVHMDk0NjA1NDNQQlJHUElBWFRNOEUAAQACQ0QAGkNvb2tpZQAAAIAAAAAM9sJDs%2FAnBVIQFAfxADDRm4a+NnvQeLYfjlRfxwW4k7fE3GVboSxq7+SLXMQtCr9B16IhwdKqOrjepSCMBqICAAAAAAwABAAAAAAAAAAAAAAAAAAAGxwMTfIo5jWgsbnlNz0fcv%2F%2F%2F%2F8AAAABAAAAAAAAAAAAAAABAAAADMRG5ct+ZdpqQYLY1EtylQlsibR27X1hv9b%2FiPk=",
       "domain": "sandbox.id.logi.com",
       "path": "/",
-      "expires": 1703153417.87694,
+      "expires": 1705398766.960854,
       "httpOnly": true,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "web_vitals_lcp",
-      "value": "14220.199999999255",
-      "domain": "logi-stage-65.logitech.com",
-      "path": "/",
-      "expires": -1,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "web_vitals_cls",
-      "value": "",
-      "domain": "logi-stage-65.logitech.com",
-      "path": "/",
-      "expires": -1,
-      "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
@@ -405,37 +275,37 @@
       "value": "j%3A%7B%22provider%22%3A%22email%22%2C%22email%22%3A%22a******%40logitech.com%22%7D",
       "domain": "sandbox.accounts.logi.com",
       "path": "/",
-      "expires": 1734685350.253582,
+      "expires": 1736928073.276181,
       "httpOnly": true,
       "secure": true,
       "sameSite": "Lax"
     },
     {
       "name": "lids.sid",
-      "value": "s%3AOCJPgO8_C2m6yb0V6y-Sd5WtTA0nfsl1.wvDSBp8V0aopxQumfI3S7zrn%2Ff2YABt7OISAzU3sXi4",
+      "value": "s%3Am0g2GhEeNqaB-nZR76KW7GBU5_owl7e9.0HJ2idBjaISaPGIRN0Wkx7hY9XLVoIIaweG1wcnnMG0",
       "domain": "sandbox.accounts.logi.com",
       "path": "/",
-      "expires": 1705741350.253657,
+      "expires": 1707984073.276238,
       "httpOnly": true,
       "secure": true,
       "sameSite": "Lax"
     },
     {
       "name": "access_token",
-      "value": "eyJ2ZXIiOiIxLjAiLCJqa3UiOiJzbGFzL3Byb2QvYmpkZF9kZXYiLCJraWQiOiJhNWIxNjFhYy00OWY3LTQ0OTQtOWY3Yy0wYzhmMzljYTU5OTMiLCJ0eXAiOiJqd3QiLCJjbHYiOiJKMi4zLjQiLCJhbGciOiJFUzI1NiJ9.eyJhdXQiOiJHVUlEIiwic2NwIjoic2ZjYy5zaG9wcGVyLW15YWNjb3VudC5iYXNrZXRzIHNmY2MuY2F0YWxvZ3Mgc2ZjYy5zaG9wcGVyLW15YWNjb3VudC5wYXltZW50aW5zdHJ1bWVudHMgc2ZjYy5zaG9wcGVyLWN1c3RvbWVycy5sb2dpbiBzZmNjLm9yZGVycyBzZmNjLnNob3BwZXItbXlhY2NvdW50Lm9yZGVycyBzZmNjLnNob3BwZXItcHJvZHVjdGxpc3RzIHNmY2Muc2hvcHBlci1wcm9tb3Rpb25zIHNmY2Muc2hvcHBlci1teWFjY291bnQucGF5bWVudGluc3RydW1lbnRzLnJ3IHNmY2Muc2hvcHBlci1teWFjY291bnQucHJvZHVjdGxpc3RzIHNmY2Muc2hvcHBlci1jYXRlZ29yaWVzIHNmY2Muc2hvcHBlci1teWFjY291bnQgc2ZjYy5zaG9wcGVyLW15YWNjb3VudC5hZGRyZXNzZXMgc2ZjYy5zaG9wcGVyLXByb2R1Y3RzIHNmY2Muc2hvcHBlci1teWFjY291bnQucncgc2ZjYy5wd2RsZXNzX2xvZ2luIHNmY2Muc2hvcHBlci1jdXN0b21lcnMucmVnaXN0ZXIgc2ZjYy5zaG9wcGVyLWJhc2tldHMtb3JkZXJzIHNmY2MuY2F0YWxvZ3Mucncgc2ZjYy5zaG9wcGVyLW15YWNjb3VudC5hZGRyZXNzZXMucncgc2ZjYy5zaG9wcGVyLW15YWNjb3VudC5wcm9kdWN0bGlzdHMucncgc2ZjYy5zaG9wcGVyLWJhc2tldHMtb3JkZXJzLnJ3IHNmY2Muc2hvcHBlci1naWZ0LWNlcnRpZmljYXRlcyBzZmNjLnNob3BwZXItcHJvZHVjdC1zZWFyY2ggc2ZjYy5jdXN0b21lcmxpc3RzIiwic3ViIjoiY2Mtc2xhczo6YmpkZF9kZXY6OnNjaWQ6ZjRjYTljMWEtOGNlMy00NTVkLWFkOWItN2U2NzhiMWRhYjg0Ojp1c2lkOjgyZjk4ZjAxLTM3MDktNGFlMS1hYzJkLTUzOWIzODVhODY0YSIsImN0eCI6InNsYXMiLCJpc3MiOiJzbGFzL3Byb2QvYmpkZF9kZXYiLCJpc3QiOjEsImF1ZCI6ImNvbW1lcmNlY2xvdWQvcHJvZC9iamRkX2RldiIsIm5iZiI6MTcwMzE0OTMyMiwic3R5IjoiVXNlciIsImlzYiI6InVpZG86ZWNvbTo6dXBuOkxJRFMtYTlhMTAzN2EtMjNkNC00ODYwLWFjZDktM2IzYzljNmQ0ZmQzOjp1aWRuOlRFU1RJTkcgU0FWRSBTQVZFIExBU1QgTkFNRTo6Z2NpZDphYm1iaEttckZLa2JjUmtYQVVtcVlZd3VzVjo6cmNpZDphYndIZzNsYmtabHVnUm1iQTBrV1lZa2JFWTo6Y2hpZDpVUyIsImV4cCI6MTcwMzE1MTE1MiwiaWF0IjoxNzAzMTQ5MzUyLCJqdGkiOiJDMkMtMTA5OTE1Mzc0MDE4MDg3NTI4MzM0MjkzMzYzNDgwMzIzOTQxIn0.AaH2cMDOBIEyalIAjsMv8vNp9BJo4SoK3Q4AJJJo8XXd_4uLG8VVkRRpvw606E7T4cqMIpHWaxlYPVrWm6LK0A",
+      "value": "eyJ2ZXIiOiIxLjAiLCJqa3UiOiJzbGFzL3Byb2QvYmpkZF9kZXYiLCJraWQiOiI0MWMwZmM3OC1kYmVjLTQ5NTAtYWUzYy04NzZjM2IxZDBhZTkiLCJ0eXAiOiJqd3QiLCJjbHYiOiJKMi4zLjQiLCJhbGciOiJFUzI1NiJ9.eyJhdXQiOiJHVUlEIiwic2NwIjoic2ZjYy5zaG9wcGVyLW15YWNjb3VudC5iYXNrZXRzIHNmY2MuY2F0YWxvZ3Mgc2ZjYy5zaG9wcGVyLW15YWNjb3VudC5wYXltZW50aW5zdHJ1bWVudHMgc2ZjYy5zaG9wcGVyLWN1c3RvbWVycy5sb2dpbiBzZmNjLm9yZGVycyBzZmNjLnNob3BwZXItbXlhY2NvdW50Lm9yZGVycyBzZmNjLnNob3BwZXItcHJvZHVjdGxpc3RzIHNmY2Muc2hvcHBlci1wcm9tb3Rpb25zIHNmY2Muc2hvcHBlci1teWFjY291bnQucGF5bWVudGluc3RydW1lbnRzLnJ3IHNmY2Muc2hvcHBlci1teWFjY291bnQucHJvZHVjdGxpc3RzIHNmY2Muc2hvcHBlci1jYXRlZ29yaWVzIHNmY2Muc2hvcHBlci1teWFjY291bnQgc2ZjYy5zaG9wcGVyLW15YWNjb3VudC5hZGRyZXNzZXMgc2ZjYy5zaG9wcGVyLXByb2R1Y3RzIHNmY2Muc2hvcHBlci1teWFjY291bnQucncgc2ZjYy5wd2RsZXNzX2xvZ2luIHNmY2Muc2hvcHBlci1jdXN0b21lcnMucmVnaXN0ZXIgc2ZjYy5zaG9wcGVyLWJhc2tldHMtb3JkZXJzIHNmY2MuY2F0YWxvZ3Mucncgc2ZjYy5zaG9wcGVyLW15YWNjb3VudC5hZGRyZXNzZXMucncgc2ZjYy5zaG9wcGVyLW15YWNjb3VudC5wcm9kdWN0bGlzdHMucncgc2ZjYy5zaG9wcGVyLWJhc2tldHMtb3JkZXJzLnJ3IHNmY2Muc2hvcHBlci1naWZ0LWNlcnRpZmljYXRlcyBzZmNjLnNob3BwZXItcHJvZHVjdC1zZWFyY2ggc2ZjYy5jdXN0b21lcmxpc3RzIiwic3ViIjoiY2Mtc2xhczo6YmpkZF9kZXY6OnNjaWQ6ZjRjYTljMWEtOGNlMy00NTVkLWFkOWItN2U2NzhiMWRhYjg0Ojp1c2lkOmU5NTFjMGUyLWNmN2EtNGE4YS04ZDE1LTQ4OWE5NDRhZTYzMSIsImN0eCI6InNsYXMiLCJpc3MiOiJzbGFzL3Byb2QvYmpkZF9kZXYiLCJpc3QiOjEsImF1ZCI6ImNvbW1lcmNlY2xvdWQvcHJvZC9iamRkX2RldiIsIm5iZiI6MTcwNTM5MjA0NSwic3R5IjoiVXNlciIsImlzYiI6InVpZG86ZWNvbTo6dXBuOkxJRFMtYTlhMTAzN2EtMjNkNC00ODYwLWFjZDktM2IzYzljNmQ0ZmQzOjp1aWRuOlRFU1RJTkcgU0FWRSBTQVZFIExBU1QgTkFNRTo6Z2NpZDphYnhySVprdWtVeHJnUncwdzF3cVlZd3JGRjo6cmNpZDphYndIZzNsYmtabHVnUm1iQTBrV1lZa2JFWTo6Y2hpZDpVUyIsImV4cCI6MTcwNTM5Mzg3NSwiaWF0IjoxNzA1MzkyMDc1LCJqdGkiOiJDMkMtMTA5OTE1Mzc0MDE4MDg3NTI4MzM2NTM2MzAyMTIzMjUwMTczIn0.lC9hvBgwWuA1sCtH4j1aD1hszmV6UBUziOSfkqwe-q73nkErVwBDAjaSYcqONX6lT4yOk2WNFdd2J8zy-B9xpQ",
       "domain": "logi-stage-65.logitech.com",
       "path": "/",
-      "expires": 1703151154.138921,
+      "expires": 1705393876.421957,
       "httpOnly": false,
       "secure": true,
       "sameSite": "Lax"
     },
     {
       "name": "refresh_token",
-      "value": "fP5QF7-nRYdFrPWk2j-N2TqGjZD4qKNDDZFu6D0ahqc",
+      "value": "C8AzqWK2zdlu0wCPf5fCCq9babMkR5BR7-HHDABA3QM",
       "domain": "logi-stage-65.logitech.com",
       "path": "/",
-      "expires": 1708405354.138952,
+      "expires": 1710648076.421987,
       "httpOnly": false,
       "secure": true,
       "sameSite": "Lax"
@@ -445,7 +315,7 @@
       "value": "abwHg3lbkZlugRmbA0kWYYkbEY",
       "domain": "logi-stage-65.logitech.com",
       "path": "/",
-      "expires": 1708405354.138973,
+      "expires": 1710648076.422007,
       "httpOnly": false,
       "secure": true,
       "sameSite": "Lax"
@@ -472,7 +342,7 @@
     },
     {
       "name": "dwsid",
-      "value": "RimJf5UKaut_iHNlgQwsR6_obZKdtshE_arGd1ZGh-zrkqyS9-vXy0Wt93WVmsQhoNykqdphsmTEJI6TymuSug==",
+      "value": "bMEaMUxhMX7woEWAYelzxA-AFs2mYMUlgbiAUsaBI6UY3-7BV6ZkdxsbymXd1GZBjYt7sMgzmIcXawTwaiYhBg==",
       "domain": "logi-stage-65.logitech.com",
       "path": "/",
       "expires": -1,
@@ -482,60 +352,60 @@
     },
     {
       "name": "sfcc_login",
-      "value": "304021|YTlhMTAzN2EtMjNkNC00ODYwLWFjZDktM2IzYzljNmQ0ZmQz|YWdhbmVzaEBsb2dpdGVjaC5jb20=",
+      "value": "600871|YTlhMTAzN2EtMjNkNC00ODYwLWFjZDktM2IzYzljNmQ0ZmQz|YWdhbmVzaEBsb2dpdGVjaC5jb20=",
       "domain": "logi-stage-65.logitech.com",
       "path": "/",
-      "expires": 1708405354.139038,
+      "expires": 1710648076.422086,
       "httpOnly": false,
       "secure": true,
       "sameSite": "Lax"
     },
     {
       "name": "account-tkn",
-      "value": "eyJhbGciOiJIUzI1NiJ9.ZXlKaGJHY2lPaUpTVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0lzSW10cFpDSTZJalJrWTJSaVpUSTNZV014TURsalpqQm1NMkkwWkRabFkyWXpNR1l3TVRobE5HUTRNVE15Tm1RaWZRLmV5SnFkR2tpT2lKbFpESTNNelprWWkweE0yVTNMVFExTmpjdE9UWXdOaTA0WkdJeE5ETXpNRGd5TjJVaUxDSjJaWElpT2lJeExqQWlMQ0poYlhJaU9sc2ljSGRrSWwwc0ltbGhkQ0k2TVRjd016RTBPVE0xTVN3aVpYaHdJam94TnpBek1UVXlPVFV4TENKaGRXUWlPaUptTVRjeE1qSTFNeTB3WldVNUxUUmlPVGN0TlRZd09TMDBOalJtTVRZME9UTTVPVGNpTENKcGMzTWlPaUpvZEhSd2N6b3ZMM05oYm1SaWIzZ3VZV05qYjNWdWRITXViRzluYVM1amIyMGlMQ0p6ZFdJaU9pSmhPV0V4TURNM1lTMHlNMlEwTFRRNE5qQXRZV05rT1MwellqTmpPV00yWkRSbVpETWlmUS5CQlgxcHhxd1JLOUtnQnRaY1g0WmVsb3VoZ0J0TTNfQlZKS3N3UG1ZMGppSGJDNTE3NHBxQ2syNFBtZV8zTVlmdks2Y3pKMjlOaUc5eURhdUN2ZndjUWtlLVJBczNPSHkxTDhMblZjT1V2c1BuWHlOd3ctSjB3QlBCZjNaRlNVc0RTTEZBdjBaYmNudXhEblhwNDZuWTdHa2VVdlRTWkN6d1Y4MTZ5QlV0YVpQNlpRZTJqLWxUemFsVUJWeWRKZ01tT0o3M0p2OTcwNkYtTHpjMXBwMFFVc2FYSmpScXFRa0d1WlF2S2VCR09Xb0NGOEFmVkpjTjYweER3UlpLM0I3Qk5Ib2xzSGt4WkJsNEp6VGhtWURFYkM2LS1wZ08yNXl2Z0RhYXdaN3k4bTdXeHB2a1JCTTVhbnFvSW5TYUc2ZzhBU2FOS09VR01GRHQwU1FEelQtMDhHcHg3OERKcXNXbGhBS1JaRU8tZzhnZVIxZzVjV1ZfNXhQNUY3T01heXFMemRCaHFWcFAzSjJOR09HaDVKYUpmblB1THk3UnZwam9XNFVsdi1FSXV4aE5pN2ZVTkR2MXJHNlcxSmdOTDZMbFlkQ2dxYXdsNlZhVXVMNXhVcVhlY3Nna0V2RElqOFU4blo3ZmdfLVJQN00xYWdLd1owX0o5c1ZHNXNHcEVDamczd2g5R1M2RlBEQ3J1TDZhNkhVcUVwMHdsZjRwTEw2UWwzQmhmSkhXSVhINUtpVFc3RXJZOWFRYktrbEhNdEpIN1dDb0xiVHBWTGlOSkJSU29WUnJPTElhOHpMeXpVWk1UNTRkNVUtMUN5dDZySUNwX01aUGY5TnByMENRazZGVWt2dVdpWTVOeWt0WVVFcnBibWpNOHJ3cDBQYlFhNWJhS2hOOVlqSDBjOA.-ha683dlb_F6VLIyGuWwNNbba_PqLDu70dIFDvJ7_wQ",
+      "value": "eyJhbGciOiJIUzI1NiJ9.ZXlKaGJHY2lPaUpTVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0lzSW10cFpDSTZJalJrWTJSaVpUSTNZV014TURsalpqQm1NMkkwWkRabFkyWXpNR1l3TVRobE5HUTRNVE15Tm1RaWZRLmV5SnFkR2tpT2lJM1lXUmpPR1UyTXkxak5qSTFMVFEwTjJVdFlUVTVZaTAxTjJaaVkyWm1ZMkZqTXpVaUxDSjJaWElpT2lJeExqQWlMQ0poYlhJaU9sc2ljSGRrSWwwc0ltbGhkQ0k2TVRjd05UTTVNakEzTkN3aVpYaHdJam94TnpBMU16azFOamMwTENKaGRXUWlPaUptTVRjeE1qSTFNeTB3WldVNUxUUmlPVGN0TlRZd09TMDBOalJtTVRZME9UTTVPVGNpTENKcGMzTWlPaUpvZEhSd2N6b3ZMM05oYm1SaWIzZ3VZV05qYjNWdWRITXViRzluYVM1amIyMGlMQ0p6ZFdJaU9pSmhPV0V4TURNM1lTMHlNMlEwTFRRNE5qQXRZV05rT1MwellqTmpPV00yWkRSbVpETWlmUS5DUE51YlBVNENuWmlrZ1FrU3VibldFOXRGMmlhRmp1OXA5M242bFJrazkzT3g3d0J6NDl0dnVvNE1HMno1Q0ZHdXQ5T2NKSDFYd25aWl82YkNndTBibmxmVktLaG9IYlhTVlRwcEJ5eVpUSkoxMzVsUC1UTlNLV0wxNktXTDM0ZWNKUGxKZGFXdEFBZWgxa0paR3hzcnNhRWhnelBJa1o5SjRDb0pUMXlPRWJfM0JLU2pVb2ZTZl9Za1NZMEp0NmxWSXdSRE1xVXd2R1Q2ZXVIZVd5MnUxR0VuXzVSNjQyRHJyWlBZdXZqNDJkQ3BwTDNVREZ2RDBYMGpPbTlOV1REQklYeHJheFBha0oyM0JyNDcxT3BZZ0lCX0F6SU5JTmd6bWFPaVllOU4xV3B2VFNtaENlbDZ5djkyMTdtblZLTXViX19seXptbzJJUmhJRzlUSVpQbFAxRWlYTFBERkVIa2JDa0ozS1llV25xcXlIMDdUYjhlRERiNHFSOXNZQ3Q1WUZiR19hNVpZMjVwYUYtUGk4ZUtDME1UQ09fV25QX2k1UHA5SUtYX0VVNVlBZkZ6bi03OFk2QUhuWmpndEliTEJ6SUpIY1FQc1dNZC1mRVotWWNmZ29peXdxQV9uZVU1bFJ4bkdHQ3lPZFNlRFBSazhtTTkxcGFVUDZkU1VHNHVES3BTYnEzbzhOQ0ZTRjdNdWcta0x4UXlLb0pFZ2FLbk5kTWRraHhKem5XcHZnV1cyMTRnczE1TVAzNEtCamFBREZDb1NIQmI3VC1xVFN6cm9uWi1DM3R3SmNHWTN5ZzN4THZGajE1TnhfS0M0T0RCdHlrcTNUSWRTOTE2S1JhbTlINzhGZWFqNzBjTHJfb0kyMElTdFpFT3Iyc0RYejhoc0tIelBtejZsRQ.kfY8KIwkNIL1dyEuy04Q5KM40JCm5Z-u7vRWLZaWFMw",
       "domain": "logi-stage-65.logitech.com",
       "path": "/",
-      "expires": 1708333354.139055,
+      "expires": 1710576076.422116,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "mbox",
-      "value": "session#6a5f682d0f5247cd9a43e6a932e1ba0d#1703151216|PC#6a5f682d0f5247cd9a43e6a932e1ba0d.35_0#1766394156",
+      "value": "session#558f9437c62e42fd8a3db9e5f7f9caea#1705393938|PC#558f9437c62e42fd8a3db9e5f7f9caea.35_0#1768636878",
       "domain": ".logitech.com",
       "path": "/",
-      "expires": 1737709355.679522,
+      "expires": 1739952077.978668,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "OptanonConsent",
-      "value": "isGpcEnabled=0&datestamp=Thu+Dec+21+2023+14%3A32%3A36+GMT%2B0530+(India+Standard+Time)&version=202311.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=5cf22f6b-cb2a-40e0-8db1-23fc6a3c4419&interactionCount=1&landingPath=https%3A%2F%2Flogi-stage-65.logitech.com%2Fen-us%2Fmy-account.html&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1",
+      "value": "isGpcEnabled=0&datestamp=Tue+Jan+16+2024+13%3A31%3A19+GMT%2B0530+(India+Standard+Time)&version=202311.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=4471c335-c9e9-4799-8079-1e81f72014a7&interactionCount=1&landingPath=https%3A%2F%2Flogi-stage-65.logitech.com%2Fen-us%2Fmy-account.html&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1",
       "domain": ".logitech.com",
       "path": "/",
-      "expires": 1718701356,
+      "expires": 1720944079,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "utag_main",
-      "value": "v_id:018c8b9c95500001279e3ff3bd2b05073003806b007e8$_sn:1$_se:2$_ss:0$_st:1703151155469$ses_id:1703149344085%3Bexp-session$_pn:2%3Bexp-session$_prevpage:my-account%3Bhttps%3A%2F%2Flogi-stage-65.logitech.com%2Fen-us%2Fmy-account.html%3Bexp-1703152956787$vapi_domain:logitech.com",
+      "value": "v_id:018d1149d6700016964d003cb94800073003806b007e8$_sn:1$_se:2$_ss:0$_st:1705393877755$ses_id:1705392068209%3Bexp-session$_pn:2%3Bexp-session$_prevpage:my-account%3Bhttps%3A%2F%2Flogi-stage-65.logitech.com%2Fen-us%2Fmy-account.html%3Bexp-1705395679740$vapi_domain:logitech.com",
       "domain": ".logitech.com",
       "path": "/",
-      "expires": 1734685356,
+      "expires": 1736928079,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "CONSENTMGR",
-      "value": "c1:1%7Cc2:0%7Cc3:0%7Cc4:0%7Cc5:0%7Cc6:0%7Cc7:0%7Cc8:0%7Cc9:0%7Cc10:0%7Cc11:0%7Cc12:0%7Cc13:0%7Cc14:0%7Cc15:1%7Cts:1703149356789%7Cconsent:true",
+      "value": "c1:1%7Cc2:0%7Cc3:0%7Cc4:0%7Cc5:0%7Cc6:0%7Cc7:0%7Cc8:0%7Cc9:0%7Cc10:0%7Cc11:0%7Cc12:0%7Cc13:0%7Cc14:0%7Cc15:1%7Cts:1705392079742%7Cconsent:true",
       "domain": ".logitech.com",
       "path": "/",
-      "expires": 1710925356,
+      "expires": 1713168079,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -555,7 +425,7 @@
       "value": "https://sandbox.id.logi.com/",
       "domain": ".logitech.com",
       "path": "/",
-      "expires": 1713517356.851771,
+      "expires": 1715760079.800559,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -571,372 +441,92 @@
       "sameSite": "Lax"
     },
     {
-      "name": "web_vitals_fcp",
-      "value": "5450.89999999851",
-      "domain": "logi-stage-65.logitech.com",
+      "name": "_cls_v",
+      "value": "e8a6be08-2578-4f1b-a54b-94d658507827",
+      "domain": ".logitech.com",
       "path": "/",
-      "expires": -1,
+      "expires": 1739952079.995,
       "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
+      "secure": true,
+      "sameSite": "None"
     },
     {
-      "name": "web_vitals_ttfb",
-      "value": "3888",
-      "domain": "logi-stage-65.logitech.com",
-      "path": "/",
-      "expires": -1,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "IR_gbd",
-      "value": "logitech.com",
+      "name": "_cls_s",
+      "value": "fb6ecf9f-334e-49c4-949b-f412a694e043:0",
       "domain": ".logitech.com",
       "path": "/",
       "expires": -1,
       "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
+      "secure": true,
+      "sameSite": "None"
     },
     {
-      "name": "IR_8585",
-      "value": "1703149357018%7C0%7C1703149357018%7C%7C",
+      "name": "_gcl_au",
+      "value": "1.1.1174154826.1705392080",
       "domain": ".logitech.com",
       "path": "/",
-      "expires": -1,
+      "expires": 1713168080,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
-    },
-    {
-      "name": "_ttp",
-      "value": "2ZqUyUzmvMtzKdvNzwjeLAB4Xgx",
-      "domain": ".tiktok.com",
-      "path": "/",
-      "expires": 1736845357.246206,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "IDE",
-      "value": "AHWqTUn7_yhWoVG9RS915lyp6Okytwpb8CSiFrV9l2kzIYeEOpAllAuvfXrZunfQ",
-      "domain": ".doubleclick.net",
-      "path": "/",
-      "expires": 1737709357.306311,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "KRTBCOOKIE_377",
-      "value": "6810-f53c4976-de3b-49a5-94fa-9f6c93e98f36&KRTB&22918-f53c4976-de3b-49a5-94fa-9f6c93e98f36&KRTB&22926-f53c4976-de3b-49a5-94fa-9f6c93e98f36&KRTB&23031-f53c4976-de3b-49a5-94fa-9f6c93e98f36",
-      "domain": ".pubmatic.com",
-      "path": "/",
-      "expires": 1710925357.505937,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "PugT",
-      "value": "1703149356",
-      "domain": ".pubmatic.com",
-      "path": "/",
-      "expires": 1705741357.506018,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "AWSALB",
-      "value": "zCByZ5ZUNPSNKHDN1HX57GfHvKptVFrOaNuc5+ReZPsQ0jCUjenkpR7pWYq8iKBLggzwCpNDa1EmCw39w4GL9N/AkLFdZbwBgnDCzyz3vRXrYD9+oBkpad+kOiuu",
-      "domain": "logi-stage-65.logitech.com",
-      "path": "/",
-      "expires": 1703754157.615897,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "AWSALBCORS",
-      "value": "zCByZ5ZUNPSNKHDN1HX57GfHvKptVFrOaNuc5+ReZPsQ0jCUjenkpR7pWYq8iKBLggzwCpNDa1EmCw39w4GL9N/AkLFdZbwBgnDCzyz3vRXrYD9+oBkpad+kOiuu",
-      "domain": "logi-stage-65.logitech.com",
-      "path": "/",
-      "expires": 1703754157.615997,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
     },
     {
       "name": "_scid",
-      "value": "0cd214b7-4432-42e2-8902-a767570e13ce",
+      "value": "58d91a86-6051-4fa0-9d8f-18b115195590",
       "domain": ".logitech.com",
       "path": "/",
-      "expires": 1737336055,
+      "expires": 1739578778,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_scid_r",
-      "value": "0cd214b7-4432-42e2-8902-a767570e13ce",
+      "value": "58d91a86-6051-4fa0-9d8f-18b115195590",
       "domain": ".logitech.com",
       "path": "/",
-      "expires": 1737336055,
+      "expires": 1739578778,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
-      "name": "_biz_uid",
-      "value": "bcbfafc53e7e4f34847cc6316fca968b",
-      "domain": ".logitech.com",
+      "name": "TDID",
+      "value": "5d38ebf9-1cd4-41bd-b062-92e4d41012b6",
+      "domain": ".adsrvr.org",
       "path": "/",
-      "expires": 1734685357,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "_biz_nA",
-      "value": "2",
-      "domain": ".logitech.com",
-      "path": "/",
-      "expires": 1734685357,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "tuuid",
-      "value": "35abf581-0fc2-45e3-9eba-01a263ea96e3",
-      "domain": ".bidswitch.net",
-      "path": "/",
-      "expires": 1734685358.209158,
+      "expires": 1737014480.523753,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
-    },
-    {
-      "name": "c",
-      "value": "1703149357",
-      "domain": ".bidswitch.net",
-      "path": "/",
-      "expires": 1734685357.97666,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "AWSALBCORS",
-      "value": "8B8oF87SUIzOAF1LGekIS+VBNqPtaCbVc67KWXCogfY6IvzcSjSGuIJ3Oalxz/iDgGaDOvhzTi22vI/2/5cuTGoQ/62oPpEnC8jjxDPAxdzkrxDwTdlffXQHflOq",
-      "domain": "6016578.global.siteimproveanalytics.io",
-      "path": "/",
-      "expires": 1703754158.032221,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "_BUID",
-      "value": "bcbfafc53e7e4f34847cc6316fca968b",
-      "domain": ".bizible.com",
-      "path": "/",
-      "expires": 1734685358.075352,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "_BUID",
-      "value": "fb9d0f62f2a458e4c297a9f782f5d18e",
-      "domain": ".bizibly.com",
-      "path": "/",
-      "expires": 1734685358.076161,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "li_sugr",
-      "value": "1dfc163a-5639-4ddb-aae6-80fc4994941b",
-      "domain": ".linkedin.com",
-      "path": "/",
-      "expires": 1710925358.487853,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "bcookie",
-      "value": "\"v=2&905949d6-41e2-4f91-89a8-be292ac0e6e7\"",
-      "domain": ".linkedin.com",
-      "path": "/",
-      "expires": 1734685358.488141,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "lidc",
-      "value": "\"b=VGST09:s=V:r=V:a=V:p=V:g=2749:u=1:x=1:i=1703149358:t=1703235758:v=2:sig=AQH1mUf2niLy8k5agzzHdFJixoOgX6Ob\"",
-      "domain": ".linkedin.com",
-      "path": "/",
-      "expires": 1703235759.148913,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "guest_id_marketing",
-      "value": "v1%3A170314935811437901",
-      "domain": ".twitter.com",
-      "path": "/",
-      "expires": 1737709358.200016,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "guest_id_ads",
-      "value": "v1%3A170314935811437901",
-      "domain": ".twitter.com",
-      "path": "/",
-      "expires": 1737709358.200089,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "personalization_id",
-      "value": "\"v1_8WO94/ZAtRiFL24T9xSGMg==\"",
-      "domain": ".twitter.com",
-      "path": "/",
-      "expires": 1737709358.200108,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "guest_id",
-      "value": "v1%3A170314935811437901",
-      "domain": ".twitter.com",
-      "path": "/",
-      "expires": 1737709358.200123,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "muc_ads",
-      "value": "3e454e46-dc0a-4862-9bd3-abf809f7a459",
-      "domain": ".t.co",
-      "path": "/",
-      "expires": 1737709358.204734,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "tuuid_lu",
-      "value": "1703149358",
-      "domain": ".bidswitch.net",
-      "path": "/",
-      "expires": 1734685358.209233,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "_fbp",
-      "value": "fb.1.1703149358215.1760479029",
-      "domain": ".logitech.com",
-      "path": "/",
-      "expires": 1710925358,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
     },
     {
       "name": "TDCPM",
-      "value": "CAESGQoKcmlnaHRtZWRpYRILCJ7piduyg8E8EAUSFQoGZ29vZ2xlEgsIqIiK27KDwTwQBRIWCgdydWJpY29uEgsI6KKK27KDwTwQBRIVCgZjYXNhbGUSCwiY5snEs4PBPBAFEhcKCHB1Ym1hdGljEgsIrJLKxLODwTwQBRIYCgliaWRzd2l0Y2gSCwjKuMrEs4PBPBAFGAUgAigDMgsIxKzM8cmDwTwQBUIPIg0IARIJCgV0aWVyMxABWgdtN2ZxcG82YAE.",
+      "value": "CAESFgoHcnViaWNvbhILCLrc-bnrnMs8EAUSGQoKcmlnaHRtZWRpYRILCLb6-bnrnMs8EAUSFQoGZ29vZ2xlEgsIzpn6ueucyzwQBRgFKAMyCwjmvPzmgZ3LPBAFQg8iDQgBEgkKBXRpZXIzEAFaB203ZnFwbzZgAQ..",
       "domain": ".adsrvr.org",
       "path": "/",
-      "expires": 1734771758.263683,
+      "expires": 1737014480.523842,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
     {
-      "name": "bounceClientVisit6187v",
-      "value": "N4IgNgDiBcIBYBcEQM4FIDMBBNAmAYnvmAPYDmAlgLQoICGZAplQGwCsAdKZQowMZwOfEgFsijAHZUArugIiAnlTp9h0iQg6IRYEABoQAJxggUdCQBMARiQAeHCha7kKQ0SAC+QA",
-      "domain": ".logitech.com",
+      "name": "AWSALB",
+      "value": "lQM1ns4Nj9f2WtFDNCZrwpKhygR4rZU52JRnWJmZSIZC2hMKGYBGszzpKCxsquC+zjQPu2+JY9MXjgU2YirALKmPB5kEOnyUNlnb166pjEkm9p0Vl3OJ+MmSTo1s",
+      "domain": "logi-stage-65.logitech.com",
       "path": "/",
-      "expires": 1703151158,
+      "expires": 1705996880.528785,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
-      "name": "sc_at",
-      "value": "v2|H4sIAAAAAAAAAAXBgQ0AQQQEwIokxMrTjreqUPzNVCx/rRVOp2CtJXUoTWIqOhy4s0/dUB55+gDotWDwMgAAAA==",
-      "domain": ".snapchat.com",
+      "name": "AWSALBCORS",
+      "value": "lQM1ns4Nj9f2WtFDNCZrwpKhygR4rZU52JRnWJmZSIZC2hMKGYBGszzpKCxsquC+zjQPu2+JY9MXjgU2YirALKmPB5kEOnyUNlnb166pjEkm9p0Vl3OJ+MmSTo1s",
+      "domain": "logi-stage-65.logitech.com",
       "path": "/",
-      "expires": 1736845358.29063,
+      "expires": 1705996880.528866,
       "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "UserMatchHistory",
-      "value": "AQI3VU8Qy8UVmwAAAYyLnM0x2DbS74W_XLtUgzeOD4WmXKbnHTU3nRt-ki85ZOrOOlnPyC_X7y0eyA",
-      "domain": ".linkedin.com",
-      "path": "/",
-      "expires": 1705741358.487986,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "AnalyticsSyncHistory",
-      "value": "AQILkQpZwNFmugAAAYyLnM0xu9tESMAItvjkMMcA-144yPudwVRk8PkYR3YBrPw9wNl2ctnvaE51wYZwSbBkow",
-      "domain": ".linkedin.com",
-      "path": "/",
-      "expires": 1705741358.48811,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "_biz_flagsA",
-      "value": "%7B%22Version%22%3A1%2C%22Ecid%22%3A%221432954787%22%2C%22ViewThrough%22%3A%221%22%2C%22XDomain%22%3A%221%22%7D",
-      "domain": ".logitech.com",
-      "path": "/",
-      "expires": 1734685358,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "_biz_pendingA",
-      "value": "%5B%5D",
-      "domain": ".logitech.com",
-      "path": "/",
-      "expires": 1734685358,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "ad-id",
-      "value": "A9pSxbqbJEq8o_m0qO8yO1Q|t",
-      "domain": ".amazon-adsystem.com",
-      "path": "/",
-      "expires": 1719824558.694012,
-      "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     }
@@ -951,38 +541,18 @@
         },
         {
           "name": "CartReminderStore",
-          "value": "{\"sessionExpiry\":1703151156227}"
-        },
-        {
-          "name": "gb_unbound.app.conf",
-          "value": "eyJjb25maWd1cmF0aW9uIjp7InRoaXJkUGFydHlBdHRyaWJ1dGVSdWxlcyI6W3sidXJsTWF0Y2hlciI6InZyc19sb2dpdGUxX3Zyc2xvZ2l0ZWNoY29tIiwiYXR0cmlidXRlcyI6WyJwYWdlTmFtZSJdfSx7InVybE1hdGNoZXIiOiJ2cnNfbG9naXRlMV92cnNsb2dpdGVjaGciLCJhdHRyaWJ1dGVzIjpbInBhZ2VOYW1lIl19XSwicGFnZUF0dHJpYnV0ZVJ1bGVzIjpbeyJpZCI6IjE5NyIsIm5hbWUiOiJQYWdlIEdyb3VwIElkZW50aWZpZXIiLCJydWxlcyI6W3sidHlwZSI6Imdsb2JhbE9iamVjdCIsImRlbGltaXRlciI6IiwiLCJwYXRocyI6WyJzLnBhZ2VOYW1lIl19XSwicGFnZVVybCI6IioiLCJkZWxpbWl0ZXIiOiIsIn1dLCJoYXNoIjoiMTgyNWVlMWEifSwiYXBwSWQiOjJ9"
+          "value": "{\"sessionExpiry\":1705393879448}"
         },
         {
           "name": "gb.sid",
-          "value": "ca02f2bf-1f5e-4840-9a5c-64af93a1d6b7:0"
+          "value": "fb6ecf9f-334e-49c4-949b-f412a694e043:0"
         },
         {
           "name": "u_sclid",
-          "value": "36f940c5-a293-485c-a5cc-1251bcef4a95"
+          "value": "9e820d67-a7ce-484f-9dbb-62da57ecc43e"
         },
         {
           "name": "gb.recording.bychance.prev_th",
-          "value": "1"
-        },
-        {
-          "name": "bounceClientVisit6187",
-          "value": ""
-        },
-        {
-          "name": "gb.dom.bychance.enabled",
-          "value": "true"
-        },
-        {
-          "name": "2MmYtZqF3jbWpA-rapid-js-visitor-3",
-          "value": "{\"visitorTimestamp\":1703149356898,\"numVisitorPageViews\":2,\"numSessionPageViews\":2,\"visitorId\":\"a307ae78-13a6-42ad-824a-f1309ba137e8\",\"numSessions\":1,\"sessionId\":\"029537b2-8c47-4356-af34-9804f65e3580\",\"bandwidth\":\"\"}"
-        },
-        {
-          "name": "gb.dom.bychance.prev_th",
           "value": "1"
         },
         {
@@ -990,52 +560,44 @@
           "value": "{\"usercardinfo\":\"usercardinfo\"}"
         },
         {
+          "name": "gb.dom.bychance.enabled",
+          "value": "true"
+        },
+        {
+          "name": "2MmYtZqF3jbWpA-rapid-js-visitor-3",
+          "value": "{\"visitorTimestamp\":1705392079847,\"numVisitorPageViews\":2,\"numSessionPageViews\":2,\"visitorId\":\"8f1df784-0103-4d95-a983-a83315f43766\",\"numSessions\":1,\"sessionId\":\"33e1aad2-a596-4a1f-999a-5c687acb5b45\",\"bandwidth\":\"\"}"
+        },
+        {
+          "name": "gb.dom.bychance.prev_th",
+          "value": "1"
+        },
+        {
+          "name": "tgt:tlm:0",
+          "value": "{\"execution\":1068.3,\"parsing\":0,\"request\":{\"tls\":268.9,\"timeToFirstByte\":284.8,\"download\":0.5,\"responseSize\":300},\"telemetryServerToken\":\"yb1DiZ+ElC1x55dHgw2yNDBaFiqKQ2ZaSfkstwPvmYo=\",\"mode\":\"local\",\"features\":{\"executePageLoad\":true,\"prefetchViewCount\":1,\"decisioningMethod\":\"server-side\"},\"requestId\":\"0a963537e17c479188f7ea801a721282\",\"timestamp\":1705392063671}"
+        },
+        {
           "name": "u_sclid_r",
-          "value": "36f940c5-a293-485c-a5cc-1251bcef4a95"
+          "value": "9e820d67-a7ce-484f-9dbb-62da57ecc43e"
         },
         {
           "name": "gb.recording.bychance.enabled",
           "value": "true"
         },
         {
-          "name": "tgt:tlm:0",
-          "value": "{\"execution\":1017.2,\"parsing\":0,\"request\":{\"tls\":255.1,\"timeToFirstByte\":266.4,\"download\":0.5,\"responseSize\":302},\"telemetryServerToken\":\"13OD8mmKQLOFlv9DVqEli4GBqFM3vK/wBROgLDdPAH8=\",\"mode\":\"local\",\"features\":{\"executePageLoad\":true,\"prefetchViewCount\":1,\"decisioningMethod\":\"server-side\"},\"requestId\":\"e0d0a18610a04e83bc62f4de02cd6432\",\"timestamp\":1703149342092}"
-        },
-        {
           "name": "tgt:tlm:1",
-          "value": "{\"execution\":263.9,\"parsing\":0,\"request\":{\"timeToFirstByte\":259.3,\"download\":1.3,\"responseSize\":300},\"telemetryServerToken\":\"wCo/+PJpxeEeLo4mV5p9XzP0VwjlSgSJ2cR3h1olvXM=\",\"mode\":\"local\",\"features\":{\"executePageLoad\":true,\"prefetchViewCount\":1,\"decisioningMethod\":\"server-side\"},\"requestId\":\"ca2684b1b95e4c9888fb136b19aa04ae\",\"timestamp\":1703149355662}"
-        },
-        {
-          "name": "gb_unbound.res.pending",
-          "value": "WyJodHRwczovL2xvZ2ktc3RhZ2UtNjUubG9naXRlY2guY29tL2NvbnRlbnQvZGFtL2xvZ2l0ZWNoL2VuL25hdi9icmFuZC1sb2dvcy9tZXZvLnN2ZyIsImh0dHBzOi8vbG9naS1zdGFnZS02NS5sb2dpdGVjaC5jb20vbGlicy9jcS9leHBlcmllbmNlLWZyYWdtZW50cy9jb21wb25lbnRzL3hmcGFnZS9jb250ZW50Lm1pbi41Nzk3ZThlN2Q2OGI5ZDhiZjczZWU3NjJjMzZjMjQyNi5jc3MiLCJodHRwczovL2xvZ2ktc3RhZ2UtNjUubG9naXRlY2guY29tL2NvbnRlbnQvZGFtL2xvZ2l0ZWNoL2VuL25hdi9icmFuZC1sb2dvcy9tZXZvLWdyZXkuc3ZnIiwiaHR0cHM6Ly9sb2dpLXN0YWdlLTY1LmxvZ2l0ZWNoLmNvbS9ldGMuY2xpZW50bGlicy9sb2dpdGVjaC9jbGllbnRsaWJzL2NvbW1vbi9yZXNvdXJjZXMvZm9udHMvbG9naS1pY29uLTIud29mZjIiLCJodHRwczovL2xvZ2ktc3RhZ2UtNjUubG9naXRlY2guY29tL2NvbnRlbnQvZGFtL2xvZ2l0ZWNoL2NvbW1vbi90d2l0dGVyLnN2ZyJd"
-        },
-        {
-          "name": "gb_unbound.cls_v_expr",
-          "value": "1825"
+          "value": "{\"execution\":276.7,\"parsing\":0.1,\"request\":{\"timeToFirstByte\":273.3,\"download\":0.5,\"responseSize\":301},\"telemetryServerToken\":\"wCo/+PJpxeEeLo4mV5p9XzP0VwjlSgSJ2cR3h1olvXM=\",\"mode\":\"local\",\"features\":{\"executePageLoad\":true,\"prefetchViewCount\":1,\"decisioningMethod\":\"server-side\"},\"requestId\":\"14dc91a72bbd424aac72d8947be9bba8\",\"timestamp\":1705392077966}"
         },
         {
           "name": "2MmYtZqF3jbWpA-rapid-js-qoe-5",
-          "value": "{\"sessionTimeSaved\":5440.7999999932945,\"journeyTime\":5440.7999999932945,\"entries\":119,\"timeSaved\":5440.7999999932945,\"score\":13700,\"pageMeasured\":\"https://logi-stage-65.logitech.com/en-us/my-account.html\",\"pageMeasuredCategory\":\"content\",\"violations\":[{\"lastByteTime\":1089.800000000745,\"implementationType\":\"dom\",\"type\":4,\"zone\":1,\"resourceName\":\"https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA\",\"resourceSizeBytes\":107188},{\"lastByteTime\":1398.5,\"implementationType\":\"dom\",\"type\":4,\"zone\":1,\"resourceName\":\"https://logi-stage-65.logitech.com/etc.clientlibs/logitech/clientlibs/logitech-galaxy-pagelibs.min.27462ce7d6b37c0151d9c20d398cd995.css\",\"resourceSizeBytes\":967920},{\"lastByteTime\":798.8000000007451,\"implementationType\":\"dom\",\"type\":4,\"zone\":1,\"resourceName\":\"https://logi-stage-65.logitech.com/etc.clientlibs/logitech-common/clientlibs/onetrust.min.41ac4cd8610e597df080b70136957dff.js\",\"resourceSizeBytes\":4670},{\"lastByteTime\":986.5,\"implementationType\":\"dom\",\"type\":4,\"zone\":1,\"resourceName\":\"https://webtags.logitech.com/main/prod/utag.sync.js\",\"resourceSizeBytes\":0},{\"lastByteTime\":765.1999999992549,\"implementationType\":\"dom\",\"type\":4,\"zone\":1,\"resourceName\":\"https://logi-stage-65.logitech.com/libs/cq/experience-fragments/components/xfpage/content.min.5797e8e7d68b9d8bf73ee762c36c2426.css\",\"resourceSizeBytes\":0},{\"lastByteTime\":796.6000000014901,\"implementationType\":\"dom\",\"type\":4,\"zone\":1,\"resourceName\":\"https://logi-stage-65.logitech.com/etc.clientlibs/logitech/clientlibs/dependencies.min.669a5c8af979e693dcb3206e2df8adcd.js\",\"resourceSizeBytes\":45325},{\"lastByteTime\":807.3000000007451,\"implementationType\":\"dom\",\"type\":4,\"zone\":1,\"resourceName\":\"https://logi-stage-65.logitech.com/etc.clientlibs/clientlibs/granite/jquery/granite/csrf.min.652a558c3774088b61b0530c184710d1.js\",\"resourceSizeBytes\":3618},{\"lastByteTime\":807.6000000014901,\"implementationType\":\"dom\",\"type\":4,\"zone\":1,\"resourceName\":\"https://logi-stage-65.logitech.com/etc/clientlibs/granite/jquery/granite/csrf.min.a3d1a528306cbb0d84ffaf8f8ef22111.js\",\"resourceSizeBytes\":0},{\"lastByteTime\":5173.89999999851,\"implementationType\":\"dom\",\"type\":4,\"zone\":1,\"resourceName\":\"https://logi-stage-65.logitech.com/etc.clientlibs/logitech/clientlibs/logitech-galaxy-pagelibs.min.10a10f8d98b3a1310f1dcbe98a79f2f9.js\",\"resourceSizeBytes\":2556349},{\"lastByteTime\":769.6999999992549,\"implementationType\":\"dom\",\"type\":4,\"zone\":1,\"resourceName\":\"https://qoe-1.yottaa.net/api/v1/configure.rapid.js?key=2MmYtZqF3jbWpA&ul=en-US&dl=https%3A%2F%2Flogi-stage-65.logitech.com%2Fen-us%2Fmy-account.html&dt=&sd=24&sr=1280,720&vp=1280,720&ct=3g&rtt=300\",\"resourceSizeBytes\":1794},{\"lastByteTime\":1058,\"implementationType\":\"dom\",\"type\":4,\"zone\":1,\"resourceName\":\"https://dpm.demdex.net/id?d_visid_ver=5.4.0&d_fieldgroup=MC&d_rtbd=json&d_ver=2&d_orgid=970FAA6357F533BB0A495CC8%40AdobeOrg&d_nsid=0&ts=1703149339988\",\"resourceSizeBytes\":0},{\"lastByteTime\":975.8999999985099,\"implementationType\":\"dom\",\"type\":4,\"zone\":1,\"resourceName\":\"https://resource.logitech.com/w_0.5,f_auto,q_auto/content/dam/logitech/en/nav/logi-logo-anim-dark.png\",\"resourceSizeBytes\":18244},{\"lastByteTime\":1204.199999999255,\"implementationType\":\"dom\",\"type\":4,\"zone\":1,\"resourceName\":\"https://www.logitech.com/asset/fonts/lineto-brown-pro-bold.woff\",\"resourceSizeBytes\":0},{\"lastByteTime\":1037.300000000745,\"implementationType\":\"dom\",\"type\":4,\"zone\":1,\"resourceName\":\"https://www.logitech.com/asset/fonts/lineto-brown-pro-regular.woff\",\"resourceSizeBytes\":0},{\"lastByteTime\":1313.4000000022352,\"implementationType\":\"dom\",\"type\":4,\"zone\":1,\"resourceName\":\"https://www.logitech.com/asset/fonts/lineto-brown-pro-light.woff\",\"resourceSizeBytes\":0},{\"lastByteTime\":4485.199999999255,\"implementationType\":\"dom\",\"type\":4,\"zone\":1,\"resourceName\":\"https://logi-stage-65.logitech.com/content/dam/logitech/my-account/hero-authenticated.png\",\"resourceSizeBytes\":507034},{\"lastByteTime\":763,\"implementationType\":\"dom\",\"type\":4,\"zone\":1,\"resourceName\":\"https://logi-stage-65.logitech.com/content/dam/logitech/common/twitter.svg\",\"resourceSizeBytes\":1805},{\"lastByteTime\":751.6000000014901,\"implementationType\":\"dom\",\"type\":4,\"zone\":1,\"resourceName\":\"https://logi-stage-65.logitech.com/content/dam/logitech/common/instagram-logo.svg\",\"resourceSizeBytes\":1441},{\"lastByteTime\":1088.699999999255,\"implementationType\":\"dom\",\"type\":4,\"zone\":1,\"resourceName\":\"https://logitech.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Flogi-stage-65.logitech.com\",\"resourceSizeBytes\":0,\"delayedType\":\"none\",\"stack\":\"Error\\n    at A.captureStack (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:32689)\\n    at callback (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:33717)\\n    at k.publish (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:26356)\\n    at db (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17199)\\n    at HTMLBodyElement.Tb [as appendChild] (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17154)\\n    at e (https://webtags.logitech.com/main/prod/utag.sync.js:24:20732)\\n    at Object.attachIframe (https://webtags.logitech.com/main/prod/utag.sync.js:24:21481)\\n    at e (https://webtags.logitech.com/main/prod/utag.sync.js:24:26933)\\n    at Object.attachIframeASAP (https://webtags.logitech.com/main/prod/utag.sync.js:24:26977)\\n    at Object.processIDCallData (https://webtags.logitech.com/main/prod/utag.sync.js:24:26573)\"},{\"lastByteTime\":804.1000000014901,\"implementationType\":\"dom\",\"type\":4,\"zone\":1,\"resourceName\":\"https://webanalytics.logitech.com/id?d_visid_ver=5.4.0&d_fieldgroup=A&mcorgid=970FAA6357F533BB0A495CC8%40AdobeOrg&mid=27449022793898165832799245869006494591&ts=1703149341060\",\"resourceSizeBytes\":0},{\"lastByteTime\":1566.800000000745,\"implementationType\":\"dom\",\"type\":4,\"zone\":1,\"resourceName\":\"https://cm.everesttech.net/cm/dd?d_uuid=27908822891882281562770846245660553284\",\"resourceSizeBytes\":0},{\"lastByteTime\":1014.1999999992549,\"implementationType\":\"dom\",\"type\":4,\"zone\":1,\"resourceName\":\"https://webtarget.logitech.com/rest/v1/delivery?client=logitech&sessionId=6a5f682d0f5247cd9a43e6a932e1ba0d&version=2.9.0\",\"resourceSizeBytes\":351},{\"lastByteTime\":799,\"implementationType\":\"dom\",\"type\":4,\"zone\":3,\"resourceName\":\"https://logi-stage-65.logitech.com/content/dam/logitech/en/nav/brand-logos/ultimate-ears-grey.svg\",\"resourceSizeBytes\":4694},{\"lastByteTime\":844.3000000007451,\"implementationType\":\"dom\",\"type\":4,\"zone\":3,\"resourceName\":\"https://logi-stage-65.logitech.com/content/dam/logitech/en/nav/brand-logos/ultimate-ears.svg\",\"resourceSizeBytes\":4694},{\"lastByteTime\":845.7999999970198,\"implementationType\":\"dom\",\"type\":4,\"zone\":3,\"resourceName\":\"https://logi-stage-65.logitech.com/content/dam/logitech/en/nav/brand-logos/jaybird-grey.svg\",\"resourceSizeBytes\":3240},{\"lastByteTime\":995.5999999977648,\"implementationType\":\"dom\",\"type\":4,\"zone\":3,\"resourceName\":\"https://logi-stage-65.logitech.com/content/dam/logitech/en/nav/brand-logos/jaybird.svg\",\"resourceSizeBytes\":3263},{\"lastByteTime\":1111.8999999985099,\"implementationType\":\"dom\",\"type\":4,\"zone\":3,\"resourceName\":\"https://logi-stage-65.logitech.com/content/dam/logitech/en/nav/brand-logos/mevo-grey.svg\",\"resourceSizeBytes\":530},{\"lastByteTime\":1149.199999999255,\"implementationType\":\"dom\",\"type\":4,\"zone\":3,\"resourceName\":\"https://logi-stage-65.logitech.com/content/dam/logitech/en/nav/brand-logos/mevo.svg\",\"resourceSizeBytes\":515},{\"lastByteTime\":768.3000000007451,\"implementationType\":\"dom\",\"type\":4,\"zone\":3,\"resourceName\":\"https://logi-stage-65.logitech.com/content/logitech/amr/live/en_us/my-account.accesstokentokengenerator.json?locale=en-US&suffix=/en-us\",\"resourceSizeBytes\":1913},{\"lastByteTime\":0,\"implementationType\":\"dom\",\"type\":2,\"zone\":0,\"resourceName\":\"https://resources.xg4ken.com/js/v2/ktag.js?tid=KT-N3AA7-3EB\",\"resourceSizeBytes\":0,\"delayedType\":\"none\",\"stack\":\"Error\\n    at A.captureStack (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:32689)\\n    at callback (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:33717)\\n    at k.publish (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:26356)\\n    at db (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17199)\\n    at HTMLHeadElement.Tb [as appendChild] (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17154)\\n    at https://webtags.logitech.com/main/prod/utag.438.js?utv=ut4.49.202007282211:4:208\\n    at u.send (https://webtags.logitech.com/main/prod/utag.438.js?utv=ut4.49.202007282211:4:224)\\n    at Object.LOAD (https://webtags.logitech.com/main/prod/utag.js:47:385)\\n    at https://webtags.logitech.com/main/prod/utag.438.js?utv=ut4.49.202007282211:4:361\\n    at https://webtags.logitech.com/main/prod/utag.438.js?utv=ut4.49.202007282211:4:372\"},{\"lastByteTime\":0,\"implementationType\":\"dom\",\"type\":2,\"zone\":0,\"resourceName\":\"https://webtags.logitech.com/main/prod/utag.625.js?utv=ut4.49.202312190225\",\"resourceSizeBytes\":0,\"delayedType\":\"none\",\"stack\":\"Error\\n    at A.captureStack (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:32689)\\n    at callback (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:33717)\\n    at k.publish (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:26356)\\n    at db (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17199)\\n    at HTMLBodyElement.Tb [as appendChild] (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17154)\\n    at Object.loader (https://webtags.logitech.com/main/prod/utag.js:79:157)\\n    at Object.AS (https://webtags.logitech.com/main/prod/utag.js:15:78)\\n    at utag.loader.INIT (https://webtags.logitech.com/main/prod/utag.js:330:99)\\n    at utag.loader.PINIT (https://webtags.logitech.com/main/prod/utag.js:329:14)\\n    at https://webtags.logitech.com/main/prod/utag.js:444:233\"},{\"lastByteTime\":0,\"implementationType\":\"dom\",\"type\":2,\"zone\":0,\"resourceName\":\"https://webtags.logitech.com/main/prod/utag.630.js?utv=ut4.49.202209191227\",\"resourceSizeBytes\":0,\"delayedType\":\"none\",\"stack\":\"Error\\n    at A.captureStack (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:32689)\\n    at callback (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:33717)\\n    at k.publish (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:26356)\\n    at db (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17199)\\n    at HTMLBodyElement.Tb [as appendChild] (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17154)\\n    at Object.loader (https://webtags.logitech.com/main/prod/utag.js:79:157)\\n    at Object.AS (https://webtags.logitech.com/main/prod/utag.js:15:78)\\n    at utag.loader.INIT (https://webtags.logitech.com/main/prod/utag.js:330:99)\\n    at utag.loader.PINIT (https://webtags.logitech.com/main/prod/utag.js:329:14)\\n    at https://webtags.logitech.com/main/prod/utag.js:444:233\"},{\"lastByteTime\":0,\"implementationType\":\"dom\",\"type\":2,\"zone\":0,\"resourceName\":\"https://js.adsrvr.org/up_loader.1.1.0.js\",\"resourceSizeBytes\":0,\"delayedType\":\"none\",\"stack\":\"Error\\n    at A.captureStack (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:32689)\\n    at callback (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:33717)\\n    at k.publish (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:26356)\\n    at db (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17199)\\n    at HTMLBodyElement.Tb [as appendChild] (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17154)\\n    at Object.loader (https://webtags.logitech.com/main/prod/utag.js:79:157)\\n    at u.send (https://webtags.logitech.com/main/prod/utag.284.js?utv=ut4.49.202310272125:4:510)\\n    at Object.LOAD (https://webtags.logitech.com/main/prod/utag.js:47:385)\\n    at https://webtags.logitech.com/main/prod/utag.284.js?utv=ut4.49.202310272125:5:26\\n    at https://webtags.logitech.com/main/prod/utag.284.js?utv=ut4.49.202310272125:5:37\"},{\"lastByteTime\":0,\"implementationType\":\"dom\",\"type\":2,\"zone\":0,\"resourceName\":\"https://connect.facebook.net/en_US/fbevents.js\",\"resourceSizeBytes\":0,\"delayedType\":\"none\",\"stack\":\"Error\\n    at A.captureStack (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:32689)\\n    at callback (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:33717)\\n    at k.publish (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:26356)\\n    at db (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17199)\\n    at HTMLBodyElement.Tb [as appendChild] (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17154)\\n    at Object.loader (https://webtags.logitech.com/main/prod/utag.js:79:157)\\n    at u.send (https://webtags.logitech.com/main/prod/utag.313.js?utv=ut4.49.202311160929:26:284)\\n    at Object.LOAD (https://webtags.logitech.com/main/prod/utag.js:47:385)\\n    at https://webtags.logitech.com/main/prod/utag.313.js?utv=ut4.49.202311160929:29:26\\n    at https://webtags.logitech.com/main/prod/utag.313.js?utv=ut4.49.202311160929:29:36\"},{\"lastByteTime\":0,\"implementationType\":\"dom\",\"type\":2,\"zone\":0,\"resourceName\":\"https://snap.licdn.com/li.lms-analytics/insight.min.js\",\"resourceSizeBytes\":0,\"delayedType\":\"none\",\"stack\":\"Error\\n    at A.captureStack (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:32689)\\n    at callback (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:33717)\\n    at k.publish (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:26356)\\n    at db (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17199)\\n    at HTMLBodyElement.Tb [as appendChild] (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17154)\\n    at Object.loader (https://webtags.logitech.com/main/prod/utag.js:79:157)\\n    at u.send (https://webtags.logitech.com/main/prod/utag.395.js?utv=ut4.49.202102250548:9:275)\\n    at Object.LOAD (https://webtags.logitech.com/main/prod/utag.js:47:385)\\n    at https://webtags.logitech.com/main/prod/utag.395.js?utv=ut4.49.202102250548:9:429\\n    at https://webtags.logitech.com/main/prod/utag.395.js?utv=ut4.49.202102250548:9:439\"},{\"lastByteTime\":0,\"implementationType\":\"dom\",\"type\":2,\"zone\":0,\"resourceName\":\"https://www.googletagmanager.com/gtag/js?id=AW-316290540\",\"resourceSizeBytes\":0,\"delayedType\":\"none\",\"stack\":\"Error\\n    at A.captureStack (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:32689)\\n    at callback (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:33717)\\n    at k.publish (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:26356)\\n    at db (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17199)\\n    at HTMLBodyElement.Tb [as appendChild] (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17154)\\n    at Object.loader (https://webtags.logitech.com/main/prod/utag.js:79:157)\\n    at u.send (https://webtags.logitech.com/main/prod/utag.549.js?utv=ut4.49.202110251723:48:78)\\n    at Object.LOAD (https://webtags.logitech.com/main/prod/utag.js:47:385)\\n    at https://webtags.logitech.com/main/prod/utag.549.js?utv=ut4.49.202110251723:49:55\\n    at https://webtags.logitech.com/main/prod/utag.549.js?utv=ut4.49.202110251723:49:65\"},{\"lastByteTime\":0,\"implementationType\":\"dom\",\"type\":2,\"zone\":0,\"resourceName\":\"https://s.pinimg.com/ct/core.js\",\"resourceSizeBytes\":0,\"delayedType\":\"none\",\"stack\":\"Error\\n    at A.captureStack (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:32689)\\n    at callback (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:33717)\\n    at k.publish (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:26356)\\n    at db (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17199)\\n    at HTMLBodyElement.Tb [as appendChild] (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17154)\\n    at Object.loader (https://webtags.logitech.com/main/prod/utag.js:79:157)\\n    at u.send (https://webtags.logitech.com/main/prod/utag.502.js?utv=ut4.49.202309260952:36:269)\\n    at Object.LOAD (https://webtags.logitech.com/main/prod/utag.js:47:385)\\n    at https://webtags.logitech.com/main/prod/utag.502.js?utv=ut4.49.202309260952:37:55\\n    at https://webtags.logitech.com/main/prod/utag.502.js?utv=ut4.49.202309260952:37:65\"},{\"lastByteTime\":0,\"implementationType\":\"dom\",\"type\":2,\"zone\":0,\"resourceName\":\"https://unpkg.com/web-vitals/dist/web-vitals.iife.js\",\"resourceSizeBytes\":0,\"delayedType\":\"none\",\"stack\":\"Error\\n    at A.captureStack (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:32689)\\n    at callback (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:33717)\\n    at k.publish (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:26356)\\n    at db (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17199)\\n    at HTMLBodyElement.Tb [as appendChild] (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17154)\\n    at u.send (https://webtags.logitech.com/main/prod/utag.605.js?utv=ut4.49.202310030504:4:729)\\n    at Object.LOAD (https://webtags.logitech.com/main/prod/utag.js:47:385)\\n    at https://webtags.logitech.com/main/prod/utag.605.js?utv=ut4.49.202310030504:4:783\\n    at https://webtags.logitech.com/main/prod/utag.605.js?utv=ut4.49.202310030504:4:794\"},{\"lastByteTime\":0,\"implementationType\":\"dom\",\"type\":2,\"zone\":0,\"resourceName\":\"https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=C7Q5M1CRMF4VVL6M20F0&lib=ttq\",\"resourceSizeBytes\":0,\"delayedType\":\"none\",\"stack\":\"Error\\n    at A.captureStack (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:32689)\\n    at callback (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:33717)\\n    at k.publish (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:26356)\\n    at db (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17199)\\n    at HTMLBodyElement.Tb [as appendChild] (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17154)\\n    at Object.loader (https://webtags.logitech.com/main/prod/utag.js:79:157)\\n    at u.send (https://webtags.logitech.com/main/prod/utag.602.js?utv=ut4.49.202307172141:36:102)\\n    at Object.LOAD (https://webtags.logitech.com/main/prod/utag.js:47:385)\\n    at https://webtags.logitech.com/main/prod/utag.602.js?utv=ut4.49.202307172141:37:55\\n    at https://webtags.logitech.com/main/prod/utag.602.js?utv=ut4.49.202307172141:37:65\"},{\"lastByteTime\":0,\"implementationType\":\"dom\",\"type\":2,\"zone\":0,\"resourceName\":\"https://www.redditstatic.com/ads/pixel.js\",\"resourceSizeBytes\":0,\"delayedType\":\"none\",\"stack\":\"Error\\n    at A.captureStack (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:32689)\\n    at callback (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:33717)\\n    at k.publish (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:26356)\\n    at db (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17199)\\n    at HTMLBodyElement.Tb [as appendChild] (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17154)\\n    at Object.loader (https://webtags.logitech.com/main/prod/utag.js:79:157)\\n    at u.send (https://webtags.logitech.com/main/prod/utag.603.js?utv=ut4.49.202304260802:10:267)\\n    at Object.LOAD (https://webtags.logitech.com/main/prod/utag.js:47:385)\\n    at https://webtags.logitech.com/main/prod/utag.603.js?utv=ut4.49.202304260802:11:55\\n    at https://webtags.logitech.com/main/prod/utag.603.js?utv=ut4.49.202304260802:11:65\"},{\"lastByteTime\":0,\"implementationType\":\"dom\",\"type\":2,\"zone\":0,\"resourceName\":\"https://static.ads-twitter.com/uwt.js\",\"resourceSizeBytes\":0,\"delayedType\":\"none\",\"stack\":\"Error\\n    at A.captureStack (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:32689)\\n    at callback (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:33717)\\n    at k.publish (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:26356)\\n    at db (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17199)\\n    at HTMLBodyElement.Tb [as appendChild] (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17154)\\n    at Object.loader (https://webtags.logitech.com/main/prod/utag.js:79:157)\\n    at u.send (https://webtags.logitech.com/main/prod/utag.639.js?utv=ut4.49.202209211114:5:255)\\n    at Object.LOAD (https://webtags.logitech.com/main/prod/utag.js:47:385)\\n    at https://webtags.logitech.com/main/prod/utag.639.js?utv=ut4.49.202209211114:6:55\\n    at https://webtags.logitech.com/main/prod/utag.639.js?utv=ut4.49.202209211114:6:65\"},{\"lastByteTime\":0,\"implementationType\":\"dom\",\"type\":2,\"zone\":0,\"resourceName\":\"https://siteimproveanalytics.com/js/siteanalyze_6016578.js\",\"resourceSizeBytes\":0,\"delayedType\":\"none\",\"stack\":\"Error\\n    at A.captureStack (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:32689)\\n    at callback (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:33717)\\n    at k.publish (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:26356)\\n    at db (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17199)\\n    at HTMLBodyElement.Tb [as appendChild] (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17154)\\n    at Object.loader (https://webtags.logitech.com/main/prod/utag.js:79:157)\\n    at u.send (https://webtags.logitech.com/main/prod/utag.635.js?utv=ut4.49.202208121100:7:88)\\n    at Object.LOAD (https://webtags.logitech.com/main/prod/utag.js:47:385)\\n    at https://webtags.logitech.com/main/prod/utag.635.js?utv=ut4.49.202208121100:7:242\\n    at https://webtags.logitech.com/main/prod/utag.635.js?utv=ut4.49.202208121100:7:252\"},{\"lastByteTime\":0,\"implementationType\":\"dom\",\"type\":2,\"zone\":0,\"resourceName\":\"https://sc-static.net/scevent.min.js\",\"resourceSizeBytes\":0,\"delayedType\":\"none\",\"stack\":\"Error\\n    at A.captureStack (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:32689)\\n    at callback (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:33717)\\n    at k.publish (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:26356)\\n    at db (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17199)\\n    at HTMLBodyElement.Tb [as appendChild] (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17154)\\n    at Object.loader (https://webtags.logitech.com/main/prod/utag.js:79:157)\\n    at u.send (https://webtags.logitech.com/main/prod/utag.551.js?utv=ut4.49.202202040443:24:49)\\n    at Object.LOAD (https://webtags.logitech.com/main/prod/utag.js:47:385)\\n    at https://webtags.logitech.com/main/prod/utag.551.js?utv=ut4.49.202202040443:25:55\\n    at https://webtags.logitech.com/main/prod/utag.551.js?utv=ut4.49.202202040443:25:65\"},{\"lastByteTime\":0,\"implementationType\":\"dom\",\"type\":2,\"zone\":0,\"resourceName\":\"https://cdn.bizible.com/scripts/bizible.js\",\"resourceSizeBytes\":0,\"delayedType\":\"none\",\"stack\":\"Error\\n    at A.captureStack (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:32689)\\n    at callback (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:33717)\\n    at k.publish (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:26356)\\n    at db (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17199)\\n    at HTMLBodyElement.Tb [as appendChild] (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17154)\\n    at Object.loader (https://webtags.logitech.com/main/prod/utag.js:79:157)\\n    at u.send (https://webtags.logitech.com/main/prod/utag.657.js?utv=ut4.49.202211082352:4:28)\\n    at Object.LOAD (https://webtags.logitech.com/main/prod/utag.js:47:385)\\n    at https://webtags.logitech.com/main/prod/utag.657.js?utv=ut4.49.202211082352:4:149\\n    at https://webtags.logitech.com/main/prod/utag.657.js?utv=ut4.49.202211082352:4:159\"},{\"lastByteTime\":0,\"implementationType\":\"dom\",\"type\":2,\"zone\":0,\"resourceName\":\"https://c.amazon-adsystem.com/aat/amzn.js\",\"resourceSizeBytes\":0,\"delayedType\":\"none\",\"stack\":\"Error\\n    at A.captureStack (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:32689)\\n    at callback (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:33717)\\n    at k.publish (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:26356)\\n    at db (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17199)\\n    at HTMLBodyElement.Tb [as appendChild] (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17154)\\n    at Object.loader (https://webtags.logitech.com/main/prod/utag.js:79:157)\\n    at u.send (https://webtags.logitech.com/main/prod/utag.678.js?utv=ut4.49.202304242302:7:55)\\n    at Object.LOAD (https://webtags.logitech.com/main/prod/utag.js:47:385)\\n    at https://webtags.logitech.com/main/prod/utag.678.js?utv=ut4.49.202304242302:8:55\\n    at https://webtags.logitech.com/main/prod/utag.678.js?utv=ut4.49.202304242302:8:65\"},{\"lastByteTime\":0,\"implementationType\":\"dom\",\"type\":2,\"zone\":0,\"resourceName\":\"https://c.amazon-adsystem.com/aat/amzn.js\",\"resourceSizeBytes\":0,\"delayedType\":\"none\",\"stack\":\"Error\\n    at A.captureStack (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:32689)\\n    at callback (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:33717)\\n    at k.publish (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:26356)\\n    at db (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17199)\\n    at HTMLBodyElement.Tb [as appendChild] (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17154)\\n    at Object.loader (https://webtags.logitech.com/main/prod/utag.js:79:157)\\n    at u.send (https://webtags.logitech.com/main/prod/utag.678.js?utv=ut4.49.202304242302:7:55)\\n    at Object.LOAD (https://webtags.logitech.com/main/prod/utag.js:47:385)\\n    at https://webtags.logitech.com/main/prod/utag.678.js?utv=ut4.49.202304242302:8:55\\n    at https://webtags.logitech.com/main/prod/utag.678.js?utv=ut4.49.202304242302:8:65\"},{\"lastByteTime\":0,\"implementationType\":\"dom\",\"type\":2,\"zone\":0,\"resourceName\":\"https://m.servedby-buysellads.com/monetization.it.js\",\"resourceSizeBytes\":0,\"delayedType\":\"none\",\"stack\":\"Error\\n    at A.captureStack (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:32689)\\n    at callback (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:33717)\\n    at k.publish (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:26356)\\n    at db (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17199)\\n    at HTMLBodyElement.Tb [as appendChild] (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17154)\\n    at https://webtags.logitech.com/main/prod/utag.684.js?utv=ut4.49.202307172253:4:217\\n    at u.send (https://webtags.logitech.com/main/prod/utag.684.js?utv=ut4.49.202307172253:4:236)\\n    at Object.LOAD (https://webtags.logitech.com/main/prod/utag.js:47:385)\\n    at https://webtags.logitech.com/main/prod/utag.684.js?utv=ut4.49.202307172253:5:26\\n    at https://webtags.logitech.com/main/prod/utag.684.js?utv=ut4.49.202307172253:5:37\"},{\"lastByteTime\":0,\"implementationType\":\"dom\",\"type\":2,\"zone\":0,\"resourceName\":\"https://assets.bounceexchange.com/assets/smart-tag/versioned/runtime_8b30b4890203fd4144c54b9ffd765f5e.br.js\",\"resourceSizeBytes\":0,\"delayedType\":\"none\",\"stack\":\"Error\\n    at A.captureStack (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:32689)\\n    at callback (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:33717)\\n    at k.publish (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:26356)\\n    at db (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17199)\\n    at HTMLBodyElement.Tb [as appendChild] (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17154)\\n    at bxBootstrap (https://tag.wknd.ai/6187/i.js:54:17)\\n    at https://tag.wknd.ai/6187/i.js:64:2\\n    at https://tag.wknd.ai/6187/i.js:65:4\"},{\"lastByteTime\":0,\"implementationType\":\"dom\",\"type\":2,\"zone\":0,\"resourceName\":\"https://cdn.tkrconnector.com/js/tkrc.js\",\"resourceSizeBytes\":0,\"delayedType\":\"none\",\"stack\":\"Error\\n    at A.captureStack (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:32689)\\n    at callback (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:33717)\\n    at k.publish (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:26356)\\n    at db (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17199)\\n    at HTMLBodyElement.Tb [as appendChild] (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17154)\\n    at tkrc.load (https://webtags.logitech.com/main/prod/utag.581.js?utv=ut4.49.202307172103:5:581)\\n    at https://webtags.logitech.com/main/prod/utag.581.js?utv=ut4.49.202307172103:5:645\\n    at u.send (https://webtags.logitech.com/main/prod/utag.581.js?utv=ut4.49.202307172103:5:653)\\n    at Object.LOAD (https://webtags.logitech.com/main/prod/utag.js:47:385)\\n    at https://webtags.logitech.com/main/prod/utag.581.js?utv=ut4.49.202307172103:12:26\"}],\"jsErrors\":[],\"pageMeasuredUuid\":\"c373cef9-945a-4da8-bcb8-8a3383b0368c\",\"collectionTimestamp\":1703149345383,\"commonDimensions\":{\"optState\":\"active\",\"profileId\":40876},\"experienceMetrics\":{\"cumulative_layout_shift\":0,\"largest_contentful_paint\":14220.199999999255,\"hero_image_display\":9914.79999999702,\"hero_image\":\"https://logi-stage-65.logitech.com/content/dam/logitech/en/nav/brand-logos/logitechg-grey.svg\",\"time_to_interactive\":14526.699999999255},\"webVitalsInfo\":{\"lcp\":[{\"entryType\":\"largest-contentful-paint\",\"duration\":0,\"id\":\"i8dc9b00f75b062ede434f35d44171af5\",\"name\":\"\",\"renderTime\":14220.199999999255,\"startTime\":14220.199999999255,\"size\":631666,\"loadTime\":14199.099999997765,\"url\":\"https://logi-stage-65.logitech.com/content/dam/logitech/my-account/hero-authenticated.png\",\"resourceIndex\":25,\"element\":\"<section id=\\\"i8dc9b00f75b062ede434f35d44171af5\\\" class=\\\"component-hero-banner image-full-bleed dark-text  \\\" />\"}],\"cls\":[],\"fid\":[],\"inp\":[]}}"
+          "value": "{\"sessionTimeSaved\":815.2999999970198,\"journeyTime\":815.2999999970198,\"entries\":99,\"timeSaved\":815.2999999970198,\"score\":13400,\"pageMeasured\":\"https://logi-stage-65.logitech.com/en-us/my-account.html\",\"pageMeasuredCategory\":\"content\",\"violations\":[{\"lastByteTime\":1234.1000000014901,\"implementationType\":\"dom\",\"type\":4,\"zone\":1,\"resourceName\":\"https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA\",\"resourceSizeBytes\":107188},{\"lastByteTime\":1039.5,\"implementationType\":\"dom\",\"type\":4,\"zone\":1,\"resourceName\":\"https://logi-stage-65.logitech.com/etc.clientlibs/logitech-common/clientlibs/clientlib-jquery.min.5cf6fcd4366153d725c5d4fb008729ff.js\",\"resourceSizeBytes\":88946},{\"lastByteTime\":819.6000000014901,\"implementationType\":\"dom\",\"type\":4,\"zone\":1,\"resourceName\":\"https://logi-stage-65.logitech.com/etc.clientlibs/logitech-common/clientlibs/clientlib-utils.min.4a192b590a2c2926fb000264370c0588.js\",\"resourceSizeBytes\":8118},{\"lastByteTime\":1341.5,\"implementationType\":\"dom\",\"type\":4,\"zone\":1,\"resourceName\":\"https://logi-stage-65.logitech.com/etc.clientlibs/logitech/clientlibs/logitech-galaxy-pagelibs.min.bb9dbb654a9e3c6dac4f80d4c2322630.css\",\"resourceSizeBytes\":969352},{\"lastByteTime\":817.5,\"implementationType\":\"dom\",\"type\":4,\"zone\":1,\"resourceName\":\"https://logi-stage-65.logitech.com/etc.clientlibs/logitech-common/clientlibs/onetrust.min.41ac4cd8610e597df080b70136957dff.js\",\"resourceSizeBytes\":4670},{\"lastByteTime\":910,\"implementationType\":\"dom\",\"type\":4,\"zone\":1,\"resourceName\":\"https://webtags.logitech.com/main/prod/utag.sync.js\",\"resourceSizeBytes\":0},{\"lastByteTime\":804.0999999977648,\"implementationType\":\"dom\",\"type\":4,\"zone\":1,\"resourceName\":\"https://logi-stage-65.logitech.com/libs/cq/experience-fragments/components/xfpage/content.min.5797e8e7d68b9d8bf73ee762c36c2426.css\",\"resourceSizeBytes\":0},{\"lastByteTime\":873,\"implementationType\":\"dom\",\"type\":4,\"zone\":1,\"resourceName\":\"https://logi-stage-65.logitech.com/etc.clientlibs/clientlibs/granite/jquery/granite/csrf.min.652a558c3774088b61b0530c184710d1.js\",\"resourceSizeBytes\":3618},{\"lastByteTime\":888.6000000014901,\"implementationType\":\"dom\",\"type\":4,\"zone\":1,\"resourceName\":\"https://logi-stage-65.logitech.com/etc/clientlibs/granite/jquery/granite/csrf.min.a3d1a528306cbb0d84ffaf8f8ef22111.js\",\"resourceSizeBytes\":0},{\"lastByteTime\":6024.800000000745,\"implementationType\":\"dom\",\"type\":4,\"zone\":1,\"resourceName\":\"https://logi-stage-65.logitech.com/etc.clientlibs/logitech/clientlibs/logitech-galaxy-pagelibs.min.8cc2c8b54afd9caf585bf9954347c05c.js\",\"resourceSizeBytes\":2536747},{\"lastByteTime\":1288,\"implementationType\":\"dom\",\"type\":4,\"zone\":1,\"resourceName\":\"https://qoe-1.yottaa.net/api/v1/configure.rapid.js?key=2MmYtZqF3jbWpA&ul=en-US&dl=https%3A%2F%2Flogi-stage-65.logitech.com%2Fen-us%2Fmy-account.html&dt=&sd=24&sr=1280,720&vp=1280,720&ct=4g&rtt=0\",\"resourceSizeBytes\":1794},{\"lastByteTime\":1035.6000000014901,\"implementationType\":\"dom\",\"type\":4,\"zone\":1,\"resourceName\":\"https://dpm.demdex.net/id?d_visid_ver=5.4.0&d_fieldgroup=MC&d_rtbd=json&d_ver=2&d_orgid=970FAA6357F533BB0A495CC8%40AdobeOrg&d_nsid=0&ts=1705392061548\",\"resourceSizeBytes\":0},{\"lastByteTime\":773.6999999992549,\"implementationType\":\"dom\",\"type\":4,\"zone\":1,\"resourceName\":\"https://resource.logitech.com/w_0.5,f_auto,q_auto/content/dam/logitech/en/nav/logi-logo-anim-dark.png\",\"resourceSizeBytes\":18244},{\"lastByteTime\":1227,\"implementationType\":\"dom\",\"type\":4,\"zone\":1,\"resourceName\":\"https://www.logitech.com/asset/fonts/lineto-brown-pro-bold.woff\",\"resourceSizeBytes\":0},{\"lastByteTime\":976,\"implementationType\":\"dom\",\"type\":4,\"zone\":1,\"resourceName\":\"https://www.logitech.com/asset/fonts/lineto-brown-pro-regular.woff\",\"resourceSizeBytes\":0},{\"lastByteTime\":1190.5999999977648,\"implementationType\":\"dom\",\"type\":4,\"zone\":1,\"resourceName\":\"https://www.logitech.com/asset/fonts/lineto-brown-pro-light.woff\",\"resourceSizeBytes\":0},{\"lastByteTime\":4327,\"implementationType\":\"dom\",\"type\":4,\"zone\":1,\"resourceName\":\"https://logi-stage-65.logitech.com/content/dam/logitech/my-account/hero-authenticated.png\",\"resourceSizeBytes\":507034},{\"lastByteTime\":2226.10000000149,\"implementationType\":\"dom\",\"type\":4,\"zone\":1,\"resourceName\":\"https://logi-stage-65.logitech.com/content/dam/logitech/my-account/my-account-icon.svg.imgo.svg\",\"resourceSizeBytes\":1637},{\"lastByteTime\":2227.39999999851,\"implementationType\":\"dom\",\"type\":4,\"zone\":1,\"resourceName\":\"https://logi-stage-65.logitech.com/content/dam/logitech/my-account/compass.svg.imgo.svg\",\"resourceSizeBytes\":1140},{\"lastByteTime\":2222,\"implementationType\":\"dom\",\"type\":4,\"zone\":1,\"resourceName\":\"https://logi-stage-65.logitech.com/content/dam/logitech/my-account/cloud.svg.imgo.svg\",\"resourceSizeBytes\":2317},{\"lastByteTime\":3507.39999999851,\"implementationType\":\"dom\",\"type\":4,\"zone\":1,\"resourceName\":\"https://logi-stage-65.logitech.com/content/dam/logitech/my-account/question.svg.imgo.svg\",\"resourceSizeBytes\":1751},{\"lastByteTime\":3504.10000000149,\"implementationType\":\"dom\",\"type\":4,\"zone\":1,\"resourceName\":\"https://logi-stage-65.logitech.com/content/dam/logitech/my-account/mail.svg.imgo.svg\",\"resourceSizeBytes\":1780},{\"lastByteTime\":3545.199999999255,\"implementationType\":\"dom\",\"type\":4,\"zone\":1,\"resourceName\":\"https://logi-stage-65.logitech.com/content/dam/logitech/my-account/bulb.svg\",\"resourceSizeBytes\":1681},{\"lastByteTime\":3546.10000000149,\"implementationType\":\"dom\",\"type\":4,\"zone\":1,\"resourceName\":\"https://logi-stage-65.logitech.com/content/dam/logitech/common/facebook.svg\",\"resourceSizeBytes\":1238},{\"lastByteTime\":3546.89999999851,\"implementationType\":\"dom\",\"type\":4,\"zone\":1,\"resourceName\":\"https://logi-stage-65.logitech.com/content/dam/logitech/common/twitter.svg\",\"resourceSizeBytes\":1805},{\"lastByteTime\":3828.900000002235,\"implementationType\":\"dom\",\"type\":4,\"zone\":1,\"resourceName\":\"https://logi-stage-65.logitech.com/content/dam/logitech/common/instagram-logo.svg\",\"resourceSizeBytes\":1441},{\"lastByteTime\":3231.300000000745,\"implementationType\":\"dom\",\"type\":4,\"zone\":1,\"resourceName\":\"https://cdn.cookielaw.org/scripttemplates/202311.1.0/otBannerSdk.js\",\"resourceSizeBytes\":0,\"delayedType\":\"none\",\"stack\":\"Error\\n    at A.captureStack (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:32689)\\n    at callback (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:33717)\\n    at k.publish (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:26356)\\n    at db (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17199)\\n    at HTMLHeadElement.Tb [as appendChild] (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17154)\\n    at h.jsonp (https://cdn.cookielaw.org/scripttemplates/otSDKStub.js:1:9953)\\n    at h.addBannerSDKScript (https://cdn.cookielaw.org/scripttemplates/otSDKStub.js:1:18839)\\n    at h.geoLocationJsonCallback (https://cdn.cookielaw.org/scripttemplates/otSDKStub.js:1:8305)\\n    at s.onload (https://cdn.cookielaw.org/scripttemplates/otSDKStub.js:1:9319)\"},{\"lastByteTime\":1078,\"implementationType\":\"dom\",\"type\":4,\"zone\":1,\"resourceName\":\"https://webanalytics.logitech.com/id?d_visid_ver=5.4.0&d_fieldgroup=A&mcorgid=970FAA6357F533BB0A495CC8%40AdobeOrg&mid=74479696497207328301641269635711837804&ts=1705392062595\",\"resourceSizeBytes\":0},{\"lastByteTime\":4437,\"implementationType\":\"dom\",\"type\":4,\"zone\":1,\"resourceName\":\"https://cm.everesttech.net/cm/dd?d_uuid=74896075252176178291615130603709254999\",\"resourceSizeBytes\":0},{\"lastByteTime\":1065.7000000029802,\"implementationType\":\"dom\",\"type\":4,\"zone\":1,\"resourceName\":\"https://webtarget.logitech.com/rest/v1/delivery?client=logitech&sessionId=558f9437c62e42fd8a3db9e5f7f9caea&version=2.9.0\",\"resourceSizeBytes\":351},{\"lastByteTime\":1020.1999999992549,\"implementationType\":\"dom\",\"type\":4,\"zone\":3,\"resourceName\":\"https://www.youtube.com/iframe_api\",\"resourceSizeBytes\":0,\"delayedType\":\"none\",\"stack\":\"Error\\n    at A.captureStack (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:32689)\\n    at callback (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:33717)\\n    at k.publish (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:26356)\\n    at db (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17199)\\n    at HTMLHeadElement.Sb [as insertBefore] (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17110)\\n    at Zs.onDomReady (https://logi-stage-65.logitech.com/etc.clientlibs/logitech/clientlibs/logitech-galaxy-pagelibs.min.8cc2c8b54afd9caf585bf9954347c05c.js:4:2081821)\\n    at $u.onDomReady (https://logi-stage-65.logitech.com/etc.clientlibs/logitech/clientlibs/logitech-galaxy-pagelibs.min.8cc2c8b54afd9caf585bf9954347c05c.js:4:2095352)\\n    at l (https://logi-stage-65.logitech.com/etc.clientlibs/logitech-common/clientlibs/clientlib-jquery.min.5cf6fcd4366153d725c5d4fb008729ff.js:79:352)\\n    at m (https://logi-stage-65.logitech.com/etc.clientlibs/logitech-common/clientlibs/clientlib-jquery.min.5cf6fcd4366153d725c5d4fb008729ff.js:80:163)\"},{\"lastByteTime\":1234.6000000014901,\"implementationType\":\"dom\",\"type\":4,\"zone\":3,\"resourceName\":\"https://logi-stage-65.logitech.com/content/dam/logitech/en/nav/brand-logos/blue-grey.svg\",\"resourceSizeBytes\":3178},{\"lastByteTime\":1234.5,\"implementationType\":\"dom\",\"type\":4,\"zone\":3,\"resourceName\":\"https://logi-stage-65.logitech.com/content/dam/logitech/en/nav/brand-logos/blue.svg\",\"resourceSizeBytes\":3178},{\"lastByteTime\":1242.9000000022352,\"implementationType\":\"dom\",\"type\":4,\"zone\":3,\"resourceName\":\"https://logi-stage-65.logitech.com/content/dam/logitech/en/nav/brand-logos/streamlabs-grey.svg\",\"resourceSizeBytes\":9222},{\"lastByteTime\":1289.800000000745,\"implementationType\":\"dom\",\"type\":4,\"zone\":3,\"resourceName\":\"https://logi-stage-65.logitech.com/content/dam/logitech/en/nav/brand-logos/streamlabs.svg\",\"resourceSizeBytes\":9222},{\"lastByteTime\":1525.1000000014901,\"implementationType\":\"dom\",\"type\":4,\"zone\":3,\"resourceName\":\"https://logi-stage-65.logitech.com/content/dam/logitech/en/nav/brand-logos/ultimate-ears-grey.svg\",\"resourceSizeBytes\":4694},{\"lastByteTime\":1565.199999999255,\"implementationType\":\"dom\",\"type\":4,\"zone\":3,\"resourceName\":\"https://logi-stage-65.logitech.com/content/dam/logitech/en/nav/brand-logos/ultimate-ears.svg\",\"resourceSizeBytes\":4694},{\"lastByteTime\":1720.699999999255,\"implementationType\":\"dom\",\"type\":4,\"zone\":3,\"resourceName\":\"https://logi-stage-65.logitech.com/content/dam/logitech/en/nav/brand-logos/jaybird-grey.svg\",\"resourceSizeBytes\":3240},{\"lastByteTime\":1721.8999999985099,\"implementationType\":\"dom\",\"type\":4,\"zone\":3,\"resourceName\":\"https://logi-stage-65.logitech.com/content/dam/logitech/en/nav/brand-logos/jaybird.svg\",\"resourceSizeBytes\":3263},{\"lastByteTime\":1717,\"implementationType\":\"dom\",\"type\":4,\"zone\":3,\"resourceName\":\"https://logi-stage-65.logitech.com/content/dam/logitech/en/nav/brand-logos/mevo-grey.svg\",\"resourceSizeBytes\":530},{\"lastByteTime\":1844.1000000014901,\"implementationType\":\"dom\",\"type\":4,\"zone\":3,\"resourceName\":\"https://logi-stage-65.logitech.com/content/dam/logitech/en/nav/brand-logos/mevo.svg\",\"resourceSizeBytes\":515},{\"lastByteTime\":1745.7000000029802,\"implementationType\":\"dom\",\"type\":4,\"zone\":3,\"resourceName\":\"https://resource.logitech.com/w_316,c_limit,f_auto,q_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/navigation/shop-mice.png?v=1\",\"resourceSizeBytes\":3164},{\"lastByteTime\":1895.9000000022352,\"implementationType\":\"dom\",\"type\":4,\"zone\":3,\"resourceName\":\"https://resource.logitech.com/w_316,c_limit,f_auto,q_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/navigation/shop-keyboards.png?v=1\",\"resourceSizeBytes\":2832},{\"lastByteTime\":1908.300000000745,\"implementationType\":\"dom\",\"type\":4,\"zone\":3,\"resourceName\":\"https://resource.logitech.com/w_316,c_limit,f_auto,q_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/navigation/shop-webcams-audio.png?v=1\",\"resourceSizeBytes\":4358},{\"lastByteTime\":1900.5999999977648,\"implementationType\":\"dom\",\"type\":4,\"zone\":3,\"resourceName\":\"https://resource.logitech.com/w_316,c_limit,f_auto,q_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/navigation/shop-mobile-solutions.png?v=1\",\"resourceSizeBytes\":3504},{\"lastByteTime\":1918.3999999985099,\"implementationType\":\"dom\",\"type\":4,\"zone\":3,\"resourceName\":\"https://resource.logitech.com/w_316,c_limit,f_auto,q_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/navigation/shop-for-business.png?v=1\",\"resourceSizeBytes\":912},{\"lastByteTime\":1924.800000000745,\"implementationType\":\"dom\",\"type\":4,\"zone\":3,\"resourceName\":\"https://resource.logitech.com/w_316,c_limit,f_auto,q_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/navigation/shop-for-education.png?v=1\",\"resourceSizeBytes\":1130},{\"lastByteTime\":1924.300000000745,\"implementationType\":\"dom\",\"type\":4,\"zone\":3,\"resourceName\":\"https://resource.logitech.com/w_316,c_limit,f_auto,q_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/navigation/shop-for-gamers.png?v=1\",\"resourceSizeBytes\":784},{\"lastByteTime\":1951,\"implementationType\":\"dom\",\"type\":4,\"zone\":3,\"resourceName\":\"https://resource.logitech.com/w_316,c_limit,f_auto,q_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/navigation/shop-feature-offers.png?v=1\",\"resourceSizeBytes\":4334},{\"lastByteTime\":2030.3999999985099,\"implementationType\":\"dom\",\"type\":4,\"zone\":3,\"resourceName\":\"https://resource.logitech.com/w_316,c_limit,f_auto,q_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/navigation/discover-sustainability.png?v=1\",\"resourceSizeBytes\":3414},{\"lastByteTime\":2081.199999999255,\"implementationType\":\"dom\",\"type\":4,\"zone\":3,\"resourceName\":\"https://resource.logitech.com/w_316,c_limit,f_auto,q_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/navigation/discover-about-us.png?v=1\",\"resourceSizeBytes\":948},{\"lastByteTime\":2098.10000000149,\"implementationType\":\"dom\",\"type\":4,\"zone\":3,\"resourceName\":\"https://resource.logitech.com/w_316,c_limit,f_auto,q_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/navigation/discover-ergo-series.png?v=1\",\"resourceSizeBytes\":1874},{\"lastByteTime\":2097.89999999851,\"implementationType\":\"dom\",\"type\":4,\"zone\":3,\"resourceName\":\"https://resource.logitech.com/w_316,c_limit,f_auto,q_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/navigation/discover-master-series.png?v=1\",\"resourceSizeBytes\":768},{\"lastByteTime\":2106.5,\"implementationType\":\"dom\",\"type\":4,\"zone\":3,\"resourceName\":\"https://resource.logitech.com/w_316,c_limit,f_auto,q_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/navigation/discover-feature-sustainability.png?v=1\",\"resourceSizeBytes\":4374},{\"lastByteTime\":2116.60000000149,\"implementationType\":\"dom\",\"type\":4,\"zone\":3,\"resourceName\":\"https://resource.logitech.com/w_316,c_limit,f_auto,q_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/navigation/business-spaces-solutions.png?v=1\",\"resourceSizeBytes\":2522},{\"lastByteTime\":2112.199999999255,\"implementationType\":\"dom\",\"type\":4,\"zone\":3,\"resourceName\":\"https://resource.logitech.com/w_316,c_limit,f_auto,q_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/navigation/business-products.png?v=1\",\"resourceSizeBytes\":3758},{\"lastByteTime\":2141.5,\"implementationType\":\"dom\",\"type\":4,\"zone\":3,\"resourceName\":\"https://resource.logitech.com/w_316,c_limit,f_auto,q_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/navigation/business-software-services.png?v=1\",\"resourceSizeBytes\":3356},{\"lastByteTime\":2216.199999999255,\"implementationType\":\"dom\",\"type\":4,\"zone\":3,\"resourceName\":\"https://resource.logitech.com/w_316,c_limit,f_auto,q_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/navigation/business-partners.png?v=1\",\"resourceSizeBytes\":2856},{\"lastByteTime\":2279.39999999851,\"implementationType\":\"dom\",\"type\":4,\"zone\":3,\"resourceName\":\"https://resource.logitech.com/w_316,c_limit,f_auto,q_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/navigation/support-for-individuals.png?v=1\",\"resourceSizeBytes\":12980},{\"lastByteTime\":2291.89999999851,\"implementationType\":\"dom\",\"type\":4,\"zone\":3,\"resourceName\":\"https://resource.logitech.com/w_316,c_limit,f_auto,q_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/navigation/support-for-business-education.png?v=1\",\"resourceSizeBytes\":9510},{\"lastByteTime\":968.1999999992549,\"implementationType\":\"dom\",\"type\":4,\"zone\":3,\"resourceName\":\"https://cdn.cookielaw.org/scripttemplates/202311.1.0/assets/otFloatingRoundedCorner.json\",\"resourceSizeBytes\":0},{\"lastByteTime\":1303.0999999977648,\"implementationType\":\"dom\",\"type\":4,\"zone\":3,\"resourceName\":\"https://www.youtube.com/s/player/80b90bfd/www-widgetapi.vflset/www-widgetapi.js\",\"resourceSizeBytes\":0,\"delayedType\":\"none\",\"stack\":\"Error\\n    at A.captureStack (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:32689)\\n    at callback (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:33717)\\n    at k.publish (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:26356)\\n    at db (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17199)\\n    at HTMLHeadElement.Sb [as insertBefore] (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17110)\\n    at https://www.youtube.com/iframe_api:3:66\\n    at https://www.youtube.com/iframe_api:3:85\"},{\"lastByteTime\":904.5,\"implementationType\":\"dom\",\"type\":4,\"zone\":3,\"resourceName\":\"https://webtags.logitech.com/main/prod/utag.js\",\"resourceSizeBytes\":0,\"delayedType\":\"none\",\"stack\":\"Error\\n    at A.captureStack (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:32689)\\n    at callback (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:33717)\\n    at k.publish (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:26356)\\n    at db (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17199)\\n    at HTMLBodyElement.Tb [as appendChild] (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17154)\\n    at window.logitech.initUtagAsync (https://logi-stage-65.logitech.com/en-us/my-account.html:665:52)\\n    at g (https://logi-stage-65.logitech.com/etc.clientlibs/logitech-common/clientlibs/onetrust.min.41ac4cd8610e597df080b70136957dff.js:2:414)\\n    at window.OptanonWrapper (https://logi-stage-65.logitech.com/etc.clientlibs/logitech-common/clientlibs/onetrust.min.41ac4cd8610e597df080b70136957dff.js:5:283)\\n    at gi.executeOptanonWrapper (https://cdn.cookielaw.org/scripttemplates/202311.1.0/otBannerSdk.js:7:410292)\\n    at fi.<anonymous> (https://cdn.cookielaw.org/scripttemplates/202311.1.0/otBannerSdk.js:7:421283)\"},{\"lastByteTime\":0,\"implementationType\":\"dom\",\"type\":2,\"zone\":0,\"resourceName\":\"https://webtags.logitech.com/main/prod/utag.438.js?utv=ut4.49.202007282211\",\"resourceSizeBytes\":0,\"delayedType\":\"none\",\"stack\":\"Error\\n    at A.captureStack (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:32689)\\n    at callback (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:33717)\\n    at k.publish (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:26356)\\n    at db (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17199)\\n    at HTMLBodyElement.Tb [as appendChild] (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17154)\\n    at Object.loader (https://webtags.logitech.com/main/prod/utag.js:79:157)\\n    at Object.AS (https://webtags.logitech.com/main/prod/utag.js:15:78)\\n    at utag.loader.INIT (https://webtags.logitech.com/main/prod/utag.js:330:99)\\n    at utag.loader.PINIT (https://webtags.logitech.com/main/prod/utag.js:329:14)\\n    at https://webtags.logitech.com/main/prod/utag.js:444:233\"},{\"lastByteTime\":0,\"implementationType\":\"dom\",\"type\":2,\"zone\":0,\"resourceName\":\"https://webtags.logitech.com/main/prod/utag.502.js?utv=ut4.49.202309260952\",\"resourceSizeBytes\":0,\"delayedType\":\"none\",\"stack\":\"Error\\n    at A.captureStack (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:32689)\\n    at callback (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:33717)\\n    at k.publish (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:26356)\\n    at db (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17199)\\n    at HTMLBodyElement.Tb [as appendChild] (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17154)\\n    at Object.loader (https://webtags.logitech.com/main/prod/utag.js:79:157)\\n    at Object.AS (https://webtags.logitech.com/main/prod/utag.js:15:78)\\n    at utag.loader.INIT (https://webtags.logitech.com/main/prod/utag.js:330:99)\\n    at utag.loader.PINIT (https://webtags.logitech.com/main/prod/utag.js:329:14)\\n    at https://webtags.logitech.com/main/prod/utag.js:444:233\"},{\"lastByteTime\":0,\"implementationType\":\"dom\",\"type\":2,\"zone\":0,\"resourceName\":\"https://webtags.logitech.com/main/prod/utag.510.js?utv=ut4.49.202308012252\",\"resourceSizeBytes\":0,\"delayedType\":\"none\",\"stack\":\"Error\\n    at A.captureStack (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:32689)\\n    at callback (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:33717)\\n    at k.publish (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:26356)\\n    at db (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17199)\\n    at HTMLBodyElement.Tb [as appendChild] (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17154)\\n    at Object.loader (https://webtags.logitech.com/main/prod/utag.js:79:157)\\n    at Object.AS (https://webtags.logitech.com/main/prod/utag.js:15:78)\\n    at utag.loader.INIT (https://webtags.logitech.com/main/prod/utag.js:330:99)\\n    at utag.loader.PINIT (https://webtags.logitech.com/main/prod/utag.js:329:14)\\n    at https://webtags.logitech.com/main/prod/utag.js:444:233\"},{\"lastByteTime\":0,\"implementationType\":\"dom\",\"type\":2,\"zone\":0,\"resourceName\":\"https://webtags.logitech.com/main/prod/utag.549.js?utv=ut4.49.202110251723\",\"resourceSizeBytes\":0,\"delayedType\":\"none\",\"stack\":\"Error\\n    at A.captureStack (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:32689)\\n    at callback (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:33717)\\n    at k.publish (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:26356)\\n    at db (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17199)\\n    at HTMLBodyElement.Tb [as appendChild] (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17154)\\n    at Object.loader (https://webtags.logitech.com/main/prod/utag.js:79:157)\\n    at Object.AS (https://webtags.logitech.com/main/prod/utag.js:15:78)\\n    at utag.loader.INIT (https://webtags.logitech.com/main/prod/utag.js:330:99)\\n    at utag.loader.PINIT (https://webtags.logitech.com/main/prod/utag.js:329:14)\\n    at https://webtags.logitech.com/main/prod/utag.js:444:233\"},{\"lastByteTime\":0,\"implementationType\":\"dom\",\"type\":2,\"zone\":0,\"resourceName\":\"https://webtags.logitech.com/main/prod/utag.551.js?utv=ut4.49.202202040443\",\"resourceSizeBytes\":0,\"delayedType\":\"none\",\"stack\":\"Error\\n    at A.captureStack (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:32689)\\n    at callback (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:33717)\\n    at k.publish (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:26356)\\n    at db (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17199)\\n    at HTMLBodyElement.Tb [as appendChild] (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17154)\\n    at Object.loader (https://webtags.logitech.com/main/prod/utag.js:79:157)\\n    at Object.AS (https://webtags.logitech.com/main/prod/utag.js:15:78)\\n    at utag.loader.INIT (https://webtags.logitech.com/main/prod/utag.js:330:99)\\n    at utag.loader.PINIT (https://webtags.logitech.com/main/prod/utag.js:329:14)\\n    at https://webtags.logitech.com/main/prod/utag.js:444:233\"},{\"lastByteTime\":0,\"implementationType\":\"dom\",\"type\":2,\"zone\":0,\"resourceName\":\"https://webtags.logitech.com/main/prod/utag.581.js?utv=ut4.49.202307172103\",\"resourceSizeBytes\":0,\"delayedType\":\"none\",\"stack\":\"Error\\n    at A.captureStack (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:32689)\\n    at callback (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:33717)\\n    at k.publish (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:26356)\\n    at db (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17199)\\n    at HTMLBodyElement.Tb [as appendChild] (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17154)\\n    at Object.loader (https://webtags.logitech.com/main/prod/utag.js:79:157)\\n    at Object.AS (https://webtags.logitech.com/main/prod/utag.js:15:78)\\n    at utag.loader.INIT (https://webtags.logitech.com/main/prod/utag.js:330:99)\\n    at utag.loader.PINIT (https://webtags.logitech.com/main/prod/utag.js:329:14)\\n    at https://webtags.logitech.com/main/prod/utag.js:444:233\"},{\"lastByteTime\":0,\"implementationType\":\"dom\",\"type\":2,\"zone\":0,\"resourceName\":\"https://webtags.logitech.com/main/prod/utag.602.js?utv=ut4.49.202307172141\",\"resourceSizeBytes\":0,\"delayedType\":\"none\",\"stack\":\"Error\\n    at A.captureStack (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:32689)\\n    at callback (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:33717)\\n    at k.publish (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:26356)\\n    at db (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17199)\\n    at HTMLBodyElement.Tb [as appendChild] (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17154)\\n    at Object.loader (https://webtags.logitech.com/main/prod/utag.js:79:157)\\n    at Object.AS (https://webtags.logitech.com/main/prod/utag.js:15:78)\\n    at utag.loader.INIT (https://webtags.logitech.com/main/prod/utag.js:330:99)\\n    at utag.loader.PINIT (https://webtags.logitech.com/main/prod/utag.js:329:14)\\n    at https://webtags.logitech.com/main/prod/utag.js:444:233\"},{\"lastByteTime\":0,\"implementationType\":\"dom\",\"type\":2,\"zone\":0,\"resourceName\":\"https://webtags.logitech.com/main/prod/utag.603.js?utv=ut4.49.202304260802\",\"resourceSizeBytes\":0,\"delayedType\":\"none\",\"stack\":\"Error\\n    at A.captureStack (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:32689)\\n    at callback (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:33717)\\n    at k.publish (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:26356)\\n    at db (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17199)\\n    at HTMLBodyElement.Tb [as appendChild] (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17154)\\n    at Object.loader (https://webtags.logitech.com/main/prod/utag.js:79:157)\\n    at Object.AS (https://webtags.logitech.com/main/prod/utag.js:15:78)\\n    at utag.loader.INIT (https://webtags.logitech.com/main/prod/utag.js:330:99)\\n    at utag.loader.PINIT (https://webtags.logitech.com/main/prod/utag.js:329:14)\\n    at https://webtags.logitech.com/main/prod/utag.js:444:233\"},{\"lastByteTime\":0,\"implementationType\":\"dom\",\"type\":2,\"zone\":0,\"resourceName\":\"https://webtags.logitech.com/main/prod/utag.605.js?utv=ut4.49.202310030504\",\"resourceSizeBytes\":0,\"delayedType\":\"none\",\"stack\":\"Error\\n    at A.captureStack (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:32689)\\n    at callback (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:33717)\\n    at k.publish (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:26356)\\n    at db (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17199)\\n    at HTMLBodyElement.Tb [as appendChild] (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17154)\\n    at Object.loader (https://webtags.logitech.com/main/prod/utag.js:79:157)\\n    at Object.AS (https://webtags.logitech.com/main/prod/utag.js:15:78)\\n    at utag.loader.INIT (https://webtags.logitech.com/main/prod/utag.js:330:99)\\n    at utag.loader.PINIT (https://webtags.logitech.com/main/prod/utag.js:329:14)\\n    at https://webtags.logitech.com/main/prod/utag.js:444:233\"},{\"lastByteTime\":0,\"implementationType\":\"dom\",\"type\":2,\"zone\":0,\"resourceName\":\"https://webtags.logitech.com/main/prod/utag.625.js?utv=ut4.49.202312190225\",\"resourceSizeBytes\":0,\"delayedType\":\"none\",\"stack\":\"Error\\n    at A.captureStack (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:32689)\\n    at callback (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:33717)\\n    at k.publish (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:26356)\\n    at db (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17199)\\n    at HTMLBodyElement.Tb [as appendChild] (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17154)\\n    at Object.loader (https://webtags.logitech.com/main/prod/utag.js:79:157)\\n    at Object.AS (https://webtags.logitech.com/main/prod/utag.js:15:78)\\n    at utag.loader.INIT (https://webtags.logitech.com/main/prod/utag.js:330:99)\\n    at utag.loader.PINIT (https://webtags.logitech.com/main/prod/utag.js:329:14)\\n    at https://webtags.logitech.com/main/prod/utag.js:444:233\"},{\"lastByteTime\":0,\"implementationType\":\"dom\",\"type\":2,\"zone\":0,\"resourceName\":\"https://webtags.logitech.com/main/prod/utag.630.js?utv=ut4.49.202209191227\",\"resourceSizeBytes\":0,\"delayedType\":\"none\",\"stack\":\"Error\\n    at A.captureStack (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:32689)\\n    at callback (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:33717)\\n    at k.publish (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:26356)\\n    at db (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17199)\\n    at HTMLBodyElement.Tb [as appendChild] (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17154)\\n    at Object.loader (https://webtags.logitech.com/main/prod/utag.js:79:157)\\n    at Object.AS (https://webtags.logitech.com/main/prod/utag.js:15:78)\\n    at utag.loader.INIT (https://webtags.logitech.com/main/prod/utag.js:330:99)\\n    at utag.loader.PINIT (https://webtags.logitech.com/main/prod/utag.js:329:14)\\n    at https://webtags.logitech.com/main/prod/utag.js:444:233\"},{\"lastByteTime\":0,\"implementationType\":\"dom\",\"type\":2,\"zone\":0,\"resourceName\":\"https://webtags.logitech.com/main/prod/utag.635.js?utv=ut4.49.202208121100\",\"resourceSizeBytes\":0,\"delayedType\":\"none\",\"stack\":\"Error\\n    at A.captureStack (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:32689)\\n    at callback (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:33717)\\n    at k.publish (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:26356)\\n    at db (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17199)\\n    at HTMLBodyElement.Tb [as appendChild] (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17154)\\n    at Object.loader (https://webtags.logitech.com/main/prod/utag.js:79:157)\\n    at Object.AS (https://webtags.logitech.com/main/prod/utag.js:15:78)\\n    at utag.loader.INIT (https://webtags.logitech.com/main/prod/utag.js:330:99)\\n    at utag.loader.PINIT (https://webtags.logitech.com/main/prod/utag.js:329:14)\\n    at https://webtags.logitech.com/main/prod/utag.js:444:233\"},{\"lastByteTime\":0,\"implementationType\":\"dom\",\"type\":2,\"zone\":0,\"resourceName\":\"https://webtags.logitech.com/main/prod/utag.639.js?utv=ut4.49.202209211114\",\"resourceSizeBytes\":0,\"delayedType\":\"none\",\"stack\":\"Error\\n    at A.captureStack (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:32689)\\n    at callback (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:33717)\\n    at k.publish (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:26356)\\n    at db (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17199)\\n    at HTMLBodyElement.Tb [as appendChild] (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17154)\\n    at Object.loader (https://webtags.logitech.com/main/prod/utag.js:79:157)\\n    at Object.AS (https://webtags.logitech.com/main/prod/utag.js:15:78)\\n    at utag.loader.INIT (https://webtags.logitech.com/main/prod/utag.js:330:99)\\n    at utag.loader.PINIT (https://webtags.logitech.com/main/prod/utag.js:329:14)\\n    at https://webtags.logitech.com/main/prod/utag.js:444:233\"},{\"lastByteTime\":0,\"implementationType\":\"dom\",\"type\":2,\"zone\":0,\"resourceName\":\"https://webtags.logitech.com/main/prod/utag.657.js?utv=ut4.49.202211082352\",\"resourceSizeBytes\":0,\"delayedType\":\"none\",\"stack\":\"Error\\n    at A.captureStack (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:32689)\\n    at callback (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:33717)\\n    at k.publish (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:26356)\\n    at db (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17199)\\n    at HTMLBodyElement.Tb [as appendChild] (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17154)\\n    at Object.loader (https://webtags.logitech.com/main/prod/utag.js:79:157)\\n    at Object.AS (https://webtags.logitech.com/main/prod/utag.js:15:78)\\n    at utag.loader.INIT (https://webtags.logitech.com/main/prod/utag.js:330:99)\\n    at utag.loader.PINIT (https://webtags.logitech.com/main/prod/utag.js:329:14)\\n    at https://webtags.logitech.com/main/prod/utag.js:444:233\"},{\"lastByteTime\":0,\"implementationType\":\"dom\",\"type\":2,\"zone\":0,\"resourceName\":\"https://webtags.logitech.com/main/prod/utag.666.js?utv=ut4.49.202304242302\",\"resourceSizeBytes\":0,\"delayedType\":\"none\",\"stack\":\"Error\\n    at A.captureStack (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:32689)\\n    at callback (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:33717)\\n    at k.publish (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:26356)\\n    at db (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17199)\\n    at HTMLBodyElement.Tb [as appendChild] (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17154)\\n    at Object.loader (https://webtags.logitech.com/main/prod/utag.js:79:157)\\n    at Object.AS (https://webtags.logitech.com/main/prod/utag.js:15:78)\\n    at utag.loader.INIT (https://webtags.logitech.com/main/prod/utag.js:330:99)\\n    at utag.loader.PINIT (https://webtags.logitech.com/main/prod/utag.js:329:14)\\n    at https://webtags.logitech.com/main/prod/utag.js:444:233\"},{\"lastByteTime\":0,\"implementationType\":\"dom\",\"type\":2,\"zone\":0,\"resourceName\":\"https://cdn2.gbqofs.com/logitech/u/detector-dom.min.js\",\"resourceSizeBytes\":0,\"delayedType\":\"none\",\"stack\":\"Error\\n    at A.captureStack (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:32689)\\n    at callback (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:33717)\\n    at k.publish (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:26356)\\n    at db (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17199)\\n    at HTMLBodyElement.Tb [as appendChild] (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17154)\\n    at https://webtags.logitech.com/main/prod/utag.js:619:187\\n    at u.send (https://webtags.logitech.com/main/prod/utag.js:619:211)\\n    at Object.LOAD (https://webtags.logitech.com/main/prod/utag.js:47:385)\\n    at utag.loader.INIT (https://webtags.logitech.com/main/prod/utag.js:329:405)\\n    at utag.loader.PINIT (https://webtags.logitech.com/main/prod/utag.js:329:14)\"},{\"lastByteTime\":0,\"implementationType\":\"dom\",\"type\":2,\"zone\":0,\"resourceName\":\"https://webtags.logitech.com/main/prod/utag.669.js?utv=ut4.49.202303100008\",\"resourceSizeBytes\":0,\"delayedType\":\"none\",\"stack\":\"Error\\n    at A.captureStack (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:32689)\\n    at callback (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:33717)\\n    at k.publish (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:26356)\\n    at db (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17199)\\n    at HTMLBodyElement.Tb [as appendChild] (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17154)\\n    at Object.loader (https://webtags.logitech.com/main/prod/utag.js:79:157)\\n    at Object.AS (https://webtags.logitech.com/main/prod/utag.js:15:78)\\n    at utag.loader.INIT (https://webtags.logitech.com/main/prod/utag.js:330:99)\\n    at utag.loader.PINIT (https://webtags.logitech.com/main/prod/utag.js:329:14)\\n    at https://webtags.logitech.com/main/prod/utag.js:444:233\"},{\"lastByteTime\":0,\"implementationType\":\"dom\",\"type\":2,\"zone\":0,\"resourceName\":\"https://webtags.logitech.com/main/prod/utag.673.js?utv=ut4.49.202310281335\",\"resourceSizeBytes\":0,\"delayedType\":\"none\",\"stack\":\"Error\\n    at A.captureStack (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:32689)\\n    at callback (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:33717)\\n    at k.publish (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:26356)\\n    at db (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17199)\\n    at HTMLBodyElement.Tb [as appendChild] (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17154)\\n    at Object.loader (https://webtags.logitech.com/main/prod/utag.js:79:157)\\n    at Object.AS (https://webtags.logitech.com/main/prod/utag.js:15:78)\\n    at utag.loader.INIT (https://webtags.logitech.com/main/prod/utag.js:330:99)\\n    at utag.loader.PINIT (https://webtags.logitech.com/main/prod/utag.js:329:14)\\n    at https://webtags.logitech.com/main/prod/utag.js:444:233\"},{\"lastByteTime\":0,\"implementationType\":\"dom\",\"type\":2,\"zone\":0,\"resourceName\":\"https://webtags.logitech.com/main/prod/utag.678.js?utv=ut4.49.202304242302\",\"resourceSizeBytes\":0,\"delayedType\":\"none\",\"stack\":\"Error\\n    at A.captureStack (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:32689)\\n    at callback (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:33717)\\n    at k.publish (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:26356)\\n    at db (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17199)\\n    at HTMLBodyElement.Tb [as appendChild] (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17154)\\n    at Object.loader (https://webtags.logitech.com/main/prod/utag.js:79:157)\\n    at Object.AS (https://webtags.logitech.com/main/prod/utag.js:15:78)\\n    at utag.loader.INIT (https://webtags.logitech.com/main/prod/utag.js:330:99)\\n    at utag.loader.PINIT (https://webtags.logitech.com/main/prod/utag.js:329:14)\\n    at https://webtags.logitech.com/main/prod/utag.js:444:233\"},{\"lastByteTime\":0,\"implementationType\":\"dom\",\"type\":2,\"zone\":0,\"resourceName\":\"https://webtags.logitech.com/main/prod/utag.682.js?utv=ut4.49.202306080614\",\"resourceSizeBytes\":0,\"delayedType\":\"none\",\"stack\":\"Error\\n    at A.captureStack (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:32689)\\n    at callback (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:33717)\\n    at k.publish (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:26356)\\n    at db (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17199)\\n    at HTMLBodyElement.Tb [as appendChild] (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17154)\\n    at Object.loader (https://webtags.logitech.com/main/prod/utag.js:79:157)\\n    at Object.AS (https://webtags.logitech.com/main/prod/utag.js:15:78)\\n    at utag.loader.INIT (https://webtags.logitech.com/main/prod/utag.js:330:99)\\n    at utag.loader.PINIT (https://webtags.logitech.com/main/prod/utag.js:329:14)\\n    at https://webtags.logitech.com/main/prod/utag.js:444:233\"},{\"lastByteTime\":0,\"implementationType\":\"dom\",\"type\":2,\"zone\":0,\"resourceName\":\"https://webtags.logitech.com/main/prod/utag.684.js?utv=ut4.49.202307172253\",\"resourceSizeBytes\":0,\"delayedType\":\"none\",\"stack\":\"Error\\n    at A.captureStack (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:32689)\\n    at callback (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:33717)\\n    at k.publish (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:26356)\\n    at db (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17199)\\n    at HTMLBodyElement.Tb [as appendChild] (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17154)\\n    at Object.loader (https://webtags.logitech.com/main/prod/utag.js:79:157)\\n    at Object.AS (https://webtags.logitech.com/main/prod/utag.js:15:78)\\n    at utag.loader.INIT (https://webtags.logitech.com/main/prod/utag.js:330:99)\\n    at utag.loader.PINIT (https://webtags.logitech.com/main/prod/utag.js:329:14)\\n    at https://webtags.logitech.com/main/prod/utag.js:444:233\"},{\"lastByteTime\":0,\"implementationType\":\"dom\",\"type\":2,\"zone\":0,\"resourceName\":\"https://webtags.logitech.com/main/prod/utag.687.js?utv=ut4.49.202401110103\",\"resourceSizeBytes\":0,\"delayedType\":\"none\",\"stack\":\"Error\\n    at A.captureStack (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:32689)\\n    at callback (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:33717)\\n    at k.publish (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:26356)\\n    at db (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17199)\\n    at HTMLBodyElement.Tb [as appendChild] (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17154)\\n    at Object.loader (https://webtags.logitech.com/main/prod/utag.js:79:157)\\n    at Object.AS (https://webtags.logitech.com/main/prod/utag.js:15:78)\\n    at utag.loader.INIT (https://webtags.logitech.com/main/prod/utag.js:330:99)\\n    at utag.loader.PINIT (https://webtags.logitech.com/main/prod/utag.js:329:14)\\n    at https://webtags.logitech.com/main/prod/utag.js:444:233\"},{\"lastByteTime\":0,\"implementationType\":\"dom\",\"type\":2,\"zone\":0,\"resourceName\":\"https://js.adsrvr.org/up_loader.1.1.0.js\",\"resourceSizeBytes\":0,\"delayedType\":\"none\",\"stack\":\"Error\\n    at A.captureStack (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:32689)\\n    at callback (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:33717)\\n    at k.publish (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:26356)\\n    at db (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17199)\\n    at HTMLBodyElement.Tb [as appendChild] (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17154)\\n    at Object.loader (https://webtags.logitech.com/main/prod/utag.js:79:157)\\n    at u.send (https://webtags.logitech.com/main/prod/utag.284.js?utv=ut4.49.202310272125:4:510)\\n    at Object.LOAD (https://webtags.logitech.com/main/prod/utag.js:47:385)\\n    at https://webtags.logitech.com/main/prod/utag.284.js?utv=ut4.49.202310272125:5:26\\n    at https://webtags.logitech.com/main/prod/utag.284.js?utv=ut4.49.202310272125:5:37\"},{\"lastByteTime\":0,\"implementationType\":\"dom\",\"type\":2,\"zone\":0,\"resourceName\":\"https://connect.facebook.net/en_US/fbevents.js\",\"resourceSizeBytes\":0,\"delayedType\":\"none\",\"stack\":\"Error\\n    at A.captureStack (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:32689)\\n    at callback (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:33717)\\n    at k.publish (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:26356)\\n    at db (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17199)\\n    at HTMLBodyElement.Tb [as appendChild] (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17154)\\n    at Object.loader (https://webtags.logitech.com/main/prod/utag.js:79:157)\\n    at u.send (https://webtags.logitech.com/main/prod/utag.313.js?utv=ut4.49.202311160929:26:284)\\n    at Object.LOAD (https://webtags.logitech.com/main/prod/utag.js:47:385)\\n    at https://webtags.logitech.com/main/prod/utag.313.js?utv=ut4.49.202311160929:29:26\\n    at https://webtags.logitech.com/main/prod/utag.313.js?utv=ut4.49.202311160929:29:36\"},{\"lastByteTime\":0,\"implementationType\":\"dom\",\"type\":2,\"zone\":0,\"resourceName\":\"https://snap.licdn.com/li.lms-analytics/insight.min.js\",\"resourceSizeBytes\":0,\"delayedType\":\"none\",\"stack\":\"Error\\n    at A.captureStack (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:32689)\\n    at callback (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:33717)\\n    at k.publish (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:26356)\\n    at db (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17199)\\n    at HTMLBodyElement.Tb [as appendChild] (https://cdn.yottaa.com/rapid.security.min.7.1.1.js?key=2MmYtZqF3jbWpA:1:17154)\\n    at Object.loader (https://webtags.logitech.com/main/prod/utag.js:79:157)\\n    at u.send (https://webtags.logitech.com/main/prod/utag.395.js?utv=ut4.49.202102250548:9:275)\\n    at Object.LOAD (https://webtags.logitech.com/main/prod/utag.js:47:385)\\n    at https://webtags.logitech.com/main/prod/utag.395.js?utv=ut4.49.202102250548:9:429\\n    at https://webtags.logitech.com/main/prod/utag.395.js?utv=ut4.49.202102250548:9:439\"}],\"jsErrors\":[],\"pageMeasuredUuid\":\"6471f52d-3c9d-405e-a8e4-b10d10883441\",\"collectionTimestamp\":1705392068486,\"commonDimensions\":{\"optState\":\"active\",\"profileId\":40876},\"experienceMetrics\":{\"cumulative_layout_shift\":0.016796875,\"largest_contentful_paint\":8877.800000000745,\"hero_image_display\":4847.199999999255,\"hero_image\":\"https://logi-stage-65.logitech.com/content/dam/logitech/en/nav/brand-logos/logitechg-grey.svg\",\"time_to_interactive\":11062.199999999255},\"webVitalsInfo\":{\"lcp\":[{\"entryType\":\"largest-contentful-paint\",\"duration\":0,\"id\":\"i8dc9b00f75b062ede434f35d44171af5\",\"name\":\"\",\"renderTime\":8877.800000000745,\"startTime\":8877.800000000745,\"size\":640000,\"loadTime\":8861.800000000745,\"url\":\"https://logi-stage-65.logitech.com/content/dam/logitech/my-account/hero-authenticated.png\",\"resourceIndex\":24,\"element\":\"<section id=\\\"i8dc9b00f75b062ede434f35d44171af5\\\" class=\\\"component-hero-banner image-full-bleed dark-text  \\\" />\"}],\"cls\":[{\"duration\":0,\"entryType\":\"layout-shift\",\"hadRecentInput\":false,\"lastInputTime\":0,\"name\":\"\",\"sources\":[{\"node\":\"<div class=\\\"component-background  transparent-bg    hidden-xs hidden-sm \\\" />\",\"currentRect\":{\"x\":0,\"y\":638,\"width\":1280,\"height\":82,\"top\":638,\"right\":1280,\"bottom\":720,\"left\":0},\"previousRect\":{\"x\":0,\"y\":548,\"width\":1280,\"height\":172,\"top\":548,\"right\":1280,\"bottom\":720,\"left\":0}},{\"node\":\"<div class=\\\"col-xs-12 col-sm-6 col-md-4 \\\" />\",\"currentRect\":{\"x\":0,\"y\":0,\"width\":0,\"height\":0,\"top\":0,\"right\":0,\"bottom\":0,\"left\":0},\"previousRect\":{\"x\":28,\"y\":648,\"width\":408,\"height\":72,\"top\":648,\"right\":436,\"bottom\":720,\"left\":28}},{\"node\":\"<div class=\\\"col-xs-12 col-sm-6 col-md-4 \\\" />\",\"currentRect\":{\"x\":0,\"y\":0,\"width\":0,\"height\":0,\"top\":0,\"right\":0,\"bottom\":0,\"left\":0},\"previousRect\":{\"x\":436,\"y\":648,\"width\":408,\"height\":72,\"top\":648,\"right\":844,\"bottom\":720,\"left\":436}},{\"node\":\"<div class=\\\"col-xs-12 col-sm-6 col-md-4 \\\" />\",\"currentRect\":{\"x\":0,\"y\":0,\"width\":0,\"height\":0,\"top\":0,\"right\":0,\"bottom\":0,\"left\":0},\"previousRect\":{\"x\":844,\"y\":648,\"width\":408,\"height\":72,\"top\":648,\"right\":1252,\"bottom\":720,\"left\":844}}],\"startTime\":8510.89999999851,\"value\":0.016796875}],\"fid\":[],\"inp\":[]}}"
         },
         {
           "name": "gb.performanceRecord.bychance.enabled",
           "value": "false"
         },
         {
-          "name": "lastExternalReferrer",
-          "value": "other"
-        },
-        {
-          "name": "gb.cors_ready",
-          "value": "true"
-        },
-        {
           "name": "gb.performanceRecord.bychance.prev_th",
           "value": "0.05"
-        },
-        {
-          "name": "lastExternalReferrerTime",
-          "value": "1703149358205"
         },
         {
           "name": "usercardinfo",

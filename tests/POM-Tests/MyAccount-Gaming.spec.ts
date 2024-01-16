@@ -146,12 +146,12 @@ test.describe(`MyAccount : Non-Logged-In User Generic Test Cases executed in ${e
                 const homePage = new HomePage(page)
                 const loginPage = new LoginPage(page)
                 await homePage.clickhomePageLoginButton()
-                await loginPage.loginIntoMyAccountApplication('aganesh@logitech.com', 'Logitech@12345')
-                // await loginPage.loginIntoMyAccountApplication('kaverivijay08@gmail.com', 'Kaveriav@#07')
-                // await loginPage.loginIntoMyAccountApplication('marchtesting@yopmail.com', 'Logitech$#1947')
-                // await loginPage.loginIntoMyAccountApplication('playwrighttest@yopmail.com', 'Testing$!1947')
-                // await loginPage.loginIntoMyAccountApplication('bkumar@logitech.com', 'Greendust@2022')
-                // await page.context().storageState({ 'path': 'PageObjects/UserLogins/Gaming/QA65/addressUser.json' })
+                await loginPage.loginIntoMyAccountApplication('aganesh@logitech.com', 'Logitech@12345')                 //=> orderDetailsUser
+                // await loginPage.loginIntoMyAccountApplication('kaverivijay08@gmail.com', 'Kaveriav@#07')               //=> gamingUser
+                // await loginPage.loginIntoMyAccountApplication('marchtesting@yopmail.com', 'Logitech$#1947')            //=> orderCreationUser
+                // await loginPage.loginIntoMyAccountApplication('playwrighttest@yopmail.com', 'Testing$!1947')           //=> playwrightUser
+                // await loginPage.loginIntoMyAccountApplication('bkumar@logitech.com', 'Greendust@2022')                    //=> addressUser
+                // await page.context().storageState({ 'path': 'PageObjects/UserLogins/Gaming/Stage65/playwrightUser.json' })
                 await loginPage.logoutFromMyAccountApplication()
                 await homePage.validateHomeButtons()
             })
