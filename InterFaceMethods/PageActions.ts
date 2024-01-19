@@ -364,5 +364,5 @@ export interface IPageActions {
     * @since : Dec 2023
     */
 
-    deleteAllFilesInDir(dirPath, options?: { message: string }): Promise<void>
+    deleteAllFilesInDir(dirPath: string, options?: { message: string }): Promise<void>
 }

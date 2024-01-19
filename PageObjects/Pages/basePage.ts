@@ -286,18 +286,20 @@ export class BasePage implements IPageActions {
         })
     }
 
-    async deleteAllFilesInDir(dirPath, options?: { message: string }): Promise<void> {
-        try {
-            const files = await fs.readdir(dirPath);
+    async deleteAllFilesInDir(dirPath: string, options?: { message: string }): Promise<void> {
+        await test.step(`To Delete all from the directory ${dirPath}`, async () => {
+            try {
+                const files = await fs.readdir(dirPath);
 
-            const deleteFilePromises = files.map(file =>
-                fs.unlink(path.join(dirPath, file)),
-            );
+                const deleteFilePromises = files.map(file =>
+                    fs.unlink(path.join(dirPath, file)),
+                );
 
-            await Promise.all(deleteFilePromises);
-            await fs.rmdir(dirPath);
-        } catch (err) {
-            throw new Error(`Exception occured while deleting files from the folder ${options?.message} and ${err}`);
-        }
+                await Promise.all(deleteFilePromises);
+                await fs.rmdir(dirPath);
+            } catch (err) {
+                throw new Error(`Exception occured while deleting files from the folder ${options?.message} and ${err}`);
+            }
+        })
     }
 }
