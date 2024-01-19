@@ -365,4 +365,18 @@ export interface IPageActions {
     */
 
     deleteAllFilesInDir(dirPath: string, options?: { message: string }): Promise<void>
+
+    /**
+    * This method is used to Launch the Versel URL with Versel Automation By Pass Header.
+    *
+    * @mandatoryparameters :  
+    *              ==> [vercelURL] -string-  (E.g.) => "https://logi-web-publish-qa.vercel.app/en-ca/test-data/category-card/category-card"
+    * @optional_parameters :
+    *              ==> [message] -string-  (E.g.) => 'Vercel URL Launching'
+    * @returnType : number
+    * @author : Web QA Automation Team
+    * @since : Jan 2024
+    */
+
+    launchBrowserVercel(vercelURL: string, options?: { message: string }): Promise<void>
 }

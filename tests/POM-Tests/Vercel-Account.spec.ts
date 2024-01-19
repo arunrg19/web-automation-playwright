@@ -1,17 +1,14 @@
 import { expect, test } from '@playwright/test'
+import { BasePage } from '../../PageObjects/Pages/basePage'
+import { VercelPage } from '../../PageObjects/Pages/vercelPage'
 
-test.describe("Vercel Header", async () => {
+test.describe("Vercel Header URL Launch", async () => {
 
-    test(`Testing`, async ({ page, browser }) => {
-        const headers = {
-            "x-vercel-protection-bypass": "knD5cLIY7JOOoBiek6zjfouplKs1dHUU"
-        };
-
-        const context = await browser.newContext({ extraHTTPHeaders: headers })
-        page = await context.newPage();
-
-        page.goto('https://logi-web-publish-qa.vercel.app/en-ca/test-data/category-card/category-card')
-
-        await expect(page.locator('button[data-analytics-title="cookie-consent"]')).toBeVisible()
+    test(`Testing Vercel Header URL Launch`, async ({ page }) => {
+        const appURL = "https://logi-web-author-qa.vercel.app/en-ca/test-data/quick-links/quick-links-comp"
+        const basePage = new BasePage(page)
+        const vercelPage = new VercelPage(page)
+        await basePage.launchBrowserVercel(appURL, { 'message': "Launching the Vercel URL" })
+        await vercelPage.verifyHeaderVisibility()
     })
 })

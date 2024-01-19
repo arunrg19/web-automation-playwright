@@ -1,4 +1,4 @@
-import { Page, test, Locator, expect, ElementHandle } from '@playwright/test'
+import { Page, test, Locator, expect, chromium } from '@playwright/test'
 import { IPageActions } from '../../InterFaceMethods/PageActions'
 import * as fs from 'fs/promises';
 import path from 'path';
@@ -299,6 +299,22 @@ export class BasePage implements IPageActions {
                 await fs.rmdir(dirPath);
             } catch (err) {
                 throw new Error(`Exception occured while deleting files from the folder ${options?.message} and ${err}`);
+            }
+        })
+    }
+
+
+    async launchBrowserVercel(vercelURL: string, options?: { message: string }): Promise<void> {
+        await test.step(`Creating a Browser Context with Vercel Automation Protection bypass`, async () => {
+            try {
+                const headers = {
+                    "x-vercel-protection-bypass": "knD5cLIY7JOOoBiek6zjfouplKs1dHUU"
+                };
+                await this.page.setExtraHTTPHeaders(headers)
+                await this.page.goto(vercelURL)
+                console.log(this.page.url())
+            } catch (err) {
+                throw new Error(`Exception occured while launching the browser context with ${options?.message} ${err}`);
             }
         })
     }
