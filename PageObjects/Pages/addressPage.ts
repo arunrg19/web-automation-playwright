@@ -30,6 +30,7 @@ export class AddressPage extends BasePage {
     private readonly savedAddress_City_State: Locator
     private readonly savedAddress_PhoneNumber: Locator
     private readonly fieldErrorMsg: Locator
+    private readonly btnCloseModalPopUp: Locator
     private readonly btnAddAddress: string
 
     constructor(page: Page) {
@@ -61,6 +62,7 @@ export class AddressPage extends BasePage {
         this.savedAddress_City_State = page.locator('.saved-address .card p.city-state')
         this.savedAddress_PhoneNumber = page.locator('.saved-address .card p.phone')
         this.fieldErrorMsg = page.locator('p.error')
+        this.btnCloseModalPopUp = page.locator('#address-modal button.component-modal-close')
     }
 
 
@@ -168,6 +170,13 @@ export class AddressPage extends BasePage {
     public async validateFieldErrorMessage(fieldMsg: string): Promise<void> {
         await test.step('Verify the field level Error message', async () => {
             await this.verifyElementText(this.fieldErrorMsg, fieldMsg, { message: fieldMsg })
+        })
+    }
+
+    public async clickCloseSaveAddressPopUp(): Promise<void> {
+        await test.step('Clicking Close button in PopUp', async () => {
+            await this.clickOn(this.btnCloseModalPopUp, { message: 'Clicking Close button in PopUp' })
+            await this.page.waitForTimeout(5000)
         })
     }
 

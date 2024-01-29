@@ -278,7 +278,19 @@ if (["QA65", "Stage65"].includes(env)) {
                 await addressPage.clickEditIcon(1)
                 await addressPage.selectDefaultAddress()
                 await addressPage.clickSaveEditedAddress()
+
+                //AEMU-4588 - PhoneNumber field validations
+                await addressPage.clickEditIcon(1)
+                await addressPage.enterAddressPhoneNumber('123')
+                await addressPage.clickSaveEditedAddress()
+                await addressPage.validateFieldErrorMessage('Must be between 10 to 20 characters required.')
+                await addressPage.enterAddressPhoneNumber('123456789012345678901')
+                await addressPage.clickSaveEditedAddress()
+                await addressPage.validateFieldErrorMessage('Must be between 10 to 20 characters required.')
+                await addressPage.clickCloseSaveAddressPopUp()
             })
+
+            
         })
 
         test(`📃 TC008 -  Address Book : Verify Address and My Orders Should not be displayed for Non-SFCC Locales`, async ({ page }) => {
