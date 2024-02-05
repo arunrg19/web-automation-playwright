@@ -229,7 +229,8 @@ export class EditProfilePage extends BasePage {
             await this.selectLanguageEditSaveVerification()
             await this.selectCountryEditSaveVerification()
             await this.DOBEditSaveVerification()
-            await this.phoneNumberEditSaveVerification()
+            await this.verifyElementNotPresent(this.txtPhoneNumber, {'message':'Phone Number Field'})
+            // await this.phoneNumberEditSaveVerification()         //=> Commented this code as per the card : AEMU-4633
         })
     }
 
@@ -240,7 +241,8 @@ export class EditProfilePage extends BasePage {
             await this.selectLanguageEditCancelVerification()
             await this.selectCountryEditCancelVerification()
             await this.DOBEditCancelVerification()
-            await this.phoneNumberEditCancelVerification()
+            await this.verifyElementNotPresent(this.txtPhoneNumber, {'message':'Phone Number Field'})
+            // await this.phoneNumberEditCancelVerification()       //=> Commented this code as per the card : AEMU-4633
         })
     }  
 
